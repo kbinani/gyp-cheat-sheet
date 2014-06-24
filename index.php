@@ -37,11 +37,13 @@ class Page {
 class Description {
   private $samples;
   private $button_index;
+  private $button_height;
 
-  public function __construct($samples, $button_index)
+  public function __construct($samples, $button_index, $button_height = 1)
   {
     $this->samples = $samples;
     $this->button_index = $button_index;
+    $this->button_height = $button_height;
   }
 
   public function getSamples()
@@ -53,58 +55,78 @@ class Description {
   {
     return $this->button_index;
   }
+
+  public function getButtonHeight()
+  {
+    return $this->button_height;
+  }
 }
 
 $page_button_height = 20;
 $page_button_offset = 0;
-$description_button_height = 21;
+$description_button_distance = 21;
+$description_button_height = 19;
 $description_button_offset = 0;
+$config_panel_scale = 0.8;
 
-require_once('cheet_sheet_contents_definition.php');
+require_once('cheat_sheet_contents_definition.php');
 
 ?>
 </head>
 <body class="bs-docs-docs">
+
 <div class="navbar metro-navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <h1 class="brand">GYP cheat sheet</h1>
+      <h1 class="brand">
+        <a href="index.html">GYP cheat sheet</a>
+        <small>for VisualStudio</small>
+      </h1>      
     </div>
   </div>
 </div>
+
 <div id="doc-container" class="container">
   <div class="config_panel">
+    <img src="image/config_panel.png" class="config_panel_background"/>
     <div class="config_panel_contents">
-      <div class="list_view">
-        <div class="list_view_contents">
+      <img src="image/listview.png" class="config_panel_contents_background"/>
+
 <?php
   foreach ($pages as $page) {
     $button_index = $page->getButtonIndex();
-    $top = $page_button_offset + $button_index * $page_button_height;
+    $top = ($page_button_offset + $button_index * $page_button_height) * $config_panel_scale;
     print sprintf('<div data-gypcs-page="msvs_page_%s" class="page_select_button" style="top: %dpx"></div>', $page->getName(), $top) . "\n";
   }
 ?>
-        </div>
-      </div>
-      <div class="property_grid">
+
+    </div>
+
+    <div class="config_properties">
+
 <?php
   foreach ($pages as $page) {
     $name = $page->getName();
-    print sprintf('<div id="msvs_page_%s" class="page page_%s">', $name, $name) . "\n";
-    print sprintf('<img src="image/page_%s.png"/>', $name) . "\n";
+    print sprintf('<div class="config_property" id="msvs_page_%s">', $name) . "\n";
+    print sprintf('<img src="image/page_%s.png"  class="config_property_background"/>', $name) . "\n";
+
     foreach ($page->getDescription() as $description_title => $description) {
       $button_index = $description->getButtonIndex();
-      $top = $description_button_offset + $button_index * $description_button_height;
-      print sprintf('<div data-gypcs-description="msvs_description_%s_%s" class="description_select_button" style="top: %dpx"></div>', $name, $description_title, $top) . "\n";
+      $button_height = $description->getButtonHeight();
+      $top = ($description_button_offset + $button_index * $description_button_distance) * $config_panel_scale;
+      $height = $button_height * $description_button_height * $config_panel_scale;
+      print sprintf('<div data-gypcs-description="msvs_description_%s_%s" class="description_select_button" style="top: %dpx; height: %dpx"></div>', $name, $description_title, $top, $height) . "\n";
     }
-    print '</div>' . "\n";
-    print "\n";
+
+    print sprintf('</div>') . "\n";
   }
 ?>
-      </div>
+
     </div>
+
   </div>
-  <div class="code">
+
+  <div class="n_code">
 
 <?php
   foreach ($pages as $page) {
@@ -120,7 +142,10 @@ require_once('cheet_sheet_contents_definition.php');
 ?>
 
   </div>
+
   <div class="clearfix"></div>
+
+
 </div>
 
 <script src="assets/js/jquery-1.10.0.min.js"></script>
@@ -138,10 +163,13 @@ $(document).ready(function() {
    */
   var select_description_by_button = function($button_element) {
     $(".description").css('visibility', 'hidden');
+    $(".description").css('display', 'none');
+
     $('.description_select_button').removeClass('selected_button');
     if ($button_element) {
       var description_element_id = $button_element.attr('data-gypcs-description');
       $('#' + description_element_id).css('visibility', 'visible');
+      $('#' + description_element_id).css('display', 'block');
       $button_element.addClass('selected_button');
     }
   };
@@ -154,15 +182,19 @@ $(document).ready(function() {
    * page
    */
   var select_page_by_button = function($button_element) {
-    $('.page').css('visibility', 'hidden');
+    $('.config_property').css('visibility', 'hidden');
+    $('.config_property').css('overflow', 'hidden');
     $('.page_select_button').removeClass('selected_button');
     var page_id = $button_element.attr('data-gypcs-page');
     $('#' + page_id).css('visibility', 'visible');
+    $('#' + page_id).css('overflow', 'visible');
+    $('.config_properties').css('overflow', 'hidden');
+    $('.config_properties').css('overflow', 'auto');
     $button_element.addClass('selected_button');
     select_description_by_button();
   };
   
-  $('.list_view_contents > .page_select_button').click(function(event) {
+  $('.page_select_button').click(function(event) {
     select_page_by_button($(event.target));
   });
 
@@ -171,9 +203,6 @@ $(document).ready(function() {
   select_description_by_button($('.description_select_button').first());
 
   window.prettyPrint && prettyPrint();
-
-  $(".config_panel_contents").css('transform', 'scale(0.7)')
-                             .css('transform-origin', '0 0');
 });
 </script>
 </body>

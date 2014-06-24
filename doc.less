@@ -1,8 +1,125 @@
 @width: 1150px;
-@config_panel_scale: 0.7;
+@config_panel_scale: 0.8;
 @config_panel_original_width: 940px;
 @config_panel_original_height: 705px;
 @margin: 20px;
+
+.config_panel {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: @config_panel_original_width * @config_panel_scale;
+  float: left;
+}
+
+.config_panel_background {
+  -webkit-transform: scale(@config_panel_scale);
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform: scale(@config_panel_scale);
+  -moz-transform-origin: 0px 0px;
+  transform: scale(@config_panel_scale);
+  transform-origin: 0px 0px;
+  border-radius: 10px * @config_panel_scale;
+  -webkit-border-radius: 10px * @config_panel_scale;
+  -moz-border-radius: 10px * @config_panel_scale;
+}
+
+.config_properties {
+  left: 217px * @config_panel_scale;
+  top: 77px * @config_panel_scale;
+  width: 702px * @config_panel_scale;
+  height: 509px * @config_panel_scale;
+  position: absolute;
+  overflow: auto;
+}
+
+.config_panel_contents {
+  left: 19px * @config_panel_scale;
+  top: 77px * @config_panel_scale;
+  width: 184px * @config_panel_scale;
+  height: 574px * @config_panel_scale;
+  border: solid 1px;
+  border-color: transparent;
+  overflow: auto;
+  position: absolute;
+}
+
+.config_property {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: solid 1px;
+  border-color: transparent;
+}
+
+.config_property_background {
+  overflow: hidden;
+  transform: scale(@config_panel_scale);
+  transform-origin: 0px 0px;
+  -webkit-transform: scale(@config_panel_scale);
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform: scale(@config_panel_scale);
+  -moz-transform-origin: 0px 0px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.description_select_button, .page_select_button {
+  transition: all 0.1s;
+  opacity: 0.4;
+  background-color: purple;
+  left: 20px * @config_panel_scale;
+  width: (702px - 20px) * @config_panel_scale;
+  position: absolute;
+  border: solid 1px;
+  border-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.description_select_button {
+  width: 680px * @config_panel_scale;
+}
+
+.page_select_button {
+  width: 285px * @config_panel_scale;
+  height: 18px * @config_panel_scale;
+}
+
+.config_panel_contents_background {
+  -webkit-transform: scale(@config_panel_scale);
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform: scale(@config_panel_scale);
+  -moz-transform-origin: 0px 0px;
+  transform: scale(@config_panel_scale);
+  transform-origin: 0px 0px;
+}
+
+.bs-docs-docs {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: left;
+  width: 100%;
+}
+
+.n_code {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: @margin;
+  width: @width - @config_panel_original_width * @config_panel_scale - @margin;
+  float: left;
+}
+
+.n_code pre {
+  min-width: @width - @config_panel_original_width * @config_panel_scale - @margin;
+}
+
+img {
+  max-width: 1000% !important;  
+}
 
 body {
   padding-top: 62px;
@@ -16,6 +133,12 @@ body {
 .bs-docs-docs .navbar.metro-navbar .brand {
   line-height: 20px;
   width: 300px;
+}
+
+.bs-docs-docs .navbar.metro-navbar .brand small {
+   font-size: 15px;
+   line-height: 25px;
+   display: block;
 }
 
 .bs-docs-docs .navbar-inner .container {
@@ -34,49 +157,9 @@ div .config_panel {
   float: left;
 }
 
-div .config_panel_contents {
-  width: @config_panel_original_width;
-  height: @config_panel_original_height;
-  background-image: url('image/config_panel.png'); /* 940x705*/
-  border-radius: 8px;
-}
-
-.bs-docs-docs .code {
-  border: solid 1px;
-  border-color: transparent;
-  margin-top: 0;
-  margin-left: @config_panel_original_width * @config_panel_scale + @margin;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-div .list_view {
-  position: absolute;
-  top: 77px;
-  left: 19px;
-  width: 184px;
-  height: 574px;
-  border: solid 1px;
-  border-color: transparent;
-  overflow: auto;
-}
-div .list_view_contents {
-  background-image: url('image/listview.png');
-  width: 285px;
-  height: 757px;
-}
-div .property_grid {
-  position: absolute;
-  top: 77px;
-  left: 217px;
-  width: 702px;
-  height: 509px;
-  border: solid 1px;
-  border-color: transparent;
-  overflow: auto;
-}
-
 div .description {
   position: absolute;
+  overflow-x: scroll;
 }
 
 div .page {
@@ -84,30 +167,6 @@ div .page {
   visibility: hidden;
 }
 
-.description_select_button, .page_select_button {
-  transition: all 0.1s;
-  opacity: 0.4;
-  background-color: purple;
-  height: 19px;
-  left: 20px;
-  position: absolute;
-  border: solid 1px;
-  border-color: transparent;
-  cursor: pointer;
-}
-
-.description_select_button {
-  width: 680px;
-}
-
-.page_select_button {
-  width: 265px;
-}
-
 .selected_button, .description_select_button:hover, .page_select_button:hover {
   background-color: orange;
-}
-
-.code pre {
-  min-width: @width - @config_panel_original_width * @config_panel_scale - @margin;
 }
