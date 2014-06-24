@@ -1,0 +1,146 @@
+.config_panel {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 752px;
+  float: left;
+}
+.config_panel_background {
+  -webkit-transform: scale(0.8);
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform: scale(0.8);
+  -moz-transform-origin: 0px 0px;
+  transform: scale(0.8);
+  transform-origin: 0px 0px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.config_properties {
+  left: 173.6px;
+  top: 61.6px;
+  width: 561.6px;
+  height: 407.2px;
+  position: absolute;
+  overflow-y: auto;
+}
+.config_panel_contents {
+  left: 15.2px;
+  top: 61.6px;
+  width: 147.2px;
+  height: 459.2px;
+  border: solid 1px;
+  border-color: transparent;
+  overflow: auto;
+  position: absolute;
+}
+.config_property {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.config_property_background {
+  overflow: hidden;
+  transform: scale(0.8);
+  transform-origin: 0px 0px;
+  -webkit-transform: scale(0.8);
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform: scale(0.8);
+  -moz-transform-origin: 0px 0px;
+  left: 0px;
+  top: 0px;
+}
+.description_select_button,
+.page_select_button {
+  transition: all 0.1s;
+  opacity: 0.4;
+  background-color: purple;
+  left: 16px;
+  position: absolute;
+  border: solid 1px;
+  border-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+.description_select_button {
+  width: 544px;
+}
+.page_select_button {
+  width: 212px;
+  height: 14.4px;
+}
+.config_panel_contents_background_container {
+  width: 228px;
+  height: 605.6px;
+  overflow: hidden;
+}
+.config_panel_contents_background {
+  -webkit-transform: scale(0.8);
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform: scale(0.8);
+  -moz-transform-origin: 0px 0px;
+  transform: scale(0.8);
+  transform-origin: 0px 0px;
+}
+.bs-docs-docs {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: left;
+  width: 100%;
+}
+.n_code {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  width: 378px;
+  float: left;
+}
+.n_code pre {
+  min-width: 378px;
+}
+img {
+  max-width: 1000% !important;
+}
+body {
+  padding-top: 62px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.bs-docs-docs .navbar.metro-navbar .brand {
+  line-height: 20px;
+  width: 300px;
+}
+.bs-docs-docs .navbar.metro-navbar .brand small {
+  font-size: 15px;
+  line-height: 25px;
+  display: block;
+}
+.bs-docs-docs .navbar-inner .container {
+  width: 1150px;
+}
+#doc-container {
+  position: relative;
+  padding: 20px 20px;
+  width: 1150px;
+}
+div .config_panel {
+  width: 752px;
+  height: 564px;
+  float: left;
+}
+div .description {
+  position: absolute;
+}
+div .page {
+  position: absolute;
+  visibility: hidden;
+}
+.selected_button,
+.description_select_button:hover,
+.page_select_button:hover {
+  background-color: orange;
+}

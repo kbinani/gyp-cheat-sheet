@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootmetro.css">
+<link rel="stylesheet" type="text/css" href="assets/js/google-code-prettify/prettify.css">
+<link rel="stylesheet" type="text/css" href="doc.css">
+</head>
+<body class="bs-docs-docs">
+
+<div class="navbar metro-navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <h1 class="brand">
+        <a href="index.html">GYP cheat sheet</a>
+        <small>for VisualStudio</small>
+      </h1>      
+    </div>
+  </div>
+</div>
+
+<div id="doc-container" class="container">
+  <div class="config_panel">
+    <img src="image/config_panel.png" class="config_panel_background"/>
+    <div class="config_panel_contents">
+      <div class="config_panel_contents_background_container">
+        <img src="image/listview.png" class="config_panel_contents_background"/>
+
+<div data-gypcs-page="msvs_page_general" class="page_select_button" style="top: 32px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_general" class="page_select_button" style="top: 112px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_optimization" class="page_select_button" style="top: 128px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_preprocessor" class="page_select_button" style="top: 144px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_codegeneration" class="page_select_button" style="top: 160px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_language" class="page_select_button" style="top: 176px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_precompiledheader" class="page_select_button" style="top: 192px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_output" class="page_select_button" style="top: 208px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_browserinformation" class="page_select_button" style="top: 224px"></div>
+<div data-gypcs-page="msvs_page_vccompilertools_details" class="page_select_button" style="top: 240px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_general" class="page_select_button" style="top: 304px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_input" class="page_select_button" style="top: 320px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_manifestfile" class="page_select_button" style="top: 336px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_debug" class="page_select_button" style="top: 352px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_system" class="page_select_button" style="top: 368px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_optimization" class="page_select_button" style="top: 384px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_embeddedidl" class="page_select_button" style="top: 400px"></div>
+<div data-gypcs-page="msvs_page_vclinkertools_details" class="page_select_button" style="top: 432px"></div>
+      </div>
+    </div>
+
+    <div class="config_properties">
+
+<div class="config_property" id="msvs_page_general">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_general.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_general_type" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_general_characterset" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_general_toolset" class="description_select_button" style="top: 252px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_general_targetname" class="description_select_button" style="top: 184px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_general">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_general.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_general_includedir" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_general_additionalusingdirectories" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_general_debuginformationformat" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_general_suppressstartupbanner" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_general_warninglevel" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_general_warnaserror" class="description_select_button" style="top: 117px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_optimization">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_optimization.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_optimization" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_inlinefunctionexpansion" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_enableintrinsicfunctions" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_favorsizeorspeed" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_omitframepointers" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_enablefibersafeoptimizations" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_optimization_wholeprogramoptimization" class="description_select_button" style="top: 100px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_preprocessor">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_preprocessor.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_preprocessor_defines" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_preprocessor_ignorestandardincludepath" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_preprocessor_undefineallpreprocessordefinitions" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_preprocessor_generatepreprocessedfile" class="description_select_button" style="top: 67px; height: 30px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_preprocessor_undefinepreprocessordefinitions" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_preprocessor_keepcomments" class="description_select_button" style="top: 100px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_codegeneration">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_codegeneration.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_stringpooling" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_minimalrebuild" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_exceptionhandling" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_smallertypecheck" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_basicruntimechecks" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_runtimelibrary" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_structmemberalignment" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_buffersecuritycheck" class="description_select_button" style="top: 117px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_enablefunctionlevellinking" class="description_select_button" style="top: 134px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_enableenhancedinstructionset" class="description_select_button" style="top: 168px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_floatingpointmodel" class="description_select_button" style="top: 184px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_codegeneration_floatingpointexceptions" class="description_select_button" style="top: 201px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_language">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_language.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_language_disablelanguageextensions" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_language_treatwchartasbuiltintype" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_language_forceconformanceinforloopscope" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_language_runtimetypeinfo" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_language_openmp" class="description_select_button" style="top: 67px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_precompiledheader">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_precompiledheader.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_useprecompiledheader" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_precompiledheaderthrough" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_precompiledheaderfile" class="description_select_button" style="top: 33px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_output">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_output.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_output_expandattributedsource" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_output_assembleroutput" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_output_assemblerlistinglocation" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_output_objectfile" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_output_programdatabasefilename" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_output_generatexmldocumentationfiles" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_output_xmldocumentationfilename" class="description_select_button" style="top: 117px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_browserinformation">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_browserinformation.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_browserinformation_browseinformation" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_browserinformation_browseinformationfile" class="description_select_button" style="top: 16px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vccompilertools_details">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vccompilertools_details.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vccompilertools_details_disablespecificwarnings" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_callingconversion" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_compileas" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_forcedincludefiles" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_forcedusingfiles" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_vcclcompilertool" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_usefullpaths" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_omitdefaultlibname" class="description_select_button" style="top: 117px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vccompilertools_details_errorreporting" class="description_select_button" style="top: 134px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_general">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_general.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_general_outputfile" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_showprogress" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_version" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_linkincremental" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_suppressstartupbanner" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_ignoreimportlibrary" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_registeroutput" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_peruserredirection" class="description_select_button" style="top: 117px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_additionallibrarydirectories" class="description_select_button" style="top: 134px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_linklibrarydependencies" class="description_select_button" style="top: 151px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_general_uselibrarydependencyinputs" class="description_select_button" style="top: 168px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_input">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_input.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_input_additionaldependencies" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_ignorealldefaultlibraries" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_ignoredefaultlibrarynames" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_moduledefinitionfile" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_addmodulenamestoassembly" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_embedmanagedresourcefile" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_forcesymbolreferences" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_delayloaddlls" class="description_select_button" style="top: 117px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_input_assemblylinkresource" class="description_select_button" style="top: 134px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_manifestfile">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_manifestfile.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_generatemanifest" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_manifestfile" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_additionalmanifestdependencies" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_allowisolation" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_enableuac" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_uacexecutionlevel" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_manifestfile_uacuiaccess" class="description_select_button" style="top: 100px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_debug">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_debug.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_generatedebuginformation" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_programdatabasefile" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_stripprivatesymbols" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_generatemapfile" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_mapfilename" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_mapexports" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_debug_assemblydebug" class="description_select_button" style="top: 100px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_system">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_system.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_system_generatedebuginformation" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_heapreservesize" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_heapcommitsize" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_stackreservesize" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_stackcommitsize" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_largeaddressaware" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_terminalserveraware" class="description_select_button" style="top: 117px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_swaprunfromcd" class="description_select_button" style="top: 134px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_swaprunfromnet" class="description_select_button" style="top: 151px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_system_driver" class="description_select_button" style="top: 168px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_optimization">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_optimization.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_optimization_optimizereferences" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_optimization_enablecomdatfolding" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_optimization_functionorder" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_optimization_profileguideddatabase" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_optimization_linktimecodegeneration" class="description_select_button" style="top: 67px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_embeddedidl">
+<div style="width: 560px; height: 406px; overflow: hidden;">
+<img src="image/page_vclinkertools_embeddedidl.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_embeddedidl_midlcommandfile" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_embeddedidl_ignoreembeddedidl" class="description_select_button" style="top: 16px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_embeddedidl_mergedidlbasefilename" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_embeddedidl_typelibraryfile" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_embeddedidl_typelibraryresourceid" class="description_select_button" style="top: 67px; height: 15px"></div>
+</div>
+</div>
+<div class="config_property" id="msvs_page_vclinkertools_details">
+<div style="width: 560px; height: 419px; overflow: hidden;">
+<img src="image/page_vclinkertools_details.png"  class="config_property_background"/>
+<div data-gypcs-description="msvs_description_vclinkertools_details_entrypointsymbol" class="description_select_button" style="top: 0px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_setchecksum" class="description_select_button" style="top: 33px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_baseaddress" class="description_select_button" style="top: 50px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_randomizedbaseaddress" class="description_select_button" style="top: 67px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_fixedbaseaddress" class="description_select_button" style="top: 84px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_dataexecutionprevention" class="description_select_button" style="top: 100px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_turnoffassemblygeneration" class="description_select_button" style="top: 117px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_supportunloadofdelayloadeddll" class="description_select_button" style="top: 134px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_importlibrary" class="description_select_button" style="top: 168px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_mergesections" class="description_select_button" style="top: 184px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_targetmachine" class="description_select_button" style="top: 201px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_profile" class="description_select_button" style="top: 218px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_clrthreadattribute" class="description_select_button" style="top: 235px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_clrimagetype" class="description_select_button" style="top: 252px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_keycontainer" class="description_select_button" style="top: 285px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_clrunmanagedcodecheck" class="description_select_button" style="top: 319px; height: 15px"></div>
+<div data-gypcs-description="msvs_description_vclinkertools_details_errorreporting" class="description_select_button" style="top: 352px; height: 15px"></div>
+</div>
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="n_code">
+
+<div id="msvs_description_general_type" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    # アプリケーション (.exe)
+    'type':  'executable',
+
+    # ダイナミック ライブラリ (.dll)
+    'type': 'loadable_module',
+
+    # ダイナミック ライブラリ (.dll)
+    'type': 'shared_library',
+
+    # スタティック ライブラリ (.lib)
+    'type': 'static_library',
+
+    # ユーティリティ
+    'type': 'none',
+  }
+]</pre>
+</div>
+<div id="msvs_description_general_characterset" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_configuration_attributes': {
+      # Use Unicode Character Set
+      'CharacterSet': '1',
+
+      # Use Multi-Byte Character Set
+      'CharacterSet': '2',
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_general_toolset" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    # Visual Studio 2012
+    'msbuild_toolset': 'v110',
+
+    # Visual Studio 2012 - Windows XP
+    'msbuild_toolset': 'v110_xp',
+  }
+]</pre>
+</div>
+<div id="msvs_description_general_targetname" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'product_name': 'MyProduct'
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_general_includedir" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'include_dirs': [
+      'C:\SomeLibrary\include'
+    ]
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_general_additionalusingdirectories" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'AdditionalUsingDirectories': [
+            'folderA',
+            'folderB'
+        ]
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_general_debuginformationformat" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # C7 compatible (/Z7)
+        'DebugInformationFormat': '1'
+
+        # Program Database (/Zi)
+        'DebugInformationFormat': '3'
+
+        # Program Database for Edit And Continue (/ZI)
+        'DebugInformationFormat': '4'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_general_suppressstartupbanner" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/nologo)
+        'SuppressStartupBanner': 'true',
+
+        # いいえ (/nologo-)
+        'SuppressStartupBanner': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_general_warninglevel" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # すべての警告を非表示にする (/W0)
+        'WarningLevel': '0',
+
+        # レベル 1 (/W1)
+        'WarningLevel': '1',
+
+        # レベル 2 (/W2)
+        'WarningLevel': '2',
+
+        # レベル 3 (/W3)
+        'WarningLevel': '3',
+
+        # レベル 4 (/W4)
+        'WarningLevel': '4',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_general_warnaserror" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/WX)
+        'WarnAsError': 'true',
+
+        # いいえ (/WX-)
+        'WarnAsError': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_optimization" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 無効 (/Od)
+        'Optimization': '0'
+
+        # サイズの最小化 (/O1)
+        'Optimization': '1'
+
+        # 実行速度の最小化 (/O2)
+        'Optimization': '2'
+
+        # 最大限の最適化 (/Ox)
+        'Optimization': '3'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_inlinefunctionexpansion" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'InlineFunctionExpansion': '0'
+
+        # __inline のみ (/Ob1)
+        'InlineFunctionExpansion': '1'
+
+        # 拡張可能な関数すべて (/Ob2)
+        'InlineFunctionExpansion': '2'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_enableintrinsicfunctions" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Oi)
+        'EnableIntrinsicFunctions': 'true',
+
+        # いいえ
+        'EnableIntrinsicFunctions': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_favorsizeorspeed" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # なし
+        'FavorSizeOrSpeed': '0',
+
+        # 実行速度を優先 (/Ot)
+        'FavorSizeOrSpeed': '1',
+
+        # 実行可能ファイルのサイズを優先 (/Os)
+        'FavorSizeOrSpeed': '2',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_omitframepointers" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Oy)
+        'OmitFramePointers': 'true'
+
+        # いいえ (/Oy-)
+        'OmitFramePointers': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_enablefibersafeoptimizations" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GT)
+        'EnableFiberSafeOptimizations': 'true'
+
+        # いいえ
+        'EnableFiberSafeOptimizations': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_optimization_wholeprogramoptimization" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GL)
+        'WholeProgramOptimization': 'true'
+
+        # いいえ
+        'WholeProgramOptimization': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_preprocessor_defines" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'defines': [
+        'FOO',
+        'BAR'
+    ],
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_preprocessor_ignorestandardincludepath" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/X)
+        'IgnoreStandardIncludePath': 'true'
+
+        # いいえ
+        'IgnoreStandardIncludePath': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_preprocessor_undefineallpreprocessordefinitions" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/u)
+        'UndefineAllPreprocessorDefinitions': 'true'
+
+        # いいえ
+        'UndefineAllPreprocessorDefinitions': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_preprocessor_generatepreprocessedfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # ファイルの前処理: いいえ
+        # 行番号の前処理の抑制: いいえ
+        'GeneratePreprocessedFile': '0',
+
+        # ファイルの前処理: はい (/P)
+        # 行番号の前処理の抑制: いいえ
+        'GeneratePreprocessedFile': '1',
+
+        # ファイルの前処理: はい (/P)
+        # 行番号の前処理の抑制: はい (/EP)
+        'GeneratePreprocessedFile': '2',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_preprocessor_undefinepreprocessordefinitions" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'UndefinePreprocessorDefinitions': [
+            'FOO',
+            'BAR'
+        ]
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_preprocessor_keepcomments" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/C)
+        'KeepComments': 'true'
+
+        # いいえ
+        'KeepComments': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_stringpooling" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GF)
+        'StringPooling': 'true'
+
+        # いいえ (/GF-)
+        'StringPooling': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_minimalrebuild" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Gm)
+        'MinimalRebuild': 'true'
+
+        # いいえ (/Gm-)
+        'MinimalRebuild': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_exceptionhandling" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # いいえ
+        'ExceptionHandling': '0'
+
+        # はい (/EHsc)
+        'ExceptionHandling': '1'
+
+        # はい - SEH の例外あり (/EHa)
+        'ExceptionHandling': '2'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_smallertypecheck" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/RTCc)
+        'SmallerTypeCheck': 'true'
+
+        # いいえ
+        'SmallerTypeCheck': 'false'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_basicruntimechecks" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'BasicRuntimeChecks': '0'
+
+        # スタック フレーム (/RTCs)
+        'BasicRuntimeChecks': '1'
+
+        # 初期化されていない変数 (/RTCu)
+        'BasicRuntimeChecks': '2'
+
+        # 両方 (/RTC1、/RTCsu と同等) (/RTC1)
+        'BasicRuntimeChecks': '3'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_runtimelibrary" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'configurations': {
+      'Debug': {
+        'msvs_settings': {
+          'VCCLCompilerTool': {
+            # マルチスレッド (/MT)
+            'RuntimeLibrary': '0',
+
+            # マルチスレッド デバッグ (/MTd)
+            'RuntimeLibrary': '1',
+
+            # マルチスレッド DLL (/MD)
+            'RuntimeLibrary': '2',
+
+            # マルチスレッド デバッグ DLL (/MDd)
+            'RuntimeLibrary': '3',
+          }
+        }
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_structmemberalignment" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'StructMemberAlignment': '0',
+
+        # 1 バイト (/Zp1)
+        'StructMemberAlignment': '1',
+
+        # 2 バイト (/Zp2)
+        'StructMemberAlignment': '2',
+
+        # 4 バイト (/Zp4)
+        'StructMemberAlignment': '3',
+
+        # 8 バイト (/Zp8)
+        'StructMemberAlignment': '4',
+
+        # 16 バイト (/Zp16)
+        'StructMemberAlignment': '5',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_buffersecuritycheck" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GS)
+        'BufferSecurityCheck': 'true',
+
+        # いいえ (/GS-)
+        'BufferSecurityCheck': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_enablefunctionlevellinking" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Gy)
+        'EnableFunctionLevelLinking': 'true',
+
+        # いいえ (/Gy-)
+        'EnableFunctionLevelLinking': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_enableenhancedinstructionset" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 設定なし
+        'EnableEnhancedInstructionSet': '0',
+
+        # ストリーミング SIMD 拡張機能 (/arch:SSE)
+        'EnableEnhancedInstructionSet': '1',
+
+        # ストリーミング SIMD 拡張機能 2 (/arch:SSE2)
+        'EnableEnhancedInstructionSet': '2',
+
+        # Advanced Vector Extensions (/arch:AVX)
+        'EnableEnhancedInstructionSet': '3',
+
+        # 拡張命令なし (/arch:IA32)
+        'EnableEnhancedInstructionSet': '4',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_floatingpointmodel" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # Precise (/fp:precise)
+        'FloatingPointModel': '0',
+
+        # Strict (/fp:strict)
+        'FloatingPointModel': '1',
+
+        # Fast (/fp:fast)
+        'FloatingPointModel': '2',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_codegeneration_floatingpointexceptions" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/fp:except)
+        'FloatingPointExceptions': 'true',
+
+        # いいえ (/fp:except-)
+        'FloatingPointExceptions': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_language_disablelanguageextensions" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Za)
+        'DisableLanguageExtensions': 'true',
+
+        # いいえ
+        'DisableLanguageExtensions': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_language_treatwchartasbuiltintype" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Zc:wchar_t)
+        'TreatWChar_tAsBuiltInType': 'true',
+
+        # いいえ (/Zc:wchar_t-)
+        'TreatWChar_tAsBuiltInType': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_language_forceconformanceinforloopscope" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Zc:forScope)
+        'ForceConformanceInForLoopScope': 'true',
+
+        # いいえ (/Zc:forScope-)
+        'ForceConformanceInForLoopScope': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_language_runtimetypeinfo" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GR)
+        'RuntimeTypeInfo': 'true',
+
+        # いいえ (/GR-)
+        'RuntimeTypeInfo': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_language_openmp" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/openmp)
+        'OpenMP': 'true',
+
+        # いいえ (/openmp-)
+        'OpenMP': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_precompiledheader_useprecompiledheader" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # プリコンパイル済みヘッダーを使用しない
+        'UsePrecompiledHeader': '0',
+
+        # 作成 (/Yc)
+        'UsePrecompiledHeader': '1',
+
+        # 使用 (/Yu)
+        'UsePrecompiledHeader': '2',
+      }
+    }
+  }
+]</pre>
+<pre class="prettyprint">'targets': [
+  {
+    # stdafx.cpp について、"作成 (/Yc)"
+    'msvs_precompiled_source': 'stdafx.cpp',
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_precompiledheader_precompiledheaderthrough" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'PrecompiledHeaderThrough': 'stdafx.h',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_precompiledheader_precompiledheaderfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'PrecompiledHeaderFile': '$(IntDir)$(TargetName).pch',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_expandattributedsource" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Fx)
+        'ExpandAttributedSource': 'true',
+
+        # いいえ
+        'ExpandAttributedSource': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_assembleroutput" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # なし
+        'AssemblerOutput': '0',
+
+        # アセンブリ コードのみ (/FA)
+        'AssemblerOutput': '1',
+
+        # アセンブリ コード、コンピューター語コード、ソース コード (/FAcs)
+        'AssemblerOutput': '2',
+
+        # アセンブリ コードとコンピューター語コード (/FAc)
+        'AssemblerOutput': '3',
+
+        # アセンブリ コードとソース コード (/FAs)
+        'AssemblerOutput': '4',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_assemblerlistinglocation" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'AssemblerListingLocation': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_objectfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ObjectFile': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_programdatabasefilename" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ProgramDataBaseFileName': '$(IntDir)vc$(PlatformToolsetVersion).pdb',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_generatexmldocumentationfiles" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/doc)
+        'GenerateXMLDocumentationFiles': 'true',
+
+        # いいえ
+        'GenerateXMLDocumentationFiles': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_output_xmldocumentationfilename" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'XMLDocumentationFileName': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_browserinformation_browseinformation" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # いいえ
+        'BrowseInformation': '0',
+
+        # はい (/FR)
+        'BrowseInformation': '1',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_browserinformation_browseinformationfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'BrowseInformationFile': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_disablespecificwarnings" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'DisableSpecificWarnings': [
+          '4996', // warning C4996
+        ],
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_callingconversion" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # __cdecl (/Gd)
+        'CallingConvention': '0'
+
+        # __fastcall (/Gr)
+        'CallingConvention': '1'
+
+        # __stdcall (/Gz)
+        'CallingConvention': '2'
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_compileas" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'CompileAs': '0',
+
+        # C コードとしてコンパイル (/TC)
+        'CompileAs': '1',
+
+        # C++ コードとしてコンパイル (/TP)
+        'CompileAs': '2',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_forcedincludefiles" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ForcedIncludeFiles': [
+          'stdafx.h',
+        ],
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_forcedusingfiles" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ForcedUsingFiles': [
+          'fileA',
+          'fileB',
+        ],
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_vcclcompilertool" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/showIncludes)
+        'ShowIncludes': 'true',
+
+        # いいえ
+        'ShowIncludes': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_usefullpaths" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/FC)
+        'UseFullPaths': 'true',
+
+        # いいえ
+        'UseFullPaths': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_omitdefaultlibname" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Zl)
+        'OmitDefaultLibName': 'true',
+
+        # いいえ
+        'OmitDefaultLibName': 'false',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vccompilertools_details_errorreporting" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # レポートを送信しない (/errorReport:none)
+        'ErrorReporting': '0',
+
+        # すぐにメッセージを表示 (/errorReport:prompt)
+        'ErrorReporting': '1',
+
+        # 次回ログインのためのキュー (/errorReport:queue)
+        'ErrorReporting': '2',
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_outputfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'OutputFile': '$(OutDir)$(TargetName)$(TargetExt)',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_showprogress" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 設定なし
+        'ShowProgress': '0',
+
+        # 詳細情報をすべて表示 (/VERBOSE)
+        'ShowProgress': '1',
+
+        # 検索したライブラリ (/VERBOSE:Lib)
+        'ShowProgress': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_version" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'Version': '1.2.3',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_linkincremental" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/INCREMENTAL:NO)
+        'LinkIncremental': '1',
+
+        # はい (/INCREMENTAL)
+        'LinkIncremental': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_suppressstartupbanner" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/NOLOGO)
+        'SuppressStartupBanner': 'true',
+
+        # いいえ
+        'SuppressStartupBanner': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_ignoreimportlibrary" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい
+        'IgnoreImportLibrary': 'true',
+
+        # いいえ
+        'IgnoreImportLibrary': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_registeroutput" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい
+        'RegisterOutput': 'true',
+
+        # いいえ
+        'RegisterOutput': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_peruserredirection" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい
+        'PerUserRedirection': 'true',
+
+        # いいえ
+        'PerUserRedirection': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_additionallibrarydirectories" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'AdditionalLibraryDirectories': [
+          'C:\SomeLibrary\lib',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_linklibrarydependencies" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい
+        'LinkLibraryDependencies': 'true',
+
+        # いいえ
+        'LinkLibraryDependencies': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_general_uselibrarydependencyinputs" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい
+        'UseLibraryDependencyInputs': 'true',
+
+        # いいえ
+        'UseLibraryDependencyInputs': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_additionaldependencies" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'AdditionalDependencies': [
+          'file1',
+          'file2',
+        ]
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_ignorealldefaultlibraries" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/NODEFAULTLIB)
+        'IgnoreAllDefaultLibraries': 'true',
+
+        # いいえ
+        'IgnoreAllDefaultLibraries': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_ignoredefaultlibrarynames" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'IgnoreDefaultLibraryNames': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_moduledefinitionfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'ModuleDefinitionFile': 'a_file_name.def',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_addmodulenamestoassembly" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'AddModuleNamesToAssembly': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_embedmanagedresourcefile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'EmbedManagedResourceFile': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_forcesymbolreferences" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'ForceSymbolReferences': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_delayloaddlls" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'DelayLoadDLLs': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_input_assemblylinkresource" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'AssemblyLinkResource': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_generatemanifest" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/MANIFEST)
+        'GenerateManifest': 'true',
+
+        # いいえ (/MANIFEST:NO)
+        'GenerateManifest': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_manifestfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'ManifestFile': '$(IntDir)$(TargetName)$(TargetExt).intermediate.manifest',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_additionalmanifestdependencies" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'AdditionalManifestDependencies': [
+          'file1',
+          'file2',
+        ],
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_allowisolation" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい
+        'AllowIsolation': 'true',
+
+        # いいえ (/ALLOWISOLATION:NO)
+        'AllowIsolation': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_enableuac" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/MANIFESTUAC:)
+        'EnableUAC': 'true',
+
+        # いいえ (/MANIFESTUAC:NO)
+        'EnableUAC': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_uacexecutionlevel" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # asInvoker (/level='asInvoker')
+        'UACExecutionLevel': '0',
+
+        # highestAvailable (/level='highestAvailable')
+        'UACExecutionLevel': '1',
+
+        # requireAdministrator (/level='requireAdministrator')
+        'UACExecutionLevel': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_manifestfile_uacuiaccess" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/uiAccess='true')
+        'UACUIAccess': 'true',
+
+        # いいえ (/uiAccess='false')
+        'UACUIAccess': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_generatedebuginformation" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'configurations': {
+      'Debug': {
+        'msvs_settings': {
+          'VCLinkerTool': {
+            # はい (/DEBUG)
+            'GenerateDebugInformation': 'true',
+
+            # いいえ
+            'GenerateDebugInformation': 'false',
+          },
+        }
+      }
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_programdatabasefile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'ProgramDatabaseFile': '$(OutDir)$(TargetName).pdb',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_stripprivatesymbols" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+       'StripPrivateSymbols': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_generatemapfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/MAP)
+        'GenerateMapFile': 'true',
+
+        # いいえ
+        'GenerateMapFile': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_mapfilename" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'MapFileName': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_mapexports" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/MAPINFO:EXPORTS)
+        'MapExports': 'true',
+
+        # いいえ
+        'MapExports': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_debug_assemblydebug" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/ASSEMBLYDEBUG)
+        'AssemblyDebug': '1',
+
+        # いいえ (/ASSEMBLYDEBUG:DISABLE)
+        'AssemblyDebug': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_generatedebuginformation" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 設定なし
+        'SubSystem': '0',
+
+        # コンソール (/SUBSYSTEM:CONSOLE)
+        'SubSystem': '1',
+
+        # Windows (/SUBSYSTEM:WINDOWS)
+        'SubSystem': '2',
+
+        # ネイティブ (/SUBSYSTEM:NATIVE)
+        'SubSystem': '3',
+
+        # EFI アプリケーション (/SUBSYSTEM:EFI_APPLICATION)
+        'SubSystem': '4',
+
+        # EFI ブート サービス ドライバー (/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER)
+        'SubSystem': '5',
+
+        # EFI ROM (/SUBSYSTEM:EFI_ROM)
+        'SubSystem': '6',
+
+        # EFI ランタイム (/SUBSYSTEM:EFI_RUNTIME_DRIVER)
+        'SubSystem': '7',
+
+        # WindowsCE
+        'SubSystem': '8',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_heapreservesize" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'HeapReserveSize': '1048576', # size in bytes
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_heapcommitsize" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'HeapCommitSize': '4096', # size in bytes
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_stackreservesize" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'StackReserveSize': '1048576',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_stackcommitsize" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'StackCommitSize': '4096',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_largeaddressaware" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/LARGEADDRESSAWARE:NO)
+        'LargeAddressAware': '1',
+
+        # はい (/LARGEADDRESSAWARE)
+        'LargeAddressAware': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_terminalserveraware" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/TSAWARE:NO)
+        'TerminalServerAware': '1',
+
+        # はい (/TSAWARE)
+        'TerminalServerAware': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_swaprunfromcd" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/SWAPRUN:CD)
+        'SwapRunFromCD': 'true',
+
+        # いいえ
+        'SwapRunFromCD': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_swaprunfromnet" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/SWAPRUN:NET)
+        'SwapRunFromNet': 'true',
+
+        # いいえ
+        'SwapRunFromNet': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_system_driver" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 設定なし
+        'Driver': '0',
+
+        # ドライバー (/Driver)
+        'Driver': '1',
+
+        # UP のみ (/DRIVER:UPONLY)
+        'Driver': '2',
+
+        # WDM (/DRIVER:WDM)
+        'Driver': '3',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_optimization_optimizereferences" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/OPT:NOREF)
+        'OptimizeReferences': '1',
+
+        # はい (/OPT:REF)
+        'OptimizeReferences': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_optimization_enablecomdatfolding" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/OPT:NOICF)
+        'EnableCOMDATFolding': '1',
+
+        # はい (/OPT:ICF)
+        'EnableCOMDATFolding': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_optimization_functionorder" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'FunctionOrder': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_optimization_profileguideddatabase" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'ProfileGuidedDatabase': '$(OutDir)$(TargetName).pgd',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_optimization_linktimecodegeneration" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 既定
+        'LinkTimeCodeGeneration': '0',
+
+        # リンク時のコード生成を使用 (/LTCG)
+        'LinkTimeCodeGeneration': '1',
+
+        # ガイド付き最適化のプロファイル - インストルメント (/LTCG:PGInstrument)
+        'LinkTimeCodeGeneration': '2',
+
+        # ガイド付き最適化のプロファイル - 最適化 (/LTCG:PGOptimize)
+        'LinkTimeCodeGeneration': '3',
+
+        # ガイド付き最適化のプロファイル - 更新 (/LTCG:PGUpdate)
+        'LinkTimeCodeGeneration': '4',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_embeddedidl_midlcommandfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'MidlCommandFile': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_embeddedidl_ignoreembeddedidl" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/IGNOREIDL)
+        'IgnoreEmbeddedIDL': 'true',
+        # いいえ
+        'IgnoreEmbeddedIDL': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_embeddedidl_mergedidlbasefilename" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'MergedIDLBaseFileName': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_embeddedidl_typelibraryfile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'TypeLibraryFile': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_embeddedidl_typelibraryresourceid" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'TypeLibraryResourceID': '1',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_entrypointsymbol" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'EntryPointSymbol': 'entry_point_symbol',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_setchecksum" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/RELEASE)
+        'SetChecksum': 'true',
+
+        # いいえ
+        'SetChecksum': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_baseaddress" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'BaseAddress': '0x400000',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_randomizedbaseaddress" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/DYNAMICBASE:NO)
+        'RandomizedBaseAddress': '1',
+
+        # はい (/DYNAMICBASE)
+        'RandomizedBaseAddress': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_fixedbaseaddress" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/FIXED:NO)
+        'FixedBaseAddress': '1',
+
+        # はい (/FIXED)
+        'FixedBaseAddress': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_dataexecutionprevention" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # いいえ (/NXCOMPAT:NO)
+        'DataExecutionPrevention': '1',
+
+        # はい (/NXCOMPAT)
+        'DataExecutionPrevention': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_turnoffassemblygeneration" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/NOASSEMBLY)
+        'TurnOffAssemblyGeneration': 'true',
+
+        # いいえ
+        'TurnOffAssemblyGeneration': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_supportunloadofdelayloadeddll" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/DELAY:UNLOAD)
+        'SupportUnloadOfDelayLoadedDLL': 'true',
+
+        # いいえ
+        'SupportUnloadOfDelayLoadedDLL': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_importlibrary" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'ImportLibrary': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_mergesections" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'MergeSections': '.rdata=.text',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_targetmachine" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 設定なし
+        'TargetMachine': '0',
+
+        # MachineX86 (/MACHINE:X86)
+        'TargetMachine': '1',
+
+        # MachineARM (/MACHINE:ARM)
+        'TargetMachine': '3',
+
+        # MachineEBC (/MACHINE:EBC)
+        'TargetMachine': '4',
+
+        # MachineIA64 (/MACHINE:IA64)
+        'TargetMachine': '5',
+
+        # MachineMIPS (/MACHINE:MIPS)
+        'TargetMachine': '7',
+
+        # MachineMIPS16 (/MACHINE:MIPS16)
+        'TargetMachine': '8',
+
+        # MachineMIPSFPU (/MACHINE:MIPSFPU)
+        'TargetMachine': '9',
+
+        # MachineMIPSFPU16 (/MACHINE:MIPSFPU16)
+        'TargetMachine': '10',
+
+        # MachineSH4 (/MACHINE:SH4)
+        'TargetMachine': '14',
+
+        # MachineTHUMB (/MACHINE:THUMB)
+        'TargetMachine': '16',
+
+        # MachineX64 (/MACHINE:X64)
+        'TargetMachine': '17',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_profile" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/PROFILE)
+        'Profile': 'true',
+
+        # いいえ
+        'Profile': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_clrthreadattribute" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 既定のスレッド属性 (/CLRTHREADATTRIBUTE:NONE)
+        'CLRThreadAttribute': '0',
+
+        # MTA スレッド属性 (/CLRTHREADATTRIBUTE:MTA)
+        'CLRThreadAttribute': '1',
+
+        # STA スレッド属性 (/CLRTHREADATTRIBUTE:STA)
+        'CLRThreadAttribute': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_clrimagetype" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # 既定のイメージ タイプ
+        'CLRImageType': '0',
+
+        # IJW イメージの強制 (/CLRIMAGETYPE:IJW)
+        'CLRImageType': '1',
+
+        # 純粋 IL イメージの強制 (/CLRIMAGETYPE:PURE)
+        'CLRImageType': '2',
+
+        # 安全 IL イメージの強制 (/CLRIMAGETYPE:SAFE)
+        'CLRImageType': '3',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_keycontainer" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        'KeyContainer': 'a_file_name',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_clrunmanagedcodecheck" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # はい (/CLRUNMANAGEDCODECHECK)
+        'CLRUnmanagedCodeCheck': 'true',
+
+        # いいえ (/CLRUNMANAGEDCODECHECK:NO)
+        'CLRUnmanagedCodeCheck': 'false',
+      },
+    }
+  }
+]</pre>
+</div>
+<div id="msvs_description_vclinkertools_details_errorreporting" class="description">
+<pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCLinkerTool': {
+        # エラー報告なし (/ERRORREPORT:NONE)
+        'ErrorReporting': '0',
+
+        # すぐにメッセージを表示 (/ERRORREPORT:PROMPT)
+        'ErrorReporting': '1',
+
+        # 次回ログインのためのキュー (/ERRORREPORT:QUEUE)
+        'ErrorReporting': '2',
+      },
+    }
+  }
+]</pre>
+</div>
+
+  </div>
+
+  <div class="clearfix"></div>
+
+
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript" src="assets/js/min/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootmetro.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var gypcs = {
+    language: 'ja',
+  };
+
+  /**
+   * description
+   */
+  var select_description_by_button = function($button_element) {
+    $(".description").css('visibility', 'hidden');
+    $(".description").css('display', 'none');
+
+    $('.description_select_button').removeClass('selected_button');
+    if ($button_element) {
+      var description_element_id = $button_element.attr('data-gypcs-description');
+      $('#' + description_element_id).css('visibility', 'visible');
+      $('#' + description_element_id).css('display', 'block');
+      $button_element.addClass('selected_button');
+    }
+  };
+
+  $('.description_select_button').click(function(event) {
+    select_description_by_button($(event.target));
+  });
+
+  /**
+   * page
+   */
+  var select_page_by_button = function($button_element) {
+    $('.config_property').css('visibility', 'hidden');
+    $('.config_property').css('display', 'none');
+    $('.page_select_button').removeClass('selected_button');
+    var page_id = $button_element.attr('data-gypcs-page');
+    $('#' + page_id).css('visibility', 'visible');
+    $('#' + page_id).css('display', 'block');
+    $('.config_properties').css('overflow', 'hidden');
+    $('.config_properties').css('overflow-y', 'auto');
+    $button_element.addClass('selected_button');
+    select_description_by_button();
+  };
+  
+  $('.page_select_button').click(function(event) {
+    select_page_by_button($(event.target));
+  });
+
+  // select first page and description
+  select_page_by_button($('.page_select_button').first());
+  select_description_by_button($('.description_select_button').first());
+
+  window.prettyPrint && prettyPrint();
+});
+</script>
+</body>
+</html>
