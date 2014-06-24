@@ -1,7 +1,7 @@
 <?php
 
 $pages = array(
-  new Page('general', 2,
+  new Page('general', 2, 509,
     array(
       'type' => new Description(
         array(
@@ -69,7 +69,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_general', 7,
+  new Page('vccompilertools_general', 7, 509,
     array(
       'includedir' => new Description(
         array(
@@ -193,7 +193,7 @@ $pages = array(
     )
   ),
 
-  new Page('vccompilertools_optimization', 8,
+  new Page('vccompilertools_optimization', 8, 509,
     array(
       'optimization' => new Description(
         array(
@@ -341,7 +341,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_preprocessor', 9,
+  new Page('vccompilertools_preprocessor', 9, 509,
     array(
       'defines' => new Description(
         array(
@@ -459,7 +459,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_codegeneration', 10,
+  new Page('vccompilertools_codegeneration', 10, 509,
     array(
       'stringpooling' => new Description(
         array(
@@ -733,7 +733,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_language', 11,
+  new Page('vccompilertools_language', 11, 509,
     array(
       'disablelanguageextensions' => new Description(
         array(
@@ -831,7 +831,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_precompiledheader', 12,
+  new Page('vccompilertools_precompiledheader', 12, 509,
     array(
       'useprecompiledheader' => new Description(
         array(
@@ -892,7 +892,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_output', 13,
+  new Page('vccompilertools_output', 13, 509,
     array(
       'expandattributedsource' => new Description(
         array(
@@ -1021,7 +1021,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_browserinformation', 14,
+  new Page('vccompilertools_browserinformation', 14, 509,
     array(
       'browseinformation' => new Description(
         array(
@@ -1058,7 +1058,7 @@ $pages = array(
       ),
     )
   ),
-  new Page('vccompilertools_details', 15,
+  new Page('vccompilertools_details', 15, 509,
     array(
       'disablespecificwarnings' => new Description(
         array(
@@ -1238,7 +1238,7 @@ $pages = array(
     )
   ),
 
-  new Page('vclinkertools_general', 19,
+  new Page('vclinkertools_general', 19, 509,
     array(
       'outputfile' => new Description(
         array(
@@ -1445,7 +1445,7 @@ $pages = array(
     )
   ),
 
-  new Page('vclinkertools_input', 20,
+  new Page('vclinkertools_input', 20, 509,
     array(
       'additionaldependencies' => new Description(
         array(
@@ -1611,7 +1611,7 @@ $pages = array(
     )
   ),
 
-  new Page('vclinkertools_manifestfile', 21,
+  new Page('vclinkertools_manifestfile', 21, 509,
     array(
       'generatemanifest' => new Description(
         array(
@@ -1747,7 +1747,7 @@ $pages = array(
     )
   ),
 
-  new Page('vclinkertools_debug', 22,
+  new Page('vclinkertools_debug', 22, 509,
     array(
       'generatedebuginformation' => new Description(
         array(
@@ -1878,7 +1878,7 @@ $pages = array(
   ),
 
 
-  new Page('vclinkertools_system', 23,
+  new Page('vclinkertools_system', 23, 509,
     array(
       'generatedebuginformation' => new Description(
         array(
@@ -2085,7 +2085,7 @@ $pages = array(
     )
   ),
 
-  new Page('vclinkertools_optimization', 24,
+  new Page('vclinkertools_optimization', 24, 509,
     array(
       'optimizereferences' => new Description(
         array(
@@ -2186,7 +2186,7 @@ $pages = array(
     )
   ),
 
-  new Page('vclinkertools_embeddedidl', 25,
+  new Page('vclinkertools_embeddedidl', 25, 509,
     array(
       'midlcommandfile' => new Description(
         array(
@@ -2290,7 +2290,7 @@ $pages = array(
   ),
 */
 
-  new Page('vclinkertools_details', 27,
+  new Page('vclinkertools_details', 27, 526,
     array(
       'entrypointsymbol' => new Description(
         array(

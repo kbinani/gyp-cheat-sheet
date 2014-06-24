@@ -30,7 +30,7 @@
   width: 702px * @config_panel_scale;
   height: 509px * @config_panel_scale;
   position: absolute;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .config_panel_contents {
@@ -46,10 +46,8 @@
 
 .config_property {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  border: solid 1px;
-  border-color: transparent;
+  left: 1px;
+  top: 1px;
 }
 
 .config_property_background {
@@ -62,7 +60,6 @@
   -moz-transform-origin: 0px 0px;
   left: 0px;
   top: 0px;
-  position: absolute;
 }
 
 .description_select_button, .page_select_button {
@@ -70,7 +67,6 @@
   opacity: 0.4;
   background-color: purple;
   left: 20px * @config_panel_scale;
-  width: (702px - 20px) * @config_panel_scale;
   position: absolute;
   border: solid 1px;
   border-color: transparent;
@@ -83,8 +79,14 @@
 }
 
 .page_select_button {
-  width: 285px * @config_panel_scale;
+  width: (285px - 20px) * @config_panel_scale;
   height: 18px * @config_panel_scale;
+}
+
+.config_panel_contents_background_container {
+  width: 285px * @config_panel_scale;
+  height: 757px * @config_panel_scale;
+  overflow: hidden;
 }
 
 .config_panel_contents_background {
@@ -159,7 +161,6 @@ div .config_panel {
 
 div .description {
   position: absolute;
-  overflow-x: scroll;
 }
 
 div .page {

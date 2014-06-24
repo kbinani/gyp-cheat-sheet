@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="assets/css/bootmetro.css">
 <link rel="stylesheet" type="text/css" href="assets/js/google-code-prettify/prettify.css">
@@ -10,11 +11,13 @@ class Page {
   private $name;
   private $buton_index;
   private $description;
+  private $page_height_px;
 
-  public function __construct($name, $button_index, $description)
+  public function __construct($name, $button_index, $page_height_px, $description)
   {
     $this->name = $name;
     $this->button_index = $button_index;
+    $this->page_height_px = $page_height_px;
     $this->description = $description;
   }
 
@@ -26,6 +29,16 @@ class Page {
   public function getButtonIndex()
   {
     return $this->button_index;
+  }
+
+  public function getPageHeightInPixel()
+  {
+    return $this->page_height_px;
+  }
+
+  public function getPageWidthInPixel()
+  {
+    return 702;
   }
 
   public function getDescription()
@@ -90,7 +103,8 @@ require_once('cheat_sheet_contents_definition.php');
   <div class="config_panel">
     <img src="image/config_panel.png" class="config_panel_background"/>
     <div class="config_panel_contents">
-      <img src="image/listview.png" class="config_panel_contents_background"/>
+      <div class="config_panel_contents_background_container">
+        <img src="image/listview.png" class="config_panel_contents_background"/>
 
 <?php
   foreach ($pages as $page) {
@@ -99,7 +113,7 @@ require_once('cheat_sheet_contents_definition.php');
     print sprintf('<div data-gypcs-page="msvs_page_%s" class="page_select_button" style="top: %dpx"></div>', $page->getName(), $top) . "\n";
   }
 ?>
-
+      </div>
     </div>
 
     <div class="config_properties">
@@ -108,6 +122,9 @@ require_once('cheat_sheet_contents_definition.php');
   foreach ($pages as $page) {
     $name = $page->getName();
     print sprintf('<div class="config_property" id="msvs_page_%s">', $name) . "\n";
+    $height = $page->getPageHeightInPixel() * $config_panel_scale - 1;
+    $width = $page->getPageWidthInPixel() * $config_panel_scale - 1;
+    print sprintf('<div style="width: %dpx; height: %dpx; overflow: hidden;">', $width, $height) . "\n";
     print sprintf('<img src="image/page_%s.png"  class="config_property_background"/>', $name) . "\n";
 
     foreach ($page->getDescription() as $description_title => $description) {
@@ -118,6 +135,7 @@ require_once('cheat_sheet_contents_definition.php');
       print sprintf('<div data-gypcs-description="msvs_description_%s_%s" class="description_select_button" style="top: %dpx; height: %dpx"></div>', $name, $description_title, $top, $height) . "\n";
     }
 
+    print sprintf('</div>') . "\n";
     print sprintf('</div>') . "\n";
   }
 ?>
@@ -148,7 +166,7 @@ require_once('cheat_sheet_contents_definition.php');
 
 </div>
 
-<script src="assets/js/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.10.0.min.js"></script>
 <script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
 <script type="text/javascript" src="assets/js/min/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/bootmetro.js"></script>
@@ -183,13 +201,13 @@ $(document).ready(function() {
    */
   var select_page_by_button = function($button_element) {
     $('.config_property').css('visibility', 'hidden');
-    $('.config_property').css('overflow', 'hidden');
+    $('.config_property').css('display', 'none');
     $('.page_select_button').removeClass('selected_button');
     var page_id = $button_element.attr('data-gypcs-page');
     $('#' + page_id).css('visibility', 'visible');
-    $('#' + page_id).css('overflow', 'visible');
+    $('#' + page_id).css('display', 'block');
     $('.config_properties').css('overflow', 'hidden');
-    $('.config_properties').css('overflow', 'auto');
+    $('.config_properties').css('overflow-y', 'auto');
     $button_element.addClass('selected_button');
     select_description_by_button();
   };
