@@ -1,0 +1,178 @@
+@width: 1150px;
+@config_panel_scale: 0.7;
+@config_panel_original_width: 940px;
+@config_panel_original_height: 705px;
+@margin: 20px;
+
+body {
+  padding-top: 62px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.bs-docs-docs .navbar.metro-navbar .brand {
+  line-height: 20px;
+  width: 300px;
+}
+
+.bs-docs-docs .navbar-inner .container {
+  width: @width;
+}
+
+#doc-container {
+  position: relative;
+  padding: @margin @margin;
+  width: @width;
+}
+
+div .config_panel {
+  width: @config_panel_original_width * @config_panel_scale;
+  height: @config_panel_original_height * @config_panel_scale;
+  float: left;
+}
+
+div .config_panel_contents {
+  width: @config_panel_original_width;
+  height: @config_panel_original_height;
+  background-image: url('image/config_panel.png'); /* 940x705*/
+  border-radius: 8px;
+}
+
+.bs-docs-docs .code {
+  border: solid 1px;
+  border-color: transparent;
+  margin-top: 0;
+  margin-left: @config_panel_original_width * @config_panel_scale + @margin;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+div .list_view {
+  position: absolute;
+  top: 77px;
+  left: 19px;
+  width: 184px;
+  height: 574px;
+  border: solid 1px;
+  border-color: transparent;
+  overflow: auto;
+}
+div .list_view_contents {
+  background-image: url('image/listview.png');
+  width: 285px;
+  height: 757px;
+}
+div .property_grid {
+  position: absolute;
+  top: 77px;
+  left: 217px;
+  width: 702px;
+  height: 509px;
+  border: solid 1px;
+  border-color: transparent;
+  overflow: auto;
+}
+div .page_general {
+  background-image: url('image/page_general.png');
+  width: 701px;
+  height: 509px;
+}
+
+div .property_debugging {
+  background-image: url('image/property_debugging.png');
+  width: 702px;
+  height: 438px;
+}
+
+div .page_vccompilertools_general {
+  background-image: url('image/page_vccompilertools_general.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_details {
+  background-image: url('image/page_vccompilertools_details.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_optimization {
+  background-image: url('image/page_vccompilertools_optimization.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_preprocessor {
+  background-image: url('image/page_vccompilertools_preprocessor.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_codegeneration {
+  background-image: url('image/page_vccompilertools_codegeneration.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_language {
+  background-image: url('image/page_vccompilertools_language.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_precompiledheader {
+  background-image: url('image/page_vccompilertools_precompiledheader.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_output {
+  background-image: url('image/page_vccompilertools_output.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .page_vccompilertools_browserinformation {
+  background-image: url('image/page_vccompilertools_browserinformation.png');
+  width: 702px;
+  height: 509px;
+}
+
+div .description {
+  position: absolute;
+}
+
+div .page {
+  position: absolute;
+  visibility: hidden;
+}
+
+.description_select_button, .page_select_button {
+  transition: all 0.1s;
+  opacity: 0.4;
+  background-color: purple;
+  height: 19px;
+  left: 20px;
+  position: absolute;
+  border: solid 1px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.description_select_button {
+  width: 680px;
+}
+
+.page_select_button {
+  width: 265px;
+}
+
+.selected_button, .description_select_button:hover, .page_select_button:hover {
+  background-color: orange;
+}
+
+.code pre {
+  min-width: @width - @config_panel_original_width * @config_panel_scale - @margin;
+}

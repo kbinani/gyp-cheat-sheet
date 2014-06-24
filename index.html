@@ -1,50 +1,1428 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootmetro.css">
+<link rel="stylesheet" type="text/css" href="assets/js/google-code-prettify/prettify.css">
+<link rel="stylesheet" type="text/css" href="doc.css">
 <style>
-body {
-	margin: 0;
-}
-.main {
-	width: 100%;
-	height: 100%;
-}
-div .config_panel {
-	width: 940px;
-	height: 705px;
-	background-image: url('image/config_panel.png');
-}
-div .list_view {
-	position: absolute;
-	top: 77px;
-	left: 19px;
-	width: 184px;
-	height: 574px;
-	border: solid 1px;
-	border-color: transparent;
-	overflow: auto;
-}
-div .property_grid {
-	position: absolute;
-	top: 77px;
-	left: 217px;
-	width: 702px;
-	height: 509px;
-	border: solid 1px;
-	border-color: transparent;
-	overflow: auto;
-}
+
 </style>
 </head>
-<body>
-<div class="main">
-  <div class="config_panel">
-    <div class="list_view">
-    	<div style="height: 1000px; width: 300px; ">
-    	</div>
+<body class="bs-docs-docs">
+<div class="navbar metro-navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <h1 class="brand">GYP cheat sheet</h1>
     </div>
-    <div class="property_grid"></div>
   </div>
 </div>
+<div id="doc-container" class="container">
+  <div class="config_panel">
+    <div class="config_panel_contents">
+      <div class="list_view">
+        <div class="list_view_contents">
+          <div data-gypcs-page="msvs_page_general" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_general" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_details" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_optimization" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_preprocessor" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_codegeneration" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_language" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_precompiledheader" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_output" class="page_select_button"></div>
+          <div data-gypcs-page="msvs_page_vccompilertools_browserinformation" class="page_select_button"></div>
+        </div>
+      </div>
+      <div class="property_grid">
+        <div id="msvs_page_general" class="page page_general">
+          <div data-gypcs-description="msvs_description_general_type" class="description_select_button"></div>
+          <div data-gypcs-description="msvs_description_general_characterset" class="description_select_button"></div>
+          <div data-gypcs-description="msvs_description_general_toolset" class="description_select_button"></div>
+          <div data-gypcs-description="msvs_description_general_targetname" class="description_select_button"></div>
+        </div>
+        <div class="page property_debugging">
+        </div>
+        <div id="msvs_page_vccompilertools_general" class="page page_vccompilertools_general">
+          <div data-gypcs-description="msvs_description_vccompilertools_general_includedir" class="description_select_button"></div>
+          <div data-gypcs-description="msvs_description_vccompilertools_general_additionalusingdirectories" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'AdditionalUsingDirectories' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_general_warninglevel" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'WarningLevel' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_general_warnaserror" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'WarnAsError':-->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_general_debuginformationformat" class="description_select_button">
+            <!-- 'VCCLCompilerTool': DebugInformationFormat' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_optimization" class="page page_vccompilertools_optimization">
+          <div data-gypcs-description="msvs_description_vccompilertools_optimization_optimization" class="description_select_button">
+            <!-- 'VCCLCompilerTool': Optimization' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_optimization_inlinefunctionexpansion" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'InlineFunctionExpansion' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_optimization_omitframepointers" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'OmitFramePointers' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_optimization_enablefibersafeoptimizations" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'EnableFiberSafeOptimizations' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_optimization_wholeprogramoptimization" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'WholeProgramOptimization' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_preprocessor" class="page page_vccompilertools_preprocessor">
+          <div data-gypcs-description="msvs_description_vccompilertools_preprocessor_defines" class="description_select_button">
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_preprocessor_undefinepreprocessordefinitions" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'UndefinePreprocessorDefinitions' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_preprocessor_undefineallpreprocessordefinitions" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'UndefineAllPreprocessorDefinitions' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_preprocessor_ignorestandardincludepath" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'IgnoreStandardIncludePath' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_preprocessor_keepcomments" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'KeepComments' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_codegeneration" class="page page_vccompilertools_codegeneration">
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_stringpooling" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'StringPooling' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_minimalrebuild" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'MinimalRebuild' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_exceptionhandling" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'ExceptionHandling' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_smallertypecheck" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'SmallerTypeCheck' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_basicruntimechecks" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'BasicRuntimeChecks' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_runtimelibrary" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'RuntimeLibrary' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_structmemberalignment" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'StructMemberAlignment' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_buffersecuritycheck" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'BufferSecurityCheck' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_enablefunctionlevellinking" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'EnableFunctionLevelLinking' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_enableenhancedinstructionset" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'EnableEnhancedInstructionSet' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_floatingpointmodel" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'FloatingPointModel' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_codegeneration_floatingpointexceptions" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'FloatingPointExceptions' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_language" class="page page_vccompilertools_language">
+          <div data-gypcs-description="msvs_description_vccompilertools_language_disablelanguageextensions" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'DisableLanguageExtensions' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_language_treatwchartasbuiltintype" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'TreatWChar_tAsBuiltInType' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_language_forceconformanceinforloopscope" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'ForceConformanceInForLoopScope' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_language_runtimetypeinfo" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'RuntimeTypeInfo' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_language_openmp" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'OpenMP' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_precompiledheader" class="page page_vccompilertools_precompiledheader">
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_useprecompiledheader" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'UsePrecompiledHeader' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_precompiledheaderthrough" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'PrecompiledHeaderThrough' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_precompiledheaderfile" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'PrecompiledHeaderFile' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_output" class="page page_vccompilertools_output">
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_expandattributedsource" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'ExpandAttributedSource' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_assembleroutput" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'AssemblerOutput' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_assemblerlistinglocation" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'AssemblerListingLocation' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_objectfile" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'ObjectFile' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_programdatabasefilename" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'ProgramDataBaseFileName' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_generatexmldocumentationfiles" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'GenerateXMLDocumentationFiles' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_precompiledheader_xmldocumentationfilename" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'XMLDocumentationFileName' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_browserinformation" class="page page_vccompilertools_browserinformation">
+          <div data-gypcs-description="msvs_description_vccompilertools_browseinformation_browseinformation" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'BrowseInformation' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_browseinformation_browseinformationfile" class="description_select_button">
+            <!-- 'VCCLCompilerTool': 'BrowseInformationFile' -->
+          </div>
+        </div>
+        <div id="msvs_page_vccompilertools_details" class="page page_vccompilertools_details">
+          <div data-gypcs-description="msvs_description_vccompilertools_details_callingconversion" class="description_select_button">
+            <!-- 'VCCLCompilerTool': CallingConvention' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_details_compileas" class="description_select_button">
+            <!-- 'VCCLCompilerTool': CompileAs' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_details_disablespecificwarnings" class="description_select_button">
+            <!-- 'VCCLCompilerTool': DisableSpecificWarnings' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_details_forcedincludefiles" class="description_select_button">
+            <!-- 'VCCLCompilerTool': ForcedIncludeFiles' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_details_forcedusingfiles" class="description_select_button">
+            <!-- 'VCCLCompilerTool': ForcedUsingFiles' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_details_vcclcompilertool" class="description_select_button">
+            <!-- 'VCCLCompilerTool': ShowIncludes' -->
+          </div>
+          <div data-gypcs-description="msvs_description_vccompilertools_details_usefullpaths" class="description_select_button">
+            <!-- 'VCCLCompilerTool': UseFullPaths' -->
+          </div>
+        </div>
+      </div>
+<!--
+        {'VCCLCompilerTool': {
+            'AdditionalIncludeDirectories': 'folder1;folder2',
+            'AdditionalOptions': ['string1', 'string2'],
+            'DefaultCharIsUnsigned': 'true',
+            'Detect64BitPortabilityProblems': 'true',
+            'EnableIntrinsicFunctions': 'true',
+            'EnablePREfast': 'true',
+            'ErrorReporting': '1',
+            'FavorSizeOrSpeed': '1',
+            'GeneratePreprocessedFile': '1',
+            'OmitDefaultLibName': 'true',
+            'PreprocessorDefinitions': 'string1;string2',
+            'SuppressStartupBanner': 'true',
+            'UseUnicodeResponseFiles': 'true',
+         'VCLinkerTool': {
+             'AdditionalDependencies': 'file1;file2',
+             'AdditionalDependencies_excluded': 'file3',
+             'AdditionalLibraryDirectories': 'folder1;folder2',
+             'AdditionalManifestDependencies': 'file1;file2',
+             'AdditionalOptions': 'a string1',
+             'AddModuleNamesToAssembly': 'file1;file2',
+             'AllowIsolation': 'true',
+             'AssemblyDebug': '2',
+             'AssemblyLinkResource': 'file1;file2',
+             'BaseAddress': 'a string1',
+             'CLRImageType': '2',
+             'CLRThreadAttribute': '2',
+             'CLRUnmanagedCodeCheck': 'true',
+             'DataExecutionPrevention': '2',
+             'DelayLoadDLLs': 'file1;file2',
+             'DelaySign': 'true',
+             'Driver': '2',
+             'EmbedManagedResourceFile': 'file1;file2',
+             'EnableCOMDATFolding': '2',
+             'EnableUAC': 'true',
+             'EntryPointSymbol': 'a string1',
+             'ErrorReporting': '2',
+             'FixedBaseAddress': '2',
+             'ForceSymbolReferences': 'file1;file2',
+             'FunctionOrder': 'a_file_name',
+             'GenerateDebugInformation': 'true',
+             'GenerateManifest': 'true',
+             'GenerateMapFile': 'true',
+             'HeapCommitSize': 'a string1',
+             'HeapReserveSize': 'a string1',
+             'IgnoreAllDefaultLibraries': 'true',
+             'IgnoreDefaultLibraryNames': 'file1;file2',
+             'IgnoreEmbeddedIDL': 'true',
+             'IgnoreImportLibrary': 'true',
+             'ImportLibrary': 'a_file_name',
+             'KeyContainer': 'a_file_name',
+             'KeyFile': 'a_file_name',
+             'LargeAddressAware': '2',
+             'LinkIncremental': '2',
+             'LinkLibraryDependencies': 'true',
+             'LinkTimeCodeGeneration': '2',
+             'ManifestFile': 'a_file_name',
+             'MapExports': 'true',
+             'MapFileName': 'a_file_name',
+             'MergedIDLBaseFileName': 'a_file_name',
+             'MergeSections': 'a string1',
+             'MidlCommandFile': 'a_file_name',
+             'ModuleDefinitionFile': 'a_file_name',
+             'OptimizeForWindows98': '1',
+             'OptimizeReferences': '2',
+             'OutputFile': 'a_file_name',
+             'PerUserRedirection': 'true',
+             'Profile': 'true',
+             'ProfileGuidedDatabase': 'a_file_name',
+             'ProgramDatabaseFile': 'a_file_name',
+             'RandomizedBaseAddress': '2',
+             'RegisterOutput': 'true',
+             'ResourceOnlyDLL': 'true',
+             'SetChecksum': 'true',
+             'ShowProgress': '2',
+             'StackCommitSize': 'a string1',
+             'StackReserveSize': 'a string1',
+             'StripPrivateSymbols': 'a_file_name',
+             'SubSystem': '2',
+             'SupportUnloadOfDelayLoadedDLL': 'true',
+             'SuppressStartupBanner': 'true',
+             'SwapRunFromCD': 'true',
+             'SwapRunFromNet': 'true',
+             'TargetMachine': '2',
+             'TerminalServerAware': '2',
+             'TurnOffAssemblyGeneration': 'true',
+             'TypeLibraryFile': 'a_file_name',
+             'TypeLibraryResourceID': '33',
+             'UACExecutionLevel': '2',
+             'UACUIAccess': 'true',
+             'UseLibraryDependencyInputs': 'true',
+             'UseUnicodeResponseFiles': 'true',
+             'Version': 'a string1'},
+         'VCMIDLTool': {
+             'AdditionalIncludeDirectories': 'folder1;folder2',
+             'AdditionalOptions': 'a string1',
+             'CPreprocessOptions': 'a string1',
+             'DefaultCharType': '1',
+             'DLLDataFileName': 'a_file_name',
+             'EnableErrorChecks': '1',
+             'ErrorCheckAllocations': 'true',
+             'ErrorCheckBounds': 'true',
+             'ErrorCheckEnumRange': 'true',
+             'ErrorCheckRefPointers': 'true',
+             'ErrorCheckStubData': 'true',
+             'GenerateStublessProxies': 'true',
+             'GenerateTypeLibrary': 'true',
+             'HeaderFileName': 'a_file_name',
+             'IgnoreStandardIncludePath': 'true',
+             'InterfaceIdentifierFileName': 'a_file_name',
+             'MkTypLibCompatible': 'true',
+             'OutputDirectory': 'a string1',
+             'PreprocessorDefinitions': 'string1;string2',
+             'ProxyFileName': 'a_file_name',
+             'RedirectOutputAndErrors': 'a_file_name',
+             'StructMemberAlignment': '1',
+             'SuppressStartupBanner': 'true',
+             'TargetEnvironment': '1',
+             'TypeLibraryName': 'a_file_name',
+             'UndefinePreprocessorDefinitions': 'string1;string2',
+             'ValidateParameters': 'true',
+             'WarnAsError': 'true',
+             'WarningLevel': '1'},
+         'VCResourceCompilerTool': {
+             'AdditionalOptions': 'a string1',
+             'AdditionalIncludeDirectories': 'folder1;folder2',
+             'Culture': '1003',
+             'IgnoreStandardIncludePath': 'true',
+             'PreprocessorDefinitions': 'string1;string2',
+             'ResourceOutputFileName': 'a string1',
+             'ShowProgress': 'true',
+             'SuppressStartupBanner': 'true',
+             'UndefinePreprocessorDefinitions': 'string1;string2'},
+         'VCLibrarianTool': {
+             'AdditionalDependencies': 'file1;file2',
+             'AdditionalLibraryDirectories': 'folder1;folder2',
+             'AdditionalOptions': 'a string1',
+             'ExportNamedFunctions': 'string1;string2',
+             'ForceSymbolReferences': 'a string1',
+             'IgnoreAllDefaultLibraries': 'true',
+             'IgnoreSpecificDefaultLibraries': 'file1;file2',
+             'LinkLibraryDependencies': 'true',
+             'ModuleDefinitionFile': 'a_file_name',
+             'OutputFile': 'a_file_name',
+             'SuppressStartupBanner': 'true',
+             'UseUnicodeResponseFiles': 'true'},
+         'VCManifestTool': {
+             'AdditionalManifestFiles': 'file1;file2',
+             'AdditionalOptions': 'a string1',
+             'AssemblyIdentity': 'a string1',
+             'ComponentFileName': 'a_file_name',
+             'DependencyInformationFile': 'a_file_name',
+             'GenerateCatalogFiles': 'true',
+             'InputResourceManifests': 'a string1',
+             'ManifestResourceFile': 'a_file_name',
+             'OutputManifestFile': 'a_file_name',
+             'RegistrarScriptFile': 'a_file_name',
+             'ReplacementsFile': 'a_file_name',
+             'SuppressStartupBanner': 'true',
+             'TypeLibraryFile': 'a_file_name',
+             'UpdateFileHashes': 'truel',
+             'UpdateFileHashesSearchPath': 'a_file_name',
+             'UseFAT32Workaround': 'true',
+             'UseUnicodeResponseFiles': 'true',
+             'VerboseOutput': 'true'}},
+-->
+
+    </div>
+  </div>
+  <div class="code">
+    <div id="msvs_description_general_type" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'type': 'executable',
+     ...
+  }
+]</pre>
+
+      <pre class="prettyprint">'targets': [
+  {
+    'type': 'shared_library',
+     ...
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_general_characterset" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_configuration_attributes': {
+      # Use Unicode Character Set
+      'CharacterSet': '1'
+
+      # Use Multi-Byte Character Set
+      'CharacterSet': '2'
+    }
+     ...
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_general_toolset" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    # Visual Studio 2012
+    'msbuild_toolset': 'v110'
+
+    # Visual Studio 2012 - Windows XP
+    'msbuild_toolset': 'v110_xp'
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_general_targetname" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'product_name': 'MyProduct'
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_general_includedir" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'include_dirs': [
+      'C:\SomeLibrary\include'
+    ]
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_general_additionalusingdirectories" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'AdditionalUsingDirectories': [
+            'folderA',
+            'folderB'
+        ]
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_general_warninglevel" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'WarningLevel': '4' # /W4
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_general_warnaserror" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'WarnAsError': 'true'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_general_debuginformationformat" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # C7 compatible (/Z7)
+        'DebugInformationFormat': '1'
+
+        # Program Database (/Zi)
+        'DebugInformationFormat': '3'
+
+        # Program Database for Edit And Continue (/ZI)
+        'DebugInformationFormat': '4'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_optimization_optimization" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 無効 (/Od)
+        'Optimization': '0'
+
+        # サイズの最小化 (/O1)
+        'Optimization': '1'
+
+        # 実行速度の最小化 (/O2)
+        'Optimization': '2'
+
+        # 最大限の最適化 (/Ox)
+        'Optimization': '3'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_optimization_inlinefunctionexpansion" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'InlineFunctionExpansion': '0'
+
+        # __inline のみ (/Ob1)
+        'InlineFunctionExpansion': '1'
+
+        # 拡張可能な関数すべて (/Ob2)
+        'InlineFunctionExpansion': '2'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_optimization_omitframepointers" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Oy)
+        'OmitFramePointers': 'true'
+
+        # いいえ (/Oy-)
+        'OmitFramePointers': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_optimization_enablefibersafeoptimizations" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GT)
+        'EnableFiberSafeOptimizations': 'true'
+
+        # いいえ
+        'EnableFiberSafeOptimizations': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_optimization_wholeprogramoptimization" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GL)
+        'WholeProgramOptimization': 'true'
+
+        # いいえ
+        'WholeProgramOptimization': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_preprocessor_defines" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'defines': [
+        'FOO',
+        'BAR'
+    ],
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_preprocessor_ignorestandardincludepath" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/X)
+        'IgnoreStandardIncludePath': 'true'
+
+        # いいえ
+        'IgnoreStandardIncludePath': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_preprocessor_undefineallpreprocessordefinitions" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/u)
+        'UndefineAllPreprocessorDefinitions': 'true'
+
+        # いいえ
+        'UndefineAllPreprocessorDefinitions': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_preprocessor_undefinepreprocessordefinitions" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'UndefinePreprocessorDefinitions': [
+            'FOO',
+            'BAR'
+        ]
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_preprocessor_keepcomments" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/C)
+        'KeepComments': 'true'
+
+        # いいえ
+        'KeepComments': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_stringpooling" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GF)
+        'StringPooling': 'true'
+
+        # いいえ (/GF-)
+        'StringPooling': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_minimalrebuild" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Gm)
+        'MinimalRebuild': 'true'
+
+        # いいえ (/Gm-)
+        'MinimalRebuild': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_exceptionhandling" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # いいえ
+        'ExceptionHandling': '0'
+
+        # はい (/EHsc)
+        'ExceptionHandling': '1'
+
+        # はい - SEH の例外あり (/EHa)
+        'ExceptionHandling': '2'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_smallertypecheck" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/RTCc)
+        'SmallerTypeCheck': 'true'
+
+        # いいえ
+        'SmallerTypeCheck': 'false'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_basicruntimechecks" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'BasicRuntimeChecks': '0'
+
+        # スタック フレーム (/RTCs)
+        'BasicRuntimeChecks': '1'
+
+        # 初期化されていない変数 (/RTCu)
+        'BasicRuntimeChecks': '2'
+
+        # 両方 (/RTC1、/RTCsu と同等) (/RTC1)
+        'BasicRuntimeChecks': '3'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+
+    <div id="msvs_description_vccompilertools_codegeneration_runtimelibrary" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'configurations': {
+      'Debug': {
+        'msvs_settings': {
+          'VCCLCompilerTool': {
+            # マルチスレッド (/MT)
+            'RuntimeLibrary': '0',
+
+            # マルチスレッド デバッグ (/MTd)
+            'RuntimeLibrary': '1',
+
+            # マルチスレッド DLL (/MD)
+            'RuntimeLibrary': '2',
+
+            # マルチスレッド デバッグ DLL (/MDd)
+            'RuntimeLibrary': '3',
+          }
+        }
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_structmemberalignment" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'StructMemberAlignment': '0',
+
+        # 1 バイト (/Zp1)
+        'StructMemberAlignment': '1',
+
+        # 2 バイト (/Zp2)
+        'StructMemberAlignment': '2',
+
+        # 4 バイト (/Zp4)
+        'StructMemberAlignment': '3',
+
+        # 8 バイト (/Zp8)
+        'StructMemberAlignment': '4',
+
+        # 16 バイト (/Zp16)
+        'StructMemberAlignment': '5',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_buffersecuritycheck" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GS)
+        'BufferSecurityCheck': 'true',
+
+        # いいえ (/GS-)
+        'BufferSecurityCheck': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_enablefunctionlevellinking" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Gy)
+        'EnableFunctionLevelLinking': 'true',
+
+        # いいえ (/Gy-)
+        'EnableFunctionLevelLinking': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_enableenhancedinstructionset" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 設定なし
+        'EnableEnhancedInstructionSet': '0',
+
+        # ストリーミング SIMD 拡張機能 (/arch:SSE)
+        'EnableEnhancedInstructionSet': '1',
+
+        # ストリーミング SIMD 拡張機能 2 (/arch:SSE2)
+        'EnableEnhancedInstructionSet': '2',
+
+        # Advanced Vector Extensions (/arch:AVX)
+        'EnableEnhancedInstructionSet': '3',
+
+        # 拡張命令なし (/arch:IA32)
+        'EnableEnhancedInstructionSet': '4',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_floatingpointmodel" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # Precise (/fp:precise)
+        'FloatingPointModel': '0',
+
+        # Strict (/fp:strict)
+        'FloatingPointModel': '1',
+
+        # Fast (/fp:fast)
+        'FloatingPointModel': '2',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_codegeneration_floatingpointexceptions" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/fp:except)
+        'FloatingPointExceptions': 'true',
+
+        # いいえ (/fp:except-)
+        'FloatingPointExceptions': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_language_disablelanguageextensions" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Za)
+        'DisableLanguageExtensions': 'true',
+
+        # いいえ
+        'DisableLanguageExtensions': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_language_treatwchartasbuiltintype" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Zc:wchar_t)
+        'TreatWChar_tAsBuiltInType': 'true',
+
+        # いいえ (/Zc:wchar_t-)
+        'TreatWChar_tAsBuiltInType': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_language_forceconformanceinforloopscope" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Zc:forScope)
+        'ForceConformanceInForLoopScope': 'true',
+
+        # いいえ (/Zc:forScope-)
+        'ForceConformanceInForLoopScope': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_language_runtimetypeinfo" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/GR)
+        'RuntimeTypeInfo': 'true',
+
+        # いいえ (/GR-)
+        'RuntimeTypeInfo': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_language_openmp" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/openmp)
+        'OpenMP': 'true',
+
+        # いいえ (/openmp-)
+        'OpenMP': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_useprecompiledheader" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # プリコンパイル済みヘッダーを使用しない
+        'UsePrecompiledHeader': '0',
+
+        # 作成 (/Yc)
+        'UsePrecompiledHeader': '1',
+
+        # 使用 (/Yu)
+        'UsePrecompiledHeader': '2',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_precompiledheaderthrough" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'PrecompiledHeaderThrough': 'stdafx.h',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_precompiledheaderfile" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'PrecompiledHeaderFile': '$(IntDir)$(TargetName).pch',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_expandattributedsource" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/Fx)
+        'ExpandAttributedSource': 'true',
+
+        # いいえ
+        'ExpandAttributedSource': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_assembleroutput" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # なし
+        'AssemblerOutput': '0',
+
+        # アセンブリ コードのみ (/FA)
+        'AssemblerOutput': '1',
+
+        # アセンブリ コード、コンピューター語コード、ソース コード (/FAcs)
+        'AssemblerOutput': '2',
+
+        # アセンブリ コードとコンピューター語コード (/FAc)
+        'AssemblerOutput': '3',
+
+        # アセンブリ コードとソース コード (/FAs)
+        'AssemblerOutput': '4',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_assemblerlistinglocation" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'AssemblerListingLocation': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_objectfile" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ObjectFile': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_programdatabasefilename" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ProgramDataBaseFileName': '$(IntDir)vc$(PlatformToolsetVersion).pdb',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_generatexmldocumentationfiles" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/doc)
+        'GenerateXMLDocumentationFiles': 'true',
+
+        # いいえ
+        'GenerateXMLDocumentationFiles': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_precompiledheader_xmldocumentationfilename" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'XMLDocumentationFileName': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_browseinformation_browseinformation" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # いいえ
+        'BrowseInformation': '0',
+
+        # はい (/FR)
+        'BrowseInformation': '1',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_browseinformation_browseinformationfile" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'BrowseInformationFile': '$(IntDir)',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_disablespecificwarnings" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'DisableSpecificWarnings': [
+          '4996', // warning C4996
+        ],
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_callingconversion" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # __cdecl (/Gd)
+        'CallingConvention': '0'
+
+        # __fastcall (/Gr)
+        'CallingConvention': '1'
+
+        # __stdcall (/Gz)
+        'CallingConvention': '2'
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_compileas" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # 既定
+        'CompileAs': '0',
+
+        # C コードとしてコンパイル (/TC)
+        'CompileAs': '1',
+
+        # C++ コードとしてコンパイル (/TP)
+        'CompileAs': '2',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_forcedincludefiles" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ForcedIncludeFiles': [
+          'stdafx.h',
+        ],
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_forcedusingfiles" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        'ForcedUsingFiles': [
+          'fileA',
+          'fileB',
+        ],
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_vcclcompilertool" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/showIncludes)
+        'ShowIncludes': 'true',
+
+        # いいえ
+        'ShowIncludes': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+    <div id="msvs_description_vccompilertools_details_usefullpaths" class="description">
+      <pre class="prettyprint">'targets': [
+  {
+    'msvs_settings': {
+      'VCCLCompilerTool': {
+        # はい (/FC)
+        'UseFullPaths': 'true',
+
+        # いいえ
+        'UseFullPaths': 'false',
+      }
+    }
+  }
+]</pre>
+    </div>
+
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+<script src="assets/js/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript" src="assets/js/min/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootmetro.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var gypcs = {
+    language: 'ja',
+    page_button_index: {
+      msvs_page_general: 2,
+      msvs_page_vccompilertools_general: 7,
+      msvs_page_vccompilertools_optimization: 8,
+      msvs_page_vccompilertools_preprocessor: 9,
+      msvs_page_vccompilertools_codegeneration: 10,
+      msvs_page_vccompilertools_language: 11,
+      msvs_page_vccompilertools_precompiledheader: 12,
+      msvs_page_vccompilertools_output: 13,
+      msvs_page_vccompilertools_browserinformation: 14,
+      msvs_page_vccompilertools_details: 15,
+    },
+    page_button_height: 20,
+    page_button_offset: 0,
+    description_button_index: {
+      msvs_description_general_type: 1,
+      msvs_description_general_characterset: 4,
+      msvs_description_general_targetname: 11,
+      msvs_description_general_toolset: 15,
+
+      msvs_description_vccompilertools_general_includedir: 0,
+      msvs_description_vccompilertools_general_additionalusingdirectories: 1,
+      msvs_description_vccompilertools_general_warninglevel: 6,
+      msvs_description_vccompilertools_general_warnaserror: 7,
+      msvs_description_vccompilertools_general_debuginformationformat: 2,
+
+      msvs_description_vccompilertools_optimization_optimization: 0,
+      msvs_description_vccompilertools_optimization_inlinefunctionexpansion: 1,
+      msvs_description_vccompilertools_optimization_omitframepointers: 4,
+      msvs_description_vccompilertools_optimization_enablefibersafeoptimizations: 5,
+      msvs_description_vccompilertools_optimization_wholeprogramoptimization: 6,
+
+      msvs_description_vccompilertools_preprocessor_defines: 0,
+      msvs_description_vccompilertools_preprocessor_undefinepreprocessordefinitions: 1,
+      msvs_description_vccompilertools_preprocessor_undefineallpreprocessordefinitions: 2,
+      msvs_description_vccompilertools_preprocessor_ignorestandardincludepath: 3,
+      msvs_description_vccompilertools_preprocessor_keepcomments: 6, 
+
+      msvs_description_vccompilertools_codegeneration_stringpooling: 0,
+      msvs_description_vccompilertools_codegeneration_minimalrebuild: 1,
+      msvs_description_vccompilertools_codegeneration_exceptionhandling: 2,
+      msvs_description_vccompilertools_codegeneration_smallertypecheck: 3,
+      msvs_description_vccompilertools_codegeneration_basicruntimechecks: 4,
+      msvs_description_vccompilertools_codegeneration_runtimelibrary: 5,
+      msvs_description_vccompilertools_codegeneration_structmemberalignment: 6,
+      msvs_description_vccompilertools_codegeneration_buffersecuritycheck: 7,
+      msvs_description_vccompilertools_codegeneration_enablefunctionlevellinking: 8,
+      msvs_description_vccompilertools_codegeneration_enableenhancedinstructionset: 10,
+      msvs_description_vccompilertools_codegeneration_floatingpointmodel: 11,
+      msvs_description_vccompilertools_codegeneration_floatingpointexceptions: 12,
+
+      msvs_description_vccompilertools_language_disablelanguageextensions: 0,
+      msvs_description_vccompilertools_language_treatwchartasbuiltintype: 1,
+      msvs_description_vccompilertools_language_forceconformanceinforloopscope: 2,
+      msvs_description_vccompilertools_language_runtimetypeinfo: 3,
+      msvs_description_vccompilertools_language_openmp: 4,
+
+      msvs_description_vccompilertools_precompiledheader_useprecompiledheader: 0,
+      msvs_description_vccompilertools_precompiledheader_precompiledheaderthrough: 1,
+      msvs_description_vccompilertools_precompiledheader_precompiledheaderfile: 2,
+
+      msvs_description_vccompilertools_precompiledheader_expandattributedsource: 0,
+      msvs_description_vccompilertools_precompiledheader_assembleroutput: 1,
+      msvs_description_vccompilertools_precompiledheader_assemblerlistinglocation: 3,
+      msvs_description_vccompilertools_precompiledheader_objectfile: 4,
+      msvs_description_vccompilertools_precompiledheader_programdatabasefilename: 5,
+      msvs_description_vccompilertools_precompiledheader_generatexmldocumentationfiles: 6,
+      msvs_description_vccompilertools_precompiledheader_xmldocumentationfilename: 7,
+
+      msvs_description_vccompilertools_browseinformation_browseinformation: 0,
+      msvs_description_vccompilertools_browseinformation_browseinformationfile: 1,
+
+      msvs_description_vccompilertools_details_callingconversion: 0,
+      msvs_description_vccompilertools_details_compileas: 1,
+      msvs_description_vccompilertools_details_disablespecificwarnings: 2,
+      msvs_description_vccompilertools_details_forcedincludefiles: 3,
+      msvs_description_vccompilertools_details_forcedusingfiles: 4,
+      msvs_description_vccompilertools_details_vcclcompilertool: 5,
+      msvs_description_vccompilertools_details_usefullpaths: 6,
+    },
+    description_button_height: 21,
+    description_button_offset: 0,
+  };
+
+  $('.description_select_button').each(function(index, element) {
+    var id = element.getAttribute('data-gypcs-description');
+    if (id in gypcs.description_button_index) {
+      var button_index = gypcs.description_button_index[id];
+      $(element).css('top', gypcs.description_button_offset + button_index * gypcs.description_button_height);
+    }
+  });
+  $('.list_view_contents > .page_select_button').each(function(index, element) {
+    var id = element.getAttribute('data-gypcs-page');
+    if (id in gypcs.page_button_index) {
+      var button_index = gypcs.page_button_index[id];
+      $(element).css('top', gypcs.page_button_offset + button_index * gypcs.page_button_height);
+    }
+  });
+
+  /**
+   * description
+   */
+  var select_description_by_button = function($button_element) {
+    $(".description").css('visibility', 'hidden');
+    $('.description_select_button').removeClass('selected_button');
+    if ($button_element) {
+      var description_element_id = $button_element.attr('data-gypcs-description');
+      $('#' + description_element_id).css('visibility', 'visible');
+      $button_element.addClass('selected_button');
+    }
+  };
+
+  $('.description_select_button').click(function(event) {
+    select_description_by_button($(event.target));
+  });
+
+  /**
+   * page
+   */
+  var select_page_by_button = function($button_element) {
+    $('.page').css('visibility', 'hidden');
+    $('.page_select_button').removeClass('selected_button');
+    var page_id = $button_element.attr('data-gypcs-page');
+    $('#' + page_id).css('visibility', 'visible');
+    $button_element.addClass('selected_button');
+    select_description_by_button();
+  };
+  
+  $('.list_view_contents > .page_select_button').click(function(event) {
+    select_page_by_button($(event.target));
+  });
+
+  // select first page and description
+  select_page_by_button($('.page_select_button').first());
+  select_description_by_button($('.description_select_button').first());
+
+  window.prettyPrint && prettyPrint();
+
+  $(".config_panel_contents").css('transform', 'scale(0.7)')
+                             .css('transform-origin', '0 0');
+});
+</script>
 </body>
 </html>
