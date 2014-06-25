@@ -11,7 +11,7 @@ module.exports = (grunt) ->
       cmd : 'php index.php 1>index.html'
 
     watch :
-      files : ["index.php", "cheat_sheet_contents_definition.php", "doc.less"]
+      files : ["index.php", "doc.less"]
       tasks : ["default"]
 
     grunt.loadNpmTasks "grunt-contrib-less"
