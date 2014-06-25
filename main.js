@@ -3227,44 +3227,55 @@ $(document).ready(function() {
   var config_panel_scale = 0.8;
   var page_width = 702;
 
-  var $config_panel_contents_background_container = $('.config_panel_contents_background_container');
-//  $config_panel_contents_background_container.empty();
-  for (var page_key in gypcs.pages) {
-    var lang = gypcs.language;
-    var page = gypcs.pages[page_key]
-    var button_index = page.button_index[lang];
-    var top = (page_button_offset + button_index * page_button_height) * config_panel_scale;
-    var $div = $('<div data-gypcs-page="msvs_page_' + page_key + '" class="page_select_button" style="top: ' + top + 'px"></div>');
-    $config_panel_contents_background_container.append($div);
-  }
+  var load_contents = function(lang) {
+    var $config_panel_background = $('.config_panel_background')
+    $config_panel_background.attr('src', 'image/' + lang + '/config_panel.png');
 
-  var $config_properties = $('.config_properties');
-//  $config_properties.empty();
-  for (var name in gypcs.pages) {
-    var page = gypcs.pages[name];
-    var $config_property = $('<div class="config_property" id="msvs_page_' + name + '">');
-    
-    var height = page.page_height * config_panel_scale - 1;
-    var width = page_width * config_panel_scale - 1;
-    var $div = $('<div style="width: ' + width + 'px; height: ' + height + 'px; overflow: hidden;">');
-    $config_property.append($div);
+    var $config_panel_contents_background_container = $('.config_panel_contents_background_container');
+    $config_panel_contents_background_container.empty();
 
-    var $img = $('<img src="image/page_' + name + '.png" class="config_property_background"/>');
-    $div.append($img);
+    $config_panel_contents_background = $('<img src="image/' + lang + '/listview.png" class="config_panel_contents_background"/>')
+    $config_panel_contents_background_container.append($config_panel_contents_background);
 
-    var lang = gypcs.language;
-    for (var description_title in page.descriptions) {
-      var description = page.descriptions[description_title];
-      var button_index = description.button_index[lang];
-      var button_height = description.button_height;
-      var top = (description_button_offset + button_index * description_button_distance) * config_panel_scale;
-      var height = button_height * description_button_height * config_panel_scale;
-      var $desc_div = $('<div data-gypcs-page="' + name + '" data-gypcs-description="' + description_title + '" class="description_select_button" style="top: ' + top + 'px; height: ' + height + 'px"></div>');
-      $config_property.append($desc_div);
+    for (var page_key in gypcs.pages) {
+      var page = gypcs.pages[page_key]
+      var button_index = page.button_index[lang];
+      var top = (page_button_offset + button_index * page_button_height) * config_panel_scale;
+      var $div = $('<div data-gypcs-page="msvs_page_' + page_key + '" class="page_select_button" style="top: ' + top + 'px"></div>');
+      $config_panel_contents_background_container.append($div);
     }
 
-    $config_properties.append($config_property);
-  }
+    var $config_properties = $('.config_properties');
+    $config_properties.empty();
+    for (var name in gypcs.pages) {
+      var page = gypcs.pages[name];
+      var $config_property = $('<div class="config_property" id="msvs_page_' + name + '">');
+      
+      var height = page.page_height * config_panel_scale - 1;
+      var width = page_width * config_panel_scale - 1;
+      var $div = $('<div style="width: ' + width + 'px; height: ' + height + 'px; overflow: hidden;">');
+      $config_property.append($div);
+
+      var $img = $('<img src="image/' + lang + '/page_' + name + '.png" class="config_property_background"/>');
+      $div.append($img);
+
+      for (var description_title in page.descriptions) {
+        var description = page.descriptions[description_title];
+        var button_index = description.button_index[lang];
+        var button_height = description.button_height;
+        var top = (description_button_offset + button_index * description_button_distance) * config_panel_scale;
+        var height = button_height * description_button_height * config_panel_scale;
+        var $desc_div = $('<div data-gypcs-page="' + name + '" data-gypcs-description="' + description_title + '" class="description_select_button" style="top: ' + top + 'px; height: ' + height + 'px"></div>');
+        $config_property.append($desc_div);
+      }
+
+      $config_properties.append($config_property);
+
+      gypcs.language = lang;
+    }
+  };
+
+  load_contents('ja');
 
   /**
    * description
