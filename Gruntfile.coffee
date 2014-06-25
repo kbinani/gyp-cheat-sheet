@@ -5,17 +5,36 @@ module.exports = (grunt) ->
     less :
       dist :
         files :
-          "doc.css" : "doc.less"
-
-    exec :
-      cmd : 'php index.php 1>index.html'
+          "dist/doc.css" : "doc.less"
 
     watch :
-      files : ["index.php", "doc.less"]
+      files : ["index.src.html", "doc.less", "main.js"]
       tasks : ["default"]
+
+    htmlmin:
+      dist:
+        options:
+          removeComments: true
+          collapseWhitespace: true
+        files: "dist/index.html": "index.src.html"
+
+    uglify:
+      dist:
+        files: "dist/main.min.js": ["main.js"]
+
+    imagemin:
+      dist:
+        files: [
+          expand: true,
+          cwd: 'image/',
+          src: ['**/*.{png}'],
+          dest: 'dist/image/'
+        ]
 
     grunt.loadNpmTasks "grunt-contrib-less"
     grunt.loadNpmTasks "grunt-contrib-watch"
-    grunt.loadNpmTasks "grunt-exec"
+    grunt.loadNpmTasks "grunt-contrib-htmlmin"
+    grunt.loadNpmTasks "grunt-contrib-uglify"
+    grunt.loadNpmTasks "grunt-contrib-imagemin"
 
-    grunt.registerTask "default", ["less", "exec"]
+    grunt.registerTask "default", ["less", "htmlmin", "uglify", "imagemin"]
