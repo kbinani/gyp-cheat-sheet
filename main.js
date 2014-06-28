@@ -3693,8 +3693,19 @@ $(document).ready(function() {
     }
   };
 
-//  window.gypcs_load_contents('ja');
-  window.gypcs_load_contents('en');
+  var default_lang = 'en';
+  var browser_language = function(lang) {
+    var tokens = lang.split('-', 2);
+    return tokens[0].toLowerCase();
+  }(navigator.language);
+
+  for (var i = 0; i < supported_language_list.length; i++) {
+    if (supported_language_list[i] == browser_language) {
+      default_lang = browser_language;
+      break;
+    }
+  }
+  window.gypcs_load_contents(default_lang);
 });
 /*
         {'VCCLCompilerTool': {
