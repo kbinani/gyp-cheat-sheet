@@ -8,19 +8,19 @@ module.exports = (grunt) ->
           "dist/doc.css" : "doc.less"
 
     watch :
-      files : ["index.src.html", "doc.less", "main.js"]
-      tasks : ["default"]
+      files : ["index.html", "doc.less", "main.js", "image/ja/*.png", "image/en/*.png"]
+      tasks : ["dev"]
 
     htmlmin:
       dist:
         options:
           removeComments: true
           collapseWhitespace: true
-        files: "dist/index.html": "index.src.html"
+        files: "dist/index.html": "index.html"
 
     uglify:
       dist:
-        files: "dist/main.min.js": ["main.js"]
+        files: "dist/main.js": ["main.js"]
 
     imagemin:
       dist:
@@ -37,4 +37,5 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks "grunt-contrib-uglify"
     grunt.loadNpmTasks "grunt-contrib-imagemin"
 
+    grunt.registerTask "dev", ["less", "htmlmin", "uglify"]
     grunt.registerTask "default", ["less", "htmlmin", "uglify", "imagemin"]
