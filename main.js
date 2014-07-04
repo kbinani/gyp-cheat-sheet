@@ -1109,7 +1109,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_vcclcompilertool: {
+    vccompilertools_details_showincludes: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -3021,8 +3021,8 @@ $(document).ready(function() {
           },
           button_height: 1,
         },
-        vcclcompilertool: {
-          description: gypcs.descriptions.vccompilertools_details_vcclcompilertool,
+        showincludes: {
+          description: gypcs.descriptions.vccompilertools_details_showincludes,
           button_index: {
             default: 5,
           },
@@ -3046,6 +3046,469 @@ $(document).ready(function() {
           description: gypcs.descriptions.vccompilertools_details_errorreporting,
           button_index: {
             default: 8,
+          },
+          button_height: 1,
+        },
+      },
+    },
+    vccompilertools_alloptions: {
+      button_index: {
+        default: 15
+      },
+      page_height: 1420,
+      descriptions: {
+        additionalusingdirectories: {
+          description: gypcs.descriptions.vccompilertools_general_additionalusingdirectories,
+          button_index: {
+            en: 0,
+            ja: 54,
+          },
+          button_height: 1,
+        },
+        includedir: {
+          description: gypcs.descriptions.vccompilertools_general_includedir,
+          button_index: {
+            en: 1,
+            ja: 55,
+          },
+          button_height: 1,
+        },
+        assembleroutput: {
+          description: gypcs.descriptions.vccompilertools_output_assembleroutput,
+          button_index: {
+            en: 4,
+            ja: 10,
+          },
+          button_height: 1,
+        },
+        basicruntimechecks: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_basicruntimechecks,
+          button_index: {
+            en: 5,
+            ja: 35,
+          },
+          button_height: 1,
+        },
+        browseinformationfile: {
+          description: gypcs.descriptions.vccompilertools_browserinformation_browseinformationfile,
+          button_index: {
+            en: 6,
+            ja: 20,
+          },
+          button_height: 1,
+        },
+        callingconversion: {
+          description: gypcs.descriptions.vccompilertools_details_callingconversion,
+          button_index: {
+            en: 7,
+            ja: 41,
+          },
+          button_height: 1,
+        },
+        compileas: {
+          description: gypcs.descriptions.vccompilertools_details_compileas,
+          button_index: {
+            en: 9,
+            ja: 15,
+          },
+          button_height: 1,
+        },
+        debuginformationformat: {
+          description: gypcs.descriptions.vccompilertools_general_debuginformationformat,
+          button_index: {
+            en: 12,
+            ja: 17,
+          },
+          button_height: 1,
+        },
+        disablelanguageextensions: {
+          description: gypcs.descriptions.vccompilertools_language_disablelanguageextensions,
+          button_index: {
+            en: 13,
+            ja: 40,
+          },
+          button_height: 1,
+        },
+        disablespecificwarnings: {
+          description: gypcs.descriptions.vccompilertools_details_disablespecificwarnings,
+          button_index: {
+            en: 14,
+            ja: 47,
+          },
+          button_height: 1,
+        },
+        browseinformation: {
+          description: gypcs.descriptions.vccompilertools_browserinformation_browseinformation,
+          button_index: {
+            en: 15,
+            ja: 21,
+          },
+          button_height: 1,
+        },
+        exceptionhandling: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_exceptionhandling,
+          button_index: {
+            en: 16,
+            ja: 1,
+          },
+          button_height: 1,
+        },
+        enableenhancedinstructionset: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_enableenhancedinstructionset,
+          button_index: {
+            en: 17,
+            ja: 32,
+          },
+          button_height: 1,
+        },
+        enablefibersafeoptimizations: {
+          description: gypcs.descriptions.vccompilertools_optimization_enablefibersafeoptimizations,
+          button_index: {
+            default: 18,
+          },
+          button_height: 1,
+        },
+        floatingpointexceptions: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_floatingpointexceptions,
+          button_index: {
+            en: 19,
+            ja: 62,
+          },
+          button_height: 1,
+        },
+        enablefunctionlevellinking: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_enablefunctionlevellinking,
+          button_index: {
+            en: 20,
+            ja: 34,
+          },
+          button_height: 1,
+        },
+        enableintrinsicfunctions: {
+          description: gypcs.descriptions.vccompilertools_optimization_enableintrinsicfunctions,
+          button_index: {
+            en: 21,
+            ja: 49,
+          },
+          button_height: 1,
+        },
+        minimalrebuild: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_minimalrebuild,
+          button_index: {
+            en: 22,
+            ja: 44,
+          },
+          button_height: 1,
+        },
+        runtimetypeinfo: {
+          description: gypcs.descriptions.vccompilertools_language_runtimetypeinfo,
+          button_index: {
+            en: 24,
+            ja: 31,
+          },
+          button_height: 1,
+        },
+        stringpooling: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_stringpooling,
+          button_index: {
+            en: 25,
+            ja: 65,
+          },
+          button_height: 1,
+        },
+        expandattributedsource: {
+          description: gypcs.descriptions.vccompilertools_output_expandattributedsource,
+          button_index: {
+            en: 26,
+            ja: 51,
+          },
+          button_height: 1,
+        },
+        favorsizeorspeed: {
+          description: gypcs.descriptions.vccompilertools_optimization_favorsizeorspeed,
+          button_index: {
+            en: 27,
+            ja: 50,
+          },
+          button_height: 1,
+        },
+        floatingpointmodel: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_floatingpointmodel,
+          button_index: {
+            en: 28,
+            ja: 63,
+          },
+          button_height: 1,
+        },
+        forceconformanceinforloopscope: {
+          description: gypcs.descriptions.vccompilertools_language_forceconformanceinforloopscope,
+          button_index: {
+            en: 29,
+            ja: 2,
+          },
+          button_height: 1,
+        },
+        forcedusingfiles: {
+          description: gypcs.descriptions.vccompilertools_details_forcedusingfiles,
+          button_index: {
+            en: 30,
+            ja: 60,
+          },
+          button_height: 1,
+        },
+        forcedincludefiles: {
+          description: gypcs.descriptions.vccompilertools_details_forcedincludefiles,
+          button_index: {
+            en: 31,
+            ja: 59,
+          },
+          button_height: 1,
+        },
+        generatexmldocumentationfiles: {
+          description: gypcs.descriptions.vccompilertools_output_generatexmldocumentationfiles,
+          button_index: {
+            en: 32,
+            ja: 7,
+          },
+          button_height: 1,
+        },
+        ignorestandardincludepath: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_ignorestandardincludepath,
+          button_index: {
+            en: 33,
+            ja: 61,
+          },
+          button_height: 1,
+        },
+        inlinefunctionexpansion: {
+          description: gypcs.descriptions.vccompilertools_optimization_inlinefunctionexpansion,
+          button_index: {
+            en: 34,
+            ja: 12,
+          },
+          button_height: 1,
+        },
+        errorreporting: {
+          description: gypcs.descriptions.vccompilertools_details_errorreporting,
+          button_index: {
+            en: 35,
+            ja: 58,
+          },
+          button_height: 1,
+        },
+        keepcomments: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_keepcomments,
+          button_index: {
+            en: 36,
+            ja: 14,
+          },
+          button_height: 1,
+        },
+        objectfile: {
+          description: gypcs.descriptions.vccompilertools_output_objectfile,
+          button_index: {
+            en: 38,
+            ja: 13,
+          },
+          button_height: 1,
+        },
+        omitdefaultlibname: {
+          description: gypcs.descriptions.vccompilertools_details_omitdefaultlibname,
+          button_index: {
+            en: 39,
+            ja: 36,
+          },
+          button_height: 1,
+        },
+        omitframepointers: {
+          description: gypcs.descriptions.vccompilertools_optimization_omitframepointers,
+          button_index: {
+            en: 40,
+            ja: 26,
+          },
+          button_height: 1,
+        },
+        openmp: {
+          description: gypcs.descriptions.vccompilertools_language_openmp,
+          button_index: {
+            en: 41,
+            ja: 3,
+          },
+          button_height: 1,
+        },
+        optimization: {
+          description: gypcs.descriptions.vccompilertools_optimization_optimization,
+          button_index: {
+            en: 42,
+            ja: 45,
+          },
+          button_height: 1,
+        },
+        useprecompiledheader: {
+          description: gypcs.descriptions.vccompilertools_precompiledheader_useprecompiledheader,
+          button_index: {
+            en: 43,
+            ja: 22,
+          },
+          button_height: 1,
+        },
+        precompiledheaderthrough: {
+          description: gypcs.descriptions.vccompilertools_precompiledheader_precompiledheaderthrough,
+          button_index: {
+            en: 44,
+            ja: 23,
+          },
+          button_height: 1,
+        },
+        precompiledheaderfile: {
+          description: gypcs.descriptions.vccompilertools_precompiledheader_precompiledheaderfile,
+          button_index: {
+            en: 45,
+            ja: 24,
+          },
+          button_height: 1,
+        },
+        generatepreprocessedfile_a: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile,
+          button_index: {
+            en: 46,
+            ja: 19,
+          },
+          button_height: 1,
+        },
+        generatepreprocessedfile_b: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile,
+          button_index: {
+            en: 47,
+            ja: 43,
+          },
+          button_height: 1,
+        },
+        defines: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_defines,
+          button_index: {
+            en: 48,
+            ja: 25,
+          },
+          button_height: 1,
+        },
+        programdatabasefilename: {
+          description: gypcs.descriptions.vccompilertools_output_programdatabasefilename,
+          button_index: {
+            en: 49,
+            ja: 27,
+          },
+          button_height: 1,
+        },
+        runtimelibrary: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_runtimelibrary,
+          button_index: {
+            en: 50,
+            ja: 30,
+          },
+          button_height: 1,
+        },
+        buffersecuritycheck: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_buffersecuritycheck,
+          button_index: {
+            en: 52,
+            ja: 16,
+          },
+          button_height: 1,
+        },
+        showincludes: {
+          description: gypcs.descriptions.vccompilertools_details_showincludes,
+          button_index: {
+            en: 53,
+            ja: 11,
+          },
+          button_height: 1,
+        },
+        smallertypecheck: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_smallertypecheck,
+          button_index: {
+            en: 54,
+            ja: 48,
+          },
+          button_height: 1,
+        },
+        structmemberalignment: {
+          description: gypcs.descriptions.vccompilertools_codegeneration_structmemberalignment,
+          button_index: {
+            en: 55,
+            ja: 42,
+          },
+          button_height: 1,
+        },
+        suppressstartupbanner: {
+          description: gypcs.descriptions.vccompilertools_general_suppressstartupbanner,
+          button_index: {
+            en: 56,
+            ja: 52,
+          },
+          button_height: 1,
+        },
+        warnaserror: {
+          description: gypcs.descriptions.vccompilertools_general_warnaserror,
+          button_index: {
+            en: 58,
+            ja: 39,
+          },
+          button_height: 1,
+        },
+        treatwchartasbuiltintype: {
+          description: gypcs.descriptions.vccompilertools_language_treatwchartasbuiltintype,
+          button_index: {
+            en: 59,
+            ja: 5,
+          },
+          button_height: 1,
+        },
+        undefineallpreprocessordefinitions: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_undefineallpreprocessordefinitions,
+          button_index: {
+            en: 60,
+            ja: 56,
+          },
+          button_height: 1,
+        },
+        undefinepreprocessordefinitions: {
+          description: gypcs.descriptions.vccompilertools_preprocessor_undefinepreprocessordefinitions,
+          button_index: {
+            en: 61,
+            ja: 46,
+          },
+          button_height: 1,
+        },
+        usefullpaths: {
+          description: gypcs.descriptions.vccompilertools_details_usefullpaths,
+          button_index: {
+            en: 62,
+            ja: 33,
+          },
+          button_height: 1,
+        },
+        warninglevel: {
+          description: gypcs.descriptions.vccompilertools_general_warninglevel,
+          button_index: {
+            en: 64,
+            ja: 38,
+          },
+          button_height: 1,
+        },
+        wholeprogramoptimization: {
+          description: gypcs.descriptions.vccompilertools_optimization_wholeprogramoptimization,
+          button_index: {
+            en: 65,
+            ja: 28,
+          },
+          button_height: 1,
+        },
+        xmldocumentationfilename: {
+          description: gypcs.descriptions.vccompilertools_output_xmldocumentationfilename,
+          button_index: {
+            en: 66,
+            ja: 8,
           },
           button_height: 1,
         },
