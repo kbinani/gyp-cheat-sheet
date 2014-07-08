@@ -1185,7 +1185,7 @@ $(document).ready(function() {
         "@3": { ja: "次回ログインのためのキュー", en: "Queue For Next Login" },
       },
     },
-    vclinkertools_general_outputfile: {
+    vclinkertool_general_outputfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1198,7 +1198,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_showprogress: {
+    vclinkertool_general_showprogress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1223,7 +1223,7 @@ $(document).ready(function() {
         "@3": { ja: "検索したライブラリ", en: "For Libraries Searched" },
       },
     },
-    vclinkertools_general_version: {
+    vclinkertool_general_version: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1236,7 +1236,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_linkincremental: {
+    vclinkertool_general_linkincremental: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1253,7 +1253,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_suppressstartupbanner: {
+    vclinkertool_general_suppressstartupbanner: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1270,7 +1270,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_ignoreimportlibrary: {
+    vclinkertool_general_ignoreimportlibrary: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1287,7 +1287,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_registeroutput: {
+    vclinkertool_general_registeroutput: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1304,7 +1304,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_peruserredirection: {
+    vclinkertool_general_peruserredirection: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1321,7 +1321,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_additionallibrarydirectories: {
+    vclinkertool_general_additionallibrarydirectories: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1336,7 +1336,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_linklibrarydependencies: {
+    vclinkertool_general_linklibrarydependencies: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1353,7 +1353,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_uselibrarydependencyinputs: {
+    vclinkertool_general_uselibrarydependencyinputs: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1370,7 +1370,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_additionaldependencies: {
+    vclinkertool_input_additionaldependencies: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1386,7 +1386,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_ignorealldefaultlibraries: {
+    vclinkertool_input_ignorealldefaultlibraries: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1403,7 +1403,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_ignoredefaultlibrarynames: {
+    vclinkertool_input_ignoredefaultlibrarynames: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1419,7 +1419,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_moduledefinitionfile: {
+    vclinkertool_input_moduledefinitionfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1432,7 +1432,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_addmodulenamestoassembly: {
+    vclinkertool_input_addmodulenamestoassembly: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1448,7 +1448,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_embedmanagedresourcefile: {
+    vclinkertool_input_embedmanagedresourcefile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1464,7 +1464,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_forcesymbolreferences: {
+    vclinkertool_input_forcesymbolreferences: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1480,7 +1480,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_delayloaddlls: {
+    vclinkertool_input_delayloaddlls: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1496,7 +1496,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_input_assemblylinkresource: {
+    vclinkertool_input_assemblylinkresource: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1512,7 +1512,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_generatemanifest: {
+    vclinkertool_manifestfile_generatemanifest: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1529,7 +1529,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_manifestfile: {
+    vclinkertool_manifestfile_manifestfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1542,7 +1542,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_additionalmanifestdependencies: {
+    vclinkertool_manifestfile_additionalmanifestdependencies: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1558,7 +1558,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_allowisolation: {
+    vclinkertool_manifestfile_allowisolation: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1575,7 +1575,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_enableuac: {
+    vclinkertool_manifestfile_enableuac: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1592,7 +1592,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_uacexecutionlevel: {
+    vclinkertool_manifestfile_uacexecutionlevel: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1612,7 +1612,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_manifestfile_uacuiaccess: {
+    vclinkertool_manifestfile_uacuiaccess: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1629,7 +1629,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_generatedebuginformation: {
+    vclinkertool_debug_generatedebuginformation: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1650,7 +1650,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_programdatabasefile: {
+    vclinkertool_debug_programdatabasefile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1663,7 +1663,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_stripprivatesymbols: {
+    vclinkertool_debug_stripprivatesymbols: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1676,7 +1676,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_generatemapfile: {
+    vclinkertool_debug_generatemapfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1693,7 +1693,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_mapfilename: {
+    vclinkertool_debug_mapfilename: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1706,7 +1706,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_mapexports: {
+    vclinkertool_debug_mapexports: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1723,7 +1723,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_debug_assemblydebug: {
+    vclinkertool_debug_assemblydebug: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1740,7 +1740,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_subsystem: {
+    vclinkertool_system_subsystem: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1788,7 +1788,7 @@ $(document).ready(function() {
         "@8": { ja: "EFI ランタイム", en: "EFI Runtime" },
       },
     },
-    vclinkertools_system_heapreservesize: {
+    vclinkertool_system_heapreservesize: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1801,7 +1801,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_heapcommitsize: {
+    vclinkertool_system_heapcommitsize: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1814,7 +1814,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_stackreservesize: {
+    vclinkertool_system_stackreservesize: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1827,7 +1827,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_stackcommitsize: {
+    vclinkertool_system_stackcommitsize: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1840,7 +1840,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_largeaddressaware: {
+    vclinkertool_system_largeaddressaware: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1857,7 +1857,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_terminalserveraware: {
+    vclinkertool_system_terminalserveraware: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1874,7 +1874,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_swaprunfromcd: {
+    vclinkertool_system_swaprunfromcd: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1891,7 +1891,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_swaprunfromnet: {
+    vclinkertool_system_swaprunfromnet: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1908,7 +1908,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_system_driver: {
+    vclinkertool_system_driver: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1937,7 +1937,7 @@ $(document).ready(function() {
         "@4": { ja: "WDM", en: "WDM" },
       },
     },
-    vclinkertools_optimization_optimizereferences: {
+    vclinkertool_optimization_optimizereferences: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1954,7 +1954,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_optimization_enablecomdatfolding: {
+    vclinkertool_optimization_enablecomdatfolding: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1971,7 +1971,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_optimization_functionorder: {
+    vclinkertool_optimization_functionorder: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1984,7 +1984,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_optimization_profileguideddatabase: {
+    vclinkertool_optimization_profileguideddatabase: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1997,7 +1997,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_optimization_linktimecodegeneration: {
+    vclinkertool_optimization_linktimecodegeneration: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2030,7 +2030,7 @@ $(document).ready(function() {
         "@5": { ja: "ガイド付き最適化のプロファイル - 更新ガイド付き最適化のプロファイル - 更新", en: "Profile Guided Optimization - Update" },
       },
     },
-    vclinkertools_embeddedidl_midlcommandfile: {
+    vclinkertool_embeddedidl_midlcommandfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2043,7 +2043,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_embeddedidl_ignoreembeddedidl: {
+    vclinkertool_embeddedidl_ignoreembeddedidl: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2059,7 +2059,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_embeddedidl_mergedidlbasefilename: {
+    vclinkertool_embeddedidl_mergedidlbasefilename: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2072,7 +2072,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_embeddedidl_typelibraryfile: {
+    vclinkertool_embeddedidl_typelibraryfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2085,7 +2085,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_embeddedidl_typelibraryresourceid: {
+    vclinkertool_embeddedidl_typelibraryresourceid: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2098,7 +2098,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_entrypointsymbol: {
+    vclinkertool_details_entrypointsymbol: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2111,7 +2111,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_setchecksum: {
+    vclinkertool_details_setchecksum: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2128,7 +2128,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_baseaddress: {
+    vclinkertool_details_baseaddress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2141,7 +2141,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_randomizedbaseaddress: {
+    vclinkertool_details_randomizedbaseaddress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2158,7 +2158,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_fixedbaseaddress: {
+    vclinkertool_details_fixedbaseaddress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2175,7 +2175,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_dataexecutionprevention: {
+    vclinkertool_details_dataexecutionprevention: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2192,7 +2192,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_turnoffassemblygeneration: {
+    vclinkertool_details_turnoffassemblygeneration: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2209,7 +2209,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_supportunloadofdelayloadeddll: {
+    vclinkertool_details_supportunloadofdelayloadeddll: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2226,7 +2226,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_importlibrary: {
+    vclinkertool_details_importlibrary: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2239,7 +2239,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_mergesections: {
+    vclinkertool_details_mergesections: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2252,7 +2252,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_targetmachine: {
+    vclinkertool_details_targetmachine: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2302,7 +2302,7 @@ $(document).ready(function() {
         "@1": { ja: "設定なし", en: "Not Set" },
       },
     },
-    vclinkertools_details_profile: {
+    vclinkertool_details_profile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2319,7 +2319,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_clrthreadattribute: {
+    vclinkertool_details_clrthreadattribute: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2344,7 +2344,7 @@ $(document).ready(function() {
         "@3": { ja: "STA スレッド属性", en: "STA threading attribute" },
       },
     },
-    vclinkertools_details_clrimagetype: {
+    vclinkertool_details_clrimagetype: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2373,7 +2373,7 @@ $(document).ready(function() {
         "@4": { ja: "安全 IL イメージの強制", en: "Force Safe IL Image" },
       },
     },
-    vclinkertools_details_keycontainer: {
+    vclinkertool_details_keycontainer: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2386,7 +2386,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_clrunmanagedcodecheck: {
+    vclinkertool_details_clrunmanagedcodecheck: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2403,7 +2403,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_details_errorreporting: {
+    vclinkertool_details_errorreporting: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2428,7 +2428,7 @@ $(document).ready(function() {
         "@3": { ja: "次回ログインのためのキュー", en: "Queue For Next Login" },
       },
     },
-    vclinkertools_details_additionaloptions: {
+    vclinkertool_details_additionaloptions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2441,7 +2441,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertools_general_treatlinkerwarningaserrors: {
+    vclinkertool_general_treatlinkerwarningaserrors: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -3491,15 +3491,15 @@ $(document).ready(function() {
       descriptions: {
       },
     },
-    vclinkertools_general: {
+    vclinkertool_general: {
       button_index: {
         default: 18,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         outputfile: {
-          description: 'vclinkertools_general_outputfile',
+          description: 'vclinkertool_general_outputfile',
           button_index: {
             default: 0,
           },
@@ -3509,7 +3509,7 @@ $(document).ready(function() {
           },
         },
         showprogress: {
-          description: 'vclinkertools_general_showprogress',
+          description: 'vclinkertool_general_showprogress',
           button_index: {
             default: 1,
           },
@@ -3519,7 +3519,7 @@ $(document).ready(function() {
           },
         },
         version: {
-          description: 'vclinkertools_general_version',
+          description: 'vclinkertool_general_version',
           button_index: {
             default: 2,
           },
@@ -3529,7 +3529,7 @@ $(document).ready(function() {
           },
         },
         linkincremental: {
-          description: 'vclinkertools_general_linkincremental',
+          description: 'vclinkertool_general_linkincremental',
           button_index: {
             default: 3,
           },
@@ -3539,7 +3539,7 @@ $(document).ready(function() {
           },
         },
         suppressstartupbanner: {
-          description: 'vclinkertools_general_suppressstartupbanner',
+          description: 'vclinkertool_general_suppressstartupbanner',
           button_index: {
             default: 4,
           },
@@ -3549,7 +3549,7 @@ $(document).ready(function() {
           },
         },
         ignoreimportlibrary: {
-          description: 'vclinkertools_general_ignoreimportlibrary',
+          description: 'vclinkertool_general_ignoreimportlibrary',
           button_index: {
             default: 5,
           },
@@ -3559,7 +3559,7 @@ $(document).ready(function() {
           },
         },
         registeroutput: {
-          description: 'vclinkertools_general_registeroutput',
+          description: 'vclinkertool_general_registeroutput',
           button_index: {
             default: 6,
           },
@@ -3569,7 +3569,7 @@ $(document).ready(function() {
           },
         },
         peruserredirection: {
-          description: 'vclinkertools_general_peruserredirection',
+          description: 'vclinkertool_general_peruserredirection',
           button_index: {
             default: 7,
           },
@@ -3579,7 +3579,7 @@ $(document).ready(function() {
           },
         },
         additionallibrarydirectories: {
-          description: 'vclinkertools_general_additionallibrarydirectories',
+          description: 'vclinkertool_general_additionallibrarydirectories',
           button_index: {
             default: 8,
           },
@@ -3589,7 +3589,7 @@ $(document).ready(function() {
           },
         },
         linklibrarydependencies: {
-          description: 'vclinkertools_general_linklibrarydependencies',
+          description: 'vclinkertool_general_linklibrarydependencies',
           button_index: {
             default: 9,
           },
@@ -3599,7 +3599,7 @@ $(document).ready(function() {
           },
         },
         uselibrarydependencyinputs: {
-          description: 'vclinkertools_general_uselibrarydependencyinputs',
+          description: 'vclinkertool_general_uselibrarydependencyinputs',
           button_index: {
             default: 10,
           },
@@ -3609,7 +3609,7 @@ $(document).ready(function() {
           },
         },
         treatlinkerwarningaserrors: {
-          description: 'vclinkertools_general_treatlinkerwarningaserrors',
+          description: 'vclinkertool_general_treatlinkerwarningaserrors',
           button_index: {
             default: 13,
           },
@@ -3620,15 +3620,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_input: {
+    vclinkertool_input: {
       button_index: {
         default: 19,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         additionaldependencies: {
-          description: 'vclinkertools_input_additionaldependencies',
+          description: 'vclinkertool_input_additionaldependencies',
           button_index: {
             default: 0,
           },
@@ -3638,7 +3638,7 @@ $(document).ready(function() {
           },
         },
         ignorealldefaultlibraries: {
-          description: 'vclinkertools_input_ignorealldefaultlibraries',
+          description: 'vclinkertool_input_ignorealldefaultlibraries',
           button_index: {
             default: 1,
           },
@@ -3648,7 +3648,7 @@ $(document).ready(function() {
           },
         },
         ignoredefaultlibrarynames: {
-          description: 'vclinkertools_input_ignoredefaultlibrarynames',
+          description: 'vclinkertool_input_ignoredefaultlibrarynames',
           button_index: {
             default: 2,
           },
@@ -3658,7 +3658,7 @@ $(document).ready(function() {
           },
         },
         moduledefinitionfile: {
-          description: 'vclinkertools_input_moduledefinitionfile',
+          description: 'vclinkertool_input_moduledefinitionfile',
           button_index: {
             default: 3,
           },
@@ -3668,7 +3668,7 @@ $(document).ready(function() {
           },
         },
         addmodulenamestoassembly: {
-          description: 'vclinkertools_input_addmodulenamestoassembly',
+          description: 'vclinkertool_input_addmodulenamestoassembly',
           button_index: {
             default: 4,
           },
@@ -3678,7 +3678,7 @@ $(document).ready(function() {
           },
         },
         embedmanagedresourcefile: {
-          description: 'vclinkertools_input_embedmanagedresourcefile',
+          description: 'vclinkertool_input_embedmanagedresourcefile',
           button_index: {
             default: 5,
           },
@@ -3688,7 +3688,7 @@ $(document).ready(function() {
           },
         },
         forcesymbolreferences: {
-          description: 'vclinkertools_input_forcesymbolreferences',
+          description: 'vclinkertool_input_forcesymbolreferences',
           button_index: {
             default: 6,
           },
@@ -3698,7 +3698,7 @@ $(document).ready(function() {
           },
         },
         delayloaddlls: {
-          description: 'vclinkertools_input_delayloaddlls',
+          description: 'vclinkertool_input_delayloaddlls',
           button_index: {
             default: 7,
           },
@@ -3708,7 +3708,7 @@ $(document).ready(function() {
           },
         },
         assemblylinkresource: {
-          description: 'vclinkertools_input_assemblylinkresource',
+          description: 'vclinkertool_input_assemblylinkresource',
           button_index: {
             default: 8,
           },
@@ -3719,15 +3719,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_manifestfile: {
+    vclinkertool_manifestfile: {
       button_index: {
         default: 20,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         generatemanifest: {
-          description: 'vclinkertools_manifestfile_generatemanifest',
+          description: 'vclinkertool_manifestfile_generatemanifest',
           button_index: {
             default: 0,
           },
@@ -3737,7 +3737,7 @@ $(document).ready(function() {
           },
         },
         manifestfile: {
-          description: 'vclinkertools_manifestfile_manifestfile',
+          description: 'vclinkertool_manifestfile_manifestfile',
           button_index: {
             default: 1,
           },
@@ -3747,7 +3747,7 @@ $(document).ready(function() {
           },
         },
         additionalmanifestdependencies: {
-          description: 'vclinkertools_manifestfile_additionalmanifestdependencies',
+          description: 'vclinkertool_manifestfile_additionalmanifestdependencies',
           button_index: {
             default: 2,
           },
@@ -3757,7 +3757,7 @@ $(document).ready(function() {
           },
         },
         allowisolation: {
-          description: 'vclinkertools_manifestfile_allowisolation',
+          description: 'vclinkertool_manifestfile_allowisolation',
           button_index: {
             default: 3,
           },
@@ -3767,7 +3767,7 @@ $(document).ready(function() {
           },
         },
         enableuac: {
-          description: 'vclinkertools_manifestfile_enableuac',
+          description: 'vclinkertool_manifestfile_enableuac',
           button_index: {
             default: 4,
           },
@@ -3777,7 +3777,7 @@ $(document).ready(function() {
           },
         },
         uacexecutionlevel: {
-          description: 'vclinkertools_manifestfile_uacexecutionlevel',
+          description: 'vclinkertool_manifestfile_uacexecutionlevel',
           button_index: {
             default: 5,
           },
@@ -3787,7 +3787,7 @@ $(document).ready(function() {
           },
         },
         uacuiaccess: {
-          description: 'vclinkertools_manifestfile_uacuiaccess',
+          description: 'vclinkertool_manifestfile_uacuiaccess',
           button_index: {
             default: 6,
           },
@@ -3798,15 +3798,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_debug: {
+    vclinkertool_debug: {
       button_index: {
         default: 21,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         generatedebuginformation: {
-          description: 'vclinkertools_debug_generatedebuginformation',
+          description: 'vclinkertool_debug_generatedebuginformation',
           button_index: {
             default: 0,
           },
@@ -3816,7 +3816,7 @@ $(document).ready(function() {
           },
         },
         programdatabasefile: {
-          description: 'vclinkertools_debug_programdatabasefile',
+          description: 'vclinkertool_debug_programdatabasefile',
           button_index: {
             default: 1,
           },
@@ -3826,7 +3826,7 @@ $(document).ready(function() {
           },
         },
         stripprivatesymbols: {
-          description: 'vclinkertools_debug_stripprivatesymbols',
+          description: 'vclinkertool_debug_stripprivatesymbols',
           button_index: {
             default: 2,
           },
@@ -3836,7 +3836,7 @@ $(document).ready(function() {
           },
         },
         generatemapfile: {
-          description: 'vclinkertools_debug_generatemapfile',
+          description: 'vclinkertool_debug_generatemapfile',
           button_index: {
             default: 3,
           },
@@ -3846,7 +3846,7 @@ $(document).ready(function() {
           },
         },
         mapfilename: {
-          description: 'vclinkertools_debug_mapfilename',
+          description: 'vclinkertool_debug_mapfilename',
           button_index: {
             default: 4,
           },
@@ -3856,7 +3856,7 @@ $(document).ready(function() {
           },
         },
         mapexports: {
-          description: 'vclinkertools_debug_mapexports',
+          description: 'vclinkertool_debug_mapexports',
           button_index: {
             default: 5,
           },
@@ -3866,7 +3866,7 @@ $(document).ready(function() {
           },
         },
         assemblydebug: {
-          description: 'vclinkertools_debug_assemblydebug',
+          description: 'vclinkertool_debug_assemblydebug',
           button_index: {
             default: 6,
           },
@@ -3877,15 +3877,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_system: {
+    vclinkertool_system: {
       button_index: {
         default: 22,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         subsystem: {
-          description: 'vclinkertools_system_subsystem',
+          description: 'vclinkertool_system_subsystem',
           button_index: {
             default: 0,
           },
@@ -3895,7 +3895,7 @@ $(document).ready(function() {
           },
         },
         heapreservesize: {
-          description: 'vclinkertools_system_heapreservesize',
+          description: 'vclinkertool_system_heapreservesize',
           button_index: {
             default: 2,
           },
@@ -3905,7 +3905,7 @@ $(document).ready(function() {
           },
         },
         heapcommitsize: {
-          description: 'vclinkertools_system_heapcommitsize',
+          description: 'vclinkertool_system_heapcommitsize',
           button_index: {
             default: 3,
           },
@@ -3915,7 +3915,7 @@ $(document).ready(function() {
           },
         },
         stackreservesize: {
-          description: 'vclinkertools_system_stackreservesize',
+          description: 'vclinkertool_system_stackreservesize',
           button_index: {
             default: 4,
           },
@@ -3925,7 +3925,7 @@ $(document).ready(function() {
           },
         },
         stackcommitsize: {
-          description: 'vclinkertools_system_stackcommitsize',
+          description: 'vclinkertool_system_stackcommitsize',
           button_index: {
             default: 5,
           },
@@ -3935,7 +3935,7 @@ $(document).ready(function() {
           },
         },
         largeaddressaware: {
-          description: 'vclinkertools_system_largeaddressaware',
+          description: 'vclinkertool_system_largeaddressaware',
           button_index: {
             default: 6,
           },
@@ -3945,7 +3945,7 @@ $(document).ready(function() {
           },
         },
         terminalserveraware: {
-          description: 'vclinkertools_system_terminalserveraware',
+          description: 'vclinkertool_system_terminalserveraware',
           button_index: {
             default: 7,
           },
@@ -3955,7 +3955,7 @@ $(document).ready(function() {
           },
         },
         swaprunfromcd: {
-          description: 'vclinkertools_system_swaprunfromcd',
+          description: 'vclinkertool_system_swaprunfromcd',
           button_index: {
             default: 8,
           },
@@ -3965,7 +3965,7 @@ $(document).ready(function() {
           },
         },
         swaprunfromnet: {
-          description: 'vclinkertools_system_swaprunfromnet',
+          description: 'vclinkertool_system_swaprunfromnet',
           button_index: {
             default: 9,
           },
@@ -3975,7 +3975,7 @@ $(document).ready(function() {
           },
         },
         driver: {
-          description: 'vclinkertools_system_driver',
+          description: 'vclinkertool_system_driver',
           button_index: {
             default: 10,
           },
@@ -3986,15 +3986,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_optimization: {
+    vclinkertool_optimization: {
       button_index: {
         default: 23,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         optimizereferences: {
-          description: 'vclinkertools_optimization_optimizereferences',
+          description: 'vclinkertool_optimization_optimizereferences',
           button_index: {
             default: 0,
           },
@@ -4004,7 +4004,7 @@ $(document).ready(function() {
           },
         },
         enablecomdatfolding: {
-          description: 'vclinkertools_optimization_enablecomdatfolding',
+          description: 'vclinkertool_optimization_enablecomdatfolding',
           button_index: {
             default: 1,
           },
@@ -4014,7 +4014,7 @@ $(document).ready(function() {
           },
         },
         functionorder: {
-          description: 'vclinkertools_optimization_functionorder',
+          description: 'vclinkertool_optimization_functionorder',
           button_index: {
             default: 2,
           },
@@ -4024,7 +4024,7 @@ $(document).ready(function() {
           },
         },
         profileguideddatabase: {
-          description: 'vclinkertools_optimization_profileguideddatabase',
+          description: 'vclinkertool_optimization_profileguideddatabase',
           button_index: {
             default: 3,
           },
@@ -4034,7 +4034,7 @@ $(document).ready(function() {
           },
         },
         linktimecodegeneration: {
-          description: 'vclinkertools_optimization_linktimecodegeneration',
+          description: 'vclinkertool_optimization_linktimecodegeneration',
           button_index: {
             default: 4,
           },
@@ -4045,15 +4045,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_embeddedidl: {
+    vclinkertool_embeddedidl: {
       button_index: {
         default: 24,
       },
       page_height: 509,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         midlcommandfile: {
-          description: 'vclinkertools_embeddedidl_midlcommandfile',
+          description: 'vclinkertool_embeddedidl_midlcommandfile',
           button_index: {
             default: 0,
           },
@@ -4063,7 +4063,7 @@ $(document).ready(function() {
           },
         },
         ignoreembeddedidl: {
-          description: 'vclinkertools_embeddedidl_ignoreembeddedidl',
+          description: 'vclinkertool_embeddedidl_ignoreembeddedidl',
           button_index: {
             default: 1,
           },
@@ -4073,7 +4073,7 @@ $(document).ready(function() {
           },
         },
         mergedidlbasefilename: {
-          description: 'vclinkertools_embeddedidl_mergedidlbasefilename',
+          description: 'vclinkertool_embeddedidl_mergedidlbasefilename',
           button_index: {
             default: 2,
           },
@@ -4083,7 +4083,7 @@ $(document).ready(function() {
           },
         },
         typelibraryfile: {
-          description: 'vclinkertools_embeddedidl_typelibraryfile',
+          description: 'vclinkertool_embeddedidl_typelibraryfile',
           button_index: {
             default: 3,
           },
@@ -4093,7 +4093,7 @@ $(document).ready(function() {
           },
         },
         typelibraryresourceid: {
-          description: 'vclinkertools_embeddedidl_typelibraryresourceid',
+          description: 'vclinkertool_embeddedidl_typelibraryresourceid',
           button_index: {
             default: 4,
           },
@@ -4104,15 +4104,15 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_details: {
+    vclinkertool_details: {
       button_index: {
         default: 26,
       },
       page_height: 526,
-      category: 'vclinkertools',
+      category: 'vclinkertool',
       descriptions: {
         entrypointsymbol: {
-          description: 'vclinkertools_details_entrypointsymbol',
+          description: 'vclinkertool_details_entrypointsymbol',
           button_index: {
             default: 0,
           },
@@ -4122,7 +4122,7 @@ $(document).ready(function() {
           },
         },
         setchecksum: {
-          description: 'vclinkertools_details_setchecksum',
+          description: 'vclinkertool_details_setchecksum',
           button_index: {
             default: 2,
           },
@@ -4132,7 +4132,7 @@ $(document).ready(function() {
           },
         },
         baseaddress: {
-          description: 'vclinkertools_details_baseaddress',
+          description: 'vclinkertool_details_baseaddress',
           button_index: {
             default: 3,
           },
@@ -4142,7 +4142,7 @@ $(document).ready(function() {
           },
         },
         randomizedbaseaddress: {
-          description: 'vclinkertools_details_randomizedbaseaddress',
+          description: 'vclinkertool_details_randomizedbaseaddress',
           button_index: {
             default: 4,
           },
@@ -4152,7 +4152,7 @@ $(document).ready(function() {
           },
         },
         fixedbaseaddress: {
-          description: 'vclinkertools_details_fixedbaseaddress',
+          description: 'vclinkertool_details_fixedbaseaddress',
           button_index: {
             default: 5,
           },
@@ -4162,7 +4162,7 @@ $(document).ready(function() {
           },
         },
         dataexecutionprevention: {
-          description: 'vclinkertools_details_dataexecutionprevention',
+          description: 'vclinkertool_details_dataexecutionprevention',
           button_index: {
             default: 6,
           },
@@ -4172,7 +4172,7 @@ $(document).ready(function() {
           },
         },
         turnoffassemblygeneration: {
-          description: 'vclinkertools_details_turnoffassemblygeneration',
+          description: 'vclinkertool_details_turnoffassemblygeneration',
           button_index: {
             default: 7,
           },
@@ -4182,7 +4182,7 @@ $(document).ready(function() {
           },
         },
         supportunloadofdelayloadeddll: {
-          description: 'vclinkertools_details_supportunloadofdelayloadeddll',
+          description: 'vclinkertool_details_supportunloadofdelayloadeddll',
           button_index: {
             default: 8,
           },
@@ -4192,7 +4192,7 @@ $(document).ready(function() {
           },
         },
         importlibrary: {
-          description: 'vclinkertools_details_importlibrary',
+          description: 'vclinkertool_details_importlibrary',
           button_index: {
             default: 10,
           },
@@ -4202,7 +4202,7 @@ $(document).ready(function() {
           },
         },
         mergesections: {
-          description: 'vclinkertools_details_mergesections',
+          description: 'vclinkertool_details_mergesections',
           button_index: {
             default: 11,
           },
@@ -4212,7 +4212,7 @@ $(document).ready(function() {
           },
         },
         targetmachine: {
-          description: 'vclinkertools_details_targetmachine',
+          description: 'vclinkertool_details_targetmachine',
           button_index: {
             default: 12,
           },
@@ -4222,7 +4222,7 @@ $(document).ready(function() {
           },
         },
         profile: {
-          description: 'vclinkertools_details_profile',
+          description: 'vclinkertool_details_profile',
           button_index: {
             default: 13,
           },
@@ -4232,7 +4232,7 @@ $(document).ready(function() {
           },
         },
         clrthreadattribute: {
-          description: 'vclinkertools_details_clrthreadattribute',
+          description: 'vclinkertool_details_clrthreadattribute',
           button_index: {
             default: 14,
           },
@@ -4242,7 +4242,7 @@ $(document).ready(function() {
           },
         },
         clrimagetype: {
-          description: 'vclinkertools_details_clrimagetype',
+          description: 'vclinkertool_details_clrimagetype',
           button_index: {
             default: 15,
           },
@@ -4252,7 +4252,7 @@ $(document).ready(function() {
           },
         },
         keycontainer: {
-          description: 'vclinkertools_details_keycontainer',
+          description: 'vclinkertool_details_keycontainer',
           button_index: {
             default: 17,
           },
@@ -4262,7 +4262,7 @@ $(document).ready(function() {
           },
         },
         clrunmanagedcodecheck: {
-          description: 'vclinkertools_details_clrunmanagedcodecheck',
+          description: 'vclinkertool_details_clrunmanagedcodecheck',
           button_index: {
             default: 19,
           },
@@ -4272,7 +4272,7 @@ $(document).ready(function() {
           },
         },
         errorreporting: {
-          description: 'vclinkertools_details_errorreporting',
+          description: 'vclinkertool_details_errorreporting',
           button_index: {
             default: 21,
           },
@@ -4283,7 +4283,7 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertools_alloptions: {
+    vclinkertool_alloptions: {
       button_index: {
         default: 27,
       },
@@ -4409,7 +4409,7 @@ $(document).ready(function() {
           },
         },
         targetmachine: {
-          description: 'vclinkertools_details_targetmachine',
+          description: 'vclinkertool_details_targetmachine',
           button_index: {
             default: 13,
           },
