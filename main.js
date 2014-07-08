@@ -2568,6 +2568,53 @@ $(document).ready(function() {
         "]\n",
       ],
     },
+    vcmanifesttool_general_assemblyidentity: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'AssemblyIdentity': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_general_suppressstartupbanner: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        # @yes (/nologo)\n" +
+        "        'SuppressStartupBanner': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'SuppressStartupBanner': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_general_verboseoutput: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        # @yes (/verbose)\n" +
+        "        'VerboseOutput': 'true'\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'VerboseOutput': 'true'\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
     vcmanifesttool_inputandoutput_additionalmanifestfiles: {
       text: [
         "'targets': [\n" +
@@ -2591,6 +2638,144 @@ $(document).ready(function() {
         "    'msvs_settings': {\n" +
         "      'VCManifestTool': {\n" +
         "        'AdditionalOptions': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_inputandoutput_generatecatalogfiles: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "      # @yes (/makecdfs)\n" +
+        "      'GenerateCatalogFiles': 'true',\n" +
+        "\n" +
+        "      # @no\n" +
+        "      'GenerateCatalogFiles': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_inputandoutput_inputresourcemanifests: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'InputResourceManifests': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_inputandoutput_manifestresourcefile: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'ManifestResourceFile': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_inputandoutput_outputmanifestfile: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'OutputManifestFile': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_isolatedcom_componentfilename: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'ComponentFileName': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_isolatedcom_registrarscriptfile: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'RegistrarScriptFile': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_isolatedcom_replacementsfile: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'ReplacementsFile': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_isolatedcom_typelibraryfile: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'TypeLibraryFile': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_advanced_updatefilehashes: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "      # @yes (/hashupdate)\n" +
+        "      'UpdateFileHashes': 'true',\n" +
+        "\n" +
+        "      # @no\n" +
+        "      'UpdateFileHashes': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_advanced_updatefilehashessearchpath: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'UpdateFileHashesSearchPath': 'a_file_name',\n" +
         "      },\n" +
         "    }\n" +
         "  }\n" +
@@ -4389,6 +4574,47 @@ $(document).ready(function() {
       descriptions: {
       },
     },
+    vcmanifesttool_general: {
+      button_index: {
+        default: 34,
+      },
+      page_height: 509,
+      category: 'vcmanifesttool',
+      descriptions: {
+        assemblyidentity: {
+          description: 'vcmanifesttool_general_assemblyidentity',
+          button_index: {
+            default: 2,
+          },
+          alloptions_button_index: {
+            default: 2,
+          },
+          button_height: 1,
+        },
+        suppressstartupbanner: {
+          description: 'vcmanifesttool_general_suppressstartupbanner',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 15,
+            ja: 15,
+          },
+          button_height: 1,
+        },
+        verboseoutput: {
+          description: 'vcmanifesttool_general_verboseoutput',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 19,
+            ja: 13,
+          },
+          button_height: 1,
+        },
+      },
+    },
     vcmanifesttool_inputandoutput: {
       button_index: {
         default: 35,
@@ -4404,6 +4630,134 @@ $(document).ready(function() {
           alloptions_button_index: {
             en: 0,
             ja: 17,
+          },
+          button_height: 1,
+        },
+        generatecatalogfiles: {
+          description: 'vcmanifesttool_inputandoutput_generatecatalogfiles',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 6,
+            ja: 4,
+          },
+          button_height: 1,
+        },
+        inputresourcemanifests: {
+          description: 'vcmanifesttool_inputandoutput_inputresourcemanifests',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 9,
+            ja: 18,
+          },
+          button_height: 1,
+        },
+        manifestresourcefile: {
+          description: 'vcmanifesttool_inputandoutput_manifestresourcefile',
+          button_index: {
+            default: 4,
+          },
+          alloptions_button_index: {
+            en: 10,
+            ja: 9,
+          },
+          button_height: 1,
+        },
+        outputmanifestfile: {
+          description: 'vcmanifesttool_inputandoutput_outputmanifestfile',
+          button_index: {
+            default: 3,
+          },
+          alloptions_button_index: {
+            en: 11,
+            ja: 12,
+          },
+          button_height: 1,
+        },
+      },
+    },
+    vcmanifesttool_isolatedcom: {
+      button_index: {
+        default: 36,
+      },
+      page_height: 509,
+      category: 'vcmanifesttool',
+      descriptions: {
+        additionalmanifestfiles: {
+          description: 'vcmanifesttool_isolatedcom_componentfilename',
+          button_index: {
+            default: 2,
+          },
+          alloptions_button_index: {
+            en: 3,
+            ja: 5,
+          },
+          button_height: 1,
+        },
+        registrarscriptfile: {
+          description: 'vcmanifesttool_isolatedcom_registrarscriptfile',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 12,
+            ja: 10,
+          },
+          button_height: 1,
+        },
+        replacementsfile: {
+          description: 'vcmanifesttool_isolatedcom_replacementsfile',
+          button_index: {
+            default: 3,
+          },
+          alloptions_button_index: {
+            en: 13,
+            ja: 14,
+          },
+          button_height: 1,
+        },
+        typelibraryfile: {
+          description: 'vcmanifesttool_isolatedcom_typelibraryfile',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 16,
+            ja: 6,
+          },
+          button_height: 1,
+        },
+      },
+    },
+    vcmanifesttool_advanced: {
+      button_index: {
+        default: 37,
+      },
+      page_height: 509,
+      category: 'vcmanifesttool',
+      descriptions: {
+        updatefilehashes: {
+          description: 'vcmanifesttool_advanced_updatefilehashes',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 17,
+            ja: 7,
+          },
+          button_height: 1,
+        },
+        updatefilehashessearchpath: {
+          description: 'vcmanifesttool_advanced_updatefilehashessearchpath',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 18,
+            ja: 8,
           },
           button_height: 1,
         },
@@ -4710,20 +5064,13 @@ $(document).ready(function() {
              'UndefinePreprocessorDefinitions': 'string1;string2'},
 
          'VCManifestTool': {
-             'AssemblyIdentity': 'a string1',
-             'ComponentFileName': 'a_file_name',
-             'DependencyInformationFile': 'a_file_name',
-             'GenerateCatalogFiles': 'true',
-             'InputResourceManifests': 'a string1',
-             'ManifestResourceFile': 'a_file_name',
-             'OutputManifestFile': 'a_file_name',
-             'RegistrarScriptFile': 'a_file_name',
-             'ReplacementsFile': 'a_file_name',
-             'SuppressStartupBanner': 'true',
-             'TypeLibraryFile': 'a_file_name',
-             'UpdateFileHashes': 'truel',
-             'UpdateFileHashesSearchPath': 'a_file_name',
+             // 反映されない
+             'DependencyInformationFile': 'b_file_name',
+
+             // 反映されない
              'UseFAT32Workaround': 'true',
+
+              // 反映されない？
              'UseUnicodeResponseFiles': 'true',
-             'VerboseOutput': 'true'}},
+             }},
 */
