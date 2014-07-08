@@ -1190,7 +1190,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        'OutputFile': '$(OutDir)$(TargetName)$(TargetExt)',\n" +
         "      },\n" +
         "    }\n" +
@@ -1258,7 +1258,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        # @yes (/NOLOGO)\n" +
         "        'SuppressStartupBanner': 'true',\n" +
         "\n" +
@@ -1328,7 +1328,7 @@ $(document).ready(function() {
         "    'msvs_settings': {\n" +
         "      'VCLinkerTool': {\n" +
         "        'AdditionalLibraryDirectories': [\n" +
-        "          'C:SomeLibrarylib',\n" +
+        "          'C:\\SomeLibrary\\lib',\n" +
         "        ],\n" +
         "      },\n" +
         "    }\n" +
@@ -1341,7 +1341,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        # @yes\n" +
         "        'LinkLibraryDependencies': 'true',\n" +
         "\n" +
@@ -1391,7 +1391,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        # @yes (/NODEFAULTLIB)\n" +
         "        'IgnoreAllDefaultLibraries': 'true',\n" +
         "\n" +
@@ -1424,7 +1424,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        'ModuleDefinitionFile': 'a_file_name.def',\n" +
         "      },\n" +
         "    }\n" +
@@ -1469,7 +1469,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        'ForceSymbolReferences': [\n" +
         "          'file1',\n" +
         "          'file2',\n" +
@@ -1745,7 +1745,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        # @1\n" +
         "        'SubSystem': '0',\n" +
         "\n" +
@@ -2257,7 +2257,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        # @1\n" +
         "        'TargetMachine': '0',\n" +
         "\n" +
@@ -2408,7 +2408,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      'VCLinkerTool': {\n" +
+        "      '@section_name': {\n" +
         "        # @1 (/ERRORREPORT:NONE)\n" +
         "        'ErrorReporting': '0',\n" +
         "\n" +
@@ -2427,6 +2427,36 @@ $(document).ready(function() {
         "@2": { ja: "すぐにメッセージを表示", en: "PromptImmediately" },
         "@3": { ja: "次回ログインのためのキュー", en: "Queue For Next Login" },
       },
+    },
+    vclinkertools_details_additionaloptions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      '@section_name': {\n" +
+        "        'AdditionalOptions': 'option1 option2',\n" +
+        "      },\n" +
+        "    },\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vclinkertools_general_treatlinkerwarningaserrors: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      '@section_name': {\n" +
+        "        # @yes (/WX)\n" +
+        "        'TreatLinkerWarningAsErrors': 'true',\n" +
+        "\n" +
+        "        # @no (/WX:NO)\n" +
+        "        'TreatLinkerWarningAsErrors': 'false',\n" +
+        "      },\n" +
+        "    },\n" +
+        "  }\n" +
+        "]\n",
+      ],
     },
     vclibrariantool_general_export_named_functions: {
       text: [
@@ -2477,7 +2507,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclibrariantool_general_suppress_startup_banner: {
+    vclibrariantool_general_suppressstartupbanner: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2494,7 +2524,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclibrariantool_general_output_file: {
+    vclibrariantool_general_outputfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2538,7 +2568,39 @@ $(document).ready(function() {
         "]\n",
       ],
     },
+    vcmanifesttool_inputandoutput_additionalmanifestfiles: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'AdditionalManifestFiles': [\n" +
+        "          'file1',\n" +
+        "          'file2',\n" +
+        "        ],\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmanifesttool_inputandoutput_additionaloptions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCManifestTool': {\n" +
+        "        'AdditionalOptions': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
   };
+  gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile_a = gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile;
+  gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile_b = gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile;
+
   gypcs.pages = {
     general: {
       button_index: {
@@ -2547,7 +2609,7 @@ $(document).ready(function() {
       page_height: 509,
       descriptions: {
         type: {
-          description: gypcs.descriptions.general_type,
+          description: 'general_type',
           button_index: {
             ja: 1,
             en: 10,
@@ -2555,7 +2617,7 @@ $(document).ready(function() {
           button_height: 1,
         },
         characterset: {
-          description: gypcs.descriptions.general_characterset,
+          description: 'general_characterset',
           button_index: {
             ja: 4,
             en: 13,
@@ -2563,7 +2625,7 @@ $(document).ready(function() {
           button_height: 1,
         },
         toolset: {
-          description: gypcs.descriptions.general_toolset,
+          description: 'general_toolset',
           button_index: {
             ja: 15,
             en: 7,
@@ -2571,7 +2633,7 @@ $(document).ready(function() {
           button_height: 1,
         },
         targetname: {
-          description: gypcs.descriptions.general_targetname,
+          description: 'general_targetname',
           button_index: {
             ja: 11,
             en: 3,
@@ -2585,46 +2647,71 @@ $(document).ready(function() {
         default: 6,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         includedir: {
-          description: gypcs.descriptions.vccompilertools_general_includedir,
+          description: 'vccompilertools_general_includedir',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 1,
+            ja: 55,
           },
           button_height: 1,
         },
         additionalusingdirectories: {
-          description: gypcs.descriptions.vccompilertools_general_additionalusingdirectories,
+          description: 'vccompilertools_general_additionalusingdirectories',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 0,
+            ja: 54,
           },
           button_height: 1,
         },
         debuginformationformat: {
-          description: gypcs.descriptions.vccompilertools_general_debuginformationformat,
+          description: 'vccompilertools_general_debuginformationformat',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 12,
+            ja: 17,
           },
           button_height: 1,
         },
         suppressstartupbanner: {
-          description: gypcs.descriptions.vccompilertools_general_suppressstartupbanner,
+          description: 'vccompilertools_general_suppressstartupbanner',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 56,
+            ja: 52,
           },
           button_height: 1,
         },
         warninglevel: {
-          description: gypcs.descriptions.vccompilertools_general_warninglevel,
+          description: 'vccompilertools_general_warninglevel',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 64,
+            ja: 38,
           },
           button_height: 1,
         },
         warnaserror: {
-          description: gypcs.descriptions.vccompilertools_general_warnaserror,
+          description: 'vccompilertools_general_warnaserror',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 58,
+            ja: 39,
           },
           button_height: 1,
         },
@@ -2635,53 +2722,81 @@ $(document).ready(function() {
         default: 7,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         optimization: {
-          description: gypcs.descriptions.vccompilertools_optimization_optimization,
+          description: 'vccompilertools_optimization_optimization',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 42,
+            ja: 45,
           },
           button_height: 1,
         },
         inlinefunctionexpansion: {
-          description: gypcs.descriptions.vccompilertools_optimization_inlinefunctionexpansion,
+          description: 'vccompilertools_optimization_inlinefunctionexpansion',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 34,
+            ja: 12,
           },
           button_height: 1,
         },
         enableintrinsicfunctions: {
-          description: gypcs.descriptions.vccompilertools_optimization_enableintrinsicfunctions,
+          description: 'vccompilertools_optimization_enableintrinsicfunctions',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 21,
+            ja: 49,
           },
           button_height: 1,
         },
         favorsizeorspeed: {
-          description: gypcs.descriptions.vccompilertools_optimization_favorsizeorspeed,
+          description: 'vccompilertools_optimization_favorsizeorspeed',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 27,
+            ja: 50,
           },
           button_height: 1,
         },
         omitframepointers: {
-          description: gypcs.descriptions.vccompilertools_optimization_omitframepointers,
+          description: 'vccompilertools_optimization_omitframepointers',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 40,
+            ja: 26,
           },
           button_height: 1,
         },
         enablefibersafeoptimizations: {
-          description: gypcs.descriptions.vccompilertools_optimization_enablefibersafeoptimizations,
+          description: 'vccompilertools_optimization_enablefibersafeoptimizations',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            default: 18,
           },
           button_height: 1,
         },
         wholeprogramoptimization: {
-          description: gypcs.descriptions.vccompilertools_optimization_wholeprogramoptimization,
+          description: 'vccompilertools_optimization_wholeprogramoptimization',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 65,
+            ja: 28,
           },
           button_height: 1,
         },
@@ -2692,46 +2807,82 @@ $(document).ready(function() {
         default: 8,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         defines: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_defines,
+          description: 'vccompilertools_preprocessor_defines',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 48,
+            ja: 25,
           },
           button_height: 1,
         },
         ignorestandardincludepath: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_ignorestandardincludepath,
+          description: 'vccompilertools_preprocessor_ignorestandardincludepath',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 33,
+            ja: 61,
           },
           button_height: 1,
         },
         undefineallpreprocessordefinitions: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_undefineallpreprocessordefinitions,
+          description: 'vccompilertools_preprocessor_undefineallpreprocessordefinitions',
           button_index: {
             default: 2,
           },
+          alloptions_button_index: {
+            en: 60,
+            ja: 56,
+          },
           button_height: 1,
         },
-        generatepreprocessedfile: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile,
+        generatepreprocessedfile_a: {
+          description: 'vccompilertools_preprocessor_generatepreprocessedfile_a',
           button_index: {
             default: 4,
           },
-          button_height: 2,
+          alloptions_button_index: {
+            en: 46,
+            ja: 19,
+          },
+          button_height: 1,
+        },
+        generatepreprocessedfile_b: {
+          description: 'vccompilertools_preprocessor_generatepreprocessedfile_b',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 47,
+            ja: 43,
+          },
+          button_height: 1,
         },
         undefinepreprocessordefinitions: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_undefinepreprocessordefinitions,
+          description: 'vccompilertools_preprocessor_undefinepreprocessordefinitions',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 61,
+            ja: 46,
           },
           button_height: 1,
         },
         keepcomments: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_keepcomments,
+          description: 'vccompilertools_preprocessor_keepcomments',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 36,
+            ja: 14,
           },
           button_height: 1,
         },
@@ -2742,88 +2893,137 @@ $(document).ready(function() {
         default: 9,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         stringpooling: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_stringpooling,
+          description: 'vccompilertools_codegeneration_stringpooling',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 25,
+            ja: 65,
           },
           button_height: 1,
         },
         minimalrebuild: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_minimalrebuild,
+          description: 'vccompilertools_codegeneration_minimalrebuild',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 22,
+            ja: 44,
           },
           button_height: 1,
         },
         exceptionhandling: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_exceptionhandling,
+          description: 'vccompilertools_codegeneration_exceptionhandling',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 16,
+            ja: 1,
           },
           button_height: 1,
         },
         smallertypecheck: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_smallertypecheck,
+          description: 'vccompilertools_codegeneration_smallertypecheck',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 54,
+            ja: 48,
           },
           button_height: 1,
         },
         basicruntimechecks: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_basicruntimechecks,
+          description: 'vccompilertools_codegeneration_basicruntimechecks',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 5,
+            ja: 35,
           },
           button_height: 1,
         },
         runtimelibrary: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_runtimelibrary,
+          description: 'vccompilertools_codegeneration_runtimelibrary',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 50,
+            ja: 30,
           },
           button_height: 1,
         },
         structmemberalignment: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_structmemberalignment,
+          description: 'vccompilertools_codegeneration_structmemberalignment',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 55,
+            ja: 42,
           },
           button_height: 1,
         },
         buffersecuritycheck: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_buffersecuritycheck,
+          description: 'vccompilertools_codegeneration_buffersecuritycheck',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 52,
+            ja: 16,
           },
           button_height: 1,
         },
         enablefunctionlevellinking: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_enablefunctionlevellinking,
+          description: 'vccompilertools_codegeneration_enablefunctionlevellinking',
           button_index: {
             default: 8,
+          },
+          alloptions_button_index: {
+            en: 20,
+            ja: 34,
           },
           button_height: 1,
         },
         enableenhancedinstructionset: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_enableenhancedinstructionset,
+          description: 'vccompilertools_codegeneration_enableenhancedinstructionset',
           button_index: {
             default: 10,
+          },
+          alloptions_button_index: {
+            en: 17,
+            ja: 32,
           },
           button_height: 1,
         },
         floatingpointmodel: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_floatingpointmodel,
+          description: 'vccompilertools_codegeneration_floatingpointmodel',
           button_index: {
             default: 11,
+          },
+          alloptions_button_index: {
+            en: 28,
+            ja: 63,
           },
           button_height: 1,
         },
         floatingpointexceptions: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_floatingpointexceptions,
+          description: 'vccompilertools_codegeneration_floatingpointexceptions',
           button_index: {
             default: 12,
+          },
+          alloptions_button_index: {
+            en: 19,
+            ja: 62,
           },
           button_height: 1,
         },
@@ -2834,39 +3034,60 @@ $(document).ready(function() {
         default: 10,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         disablelanguageextensions: {
-          description: gypcs.descriptions.vccompilertools_language_disablelanguageextensions,
+          description: 'vccompilertools_language_disablelanguageextensions',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 13,
+            ja: 40,
           },
           button_height: 1,
         },
         treatwchartasbuiltintype: {
-          description: gypcs.descriptions.vccompilertools_language_treatwchartasbuiltintype,
+          description: 'vccompilertools_language_treatwchartasbuiltintype',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 59,
+            ja: 5,
           },
           button_height: 1,
         },
         forceconformanceinforloopscope: {
-          description: gypcs.descriptions.vccompilertools_language_forceconformanceinforloopscope,
+          description: 'vccompilertools_language_forceconformanceinforloopscope',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 29,
+            ja: 2,
           },
           button_height: 1,
         },
         runtimetypeinfo: {
-          description: gypcs.descriptions.vccompilertools_language_runtimetypeinfo,
+          description: 'vccompilertools_language_runtimetypeinfo',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 24,
+            ja: 31,
           },
           button_height: 1,
         },
         openmp: {
-          description: gypcs.descriptions.vccompilertools_language_openmp,
+          description: 'vccompilertools_language_openmp',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 41,
+            ja: 3,
           },
           button_height: 1,
         },
@@ -2877,25 +3098,38 @@ $(document).ready(function() {
         default: 11,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         useprecompiledheader: {
-          description: gypcs.descriptions.vccompilertools_precompiledheader_useprecompiledheader,
+          description: 'vccompilertools_precompiledheader_useprecompiledheader',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 43,
+            ja: 22,
           },
           button_height: 1,
         },
         precompiledheaderthrough: {
-          description: gypcs.descriptions.vccompilertools_precompiledheader_precompiledheaderthrough,
+          description: 'vccompilertools_precompiledheader_precompiledheaderthrough',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 44,
+            ja: 23,
           },
           button_height: 1,
         },
         precompiledheaderfile: {
-          description: gypcs.descriptions.vccompilertools_precompiledheader_precompiledheaderfile,
+          description: 'vccompilertools_precompiledheader_precompiledheaderfile',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 45,
+            ja: 24,
           },
           button_height: 1,
         },
@@ -2906,53 +3140,82 @@ $(document).ready(function() {
         default: 12,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         expandattributedsource: {
-          description: gypcs.descriptions.vccompilertools_output_expandattributedsource,
+          description: 'vccompilertools_output_expandattributedsource',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 26,
+            ja: 51,
           },
           button_height: 1,
         },
         assembleroutput: {
-          description: gypcs.descriptions.vccompilertools_output_assembleroutput,
+          description: 'vccompilertools_output_assembleroutput',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 4,
+            ja: 10,
           },
           button_height: 1,
         },
         assemblerlistinglocation: {
-          description: gypcs.descriptions.vccompilertools_output_assemblerlistinglocation,
+          description: 'vccompilertools_output_assemblerlistinglocation',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 3,
+            ja: 0,
           },
           button_height: 1,
         },
         objectfile: {
-          description: gypcs.descriptions.vccompilertools_output_objectfile,
+          description: 'vccompilertools_output_objectfile',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 38,
+            ja: 13,
           },
           button_height: 1,
         },
         programdatabasefilename: {
-          description: gypcs.descriptions.vccompilertools_output_programdatabasefilename,
+          description: 'vccompilertools_output_programdatabasefilename',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 49,
+            ja: 27,
           },
           button_height: 1,
         },
         generatexmldocumentationfiles: {
-          description: gypcs.descriptions.vccompilertools_output_generatexmldocumentationfiles,
+          description: 'vccompilertools_output_generatexmldocumentationfiles',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 32,
+            ja: 7,
           },
           button_height: 1,
         },
         xmldocumentationfilename: {
-          description: gypcs.descriptions.vccompilertools_output_xmldocumentationfilename,
+          description: 'vccompilertools_output_xmldocumentationfilename',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 66,
+            ja: 8,
           },
           button_height: 1,
         },
@@ -2963,18 +3226,27 @@ $(document).ready(function() {
         default: 13,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         browseinformation: {
-          description: gypcs.descriptions.vccompilertools_browserinformation_browseinformation,
+          description: 'vccompilertools_browserinformation_browseinformation',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 15,
+            ja: 21,
           },
           button_height: 1,
         },
         browseinformationfile: {
-          description: gypcs.descriptions.vccompilertools_browserinformation_browseinformationfile,
+          description: 'vccompilertools_browserinformation_browseinformationfile',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 6,
+            ja: 20,
           },
           button_height: 1,
         },
@@ -2985,67 +3257,104 @@ $(document).ready(function() {
         default: 14,
       },
       page_height: 509,
+      category: 'vccompilertools',
       descriptions: {
         disablespecificwarnings: {
-          description: gypcs.descriptions.vccompilertools_details_disablespecificwarnings,
+          description: 'vccompilertools_details_disablespecificwarnings',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 14,
+            ja: 47,
           },
           button_height: 1,
         },
         callingconversion: {
-          description: gypcs.descriptions.vccompilertools_details_callingconversion,
+          description: 'vccompilertools_details_callingconversion',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 7,
+            ja: 41,
           },
           button_height: 1,
         },
         compileas: {
-          description: gypcs.descriptions.vccompilertools_details_compileas,
+          description: 'vccompilertools_details_compileas',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 9,
+            ja: 15,
           },
           button_height: 1,
         },
         forcedincludefiles: {
-          description: gypcs.descriptions.vccompilertools_details_forcedincludefiles,
+          description: 'vccompilertools_details_forcedincludefiles',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 31,
+            ja: 59,
           },
           button_height: 1,
         },
         forcedusingfiles: {
-          description: gypcs.descriptions.vccompilertools_details_forcedusingfiles,
+          description: 'vccompilertools_details_forcedusingfiles',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 30,
+            ja: 60,
           },
           button_height: 1,
         },
         showincludes: {
-          description: gypcs.descriptions.vccompilertools_details_showincludes,
+          description: 'vccompilertools_details_showincludes',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 53,
+            ja: 11,
           },
           button_height: 1,
         },
         usefullpaths: {
-          description: gypcs.descriptions.vccompilertools_details_usefullpaths,
+          description: 'vccompilertools_details_usefullpaths',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 62,
+            ja: 33,
           },
           button_height: 1,
         },
         omitdefaultlibname: {
-          description: gypcs.descriptions.vccompilertools_details_omitdefaultlibname,
+          description: 'vccompilertools_details_omitdefaultlibname',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 39,
+            ja: 36,
           },
           button_height: 1,
         },
         errorreporting: {
-          description: gypcs.descriptions.vccompilertools_details_errorreporting,
+          description: 'vccompilertools_details_errorreporting',
           button_index: {
             default: 8,
+          },
+          alloptions_button_index: {
+            en: 35,
+            ja: 58,
           },
           button_height: 1,
         },
@@ -3053,465 +3362,10 @@ $(document).ready(function() {
     },
     vccompilertools_alloptions: {
       button_index: {
-        default: 15
+        default: 15,
       },
       page_height: 1420,
       descriptions: {
-        additionalusingdirectories: {
-          description: gypcs.descriptions.vccompilertools_general_additionalusingdirectories,
-          button_index: {
-            en: 0,
-            ja: 54,
-          },
-          button_height: 1,
-        },
-        includedir: {
-          description: gypcs.descriptions.vccompilertools_general_includedir,
-          button_index: {
-            en: 1,
-            ja: 55,
-          },
-          button_height: 1,
-        },
-        assembleroutput: {
-          description: gypcs.descriptions.vccompilertools_output_assembleroutput,
-          button_index: {
-            en: 4,
-            ja: 10,
-          },
-          button_height: 1,
-        },
-        basicruntimechecks: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_basicruntimechecks,
-          button_index: {
-            en: 5,
-            ja: 35,
-          },
-          button_height: 1,
-        },
-        browseinformationfile: {
-          description: gypcs.descriptions.vccompilertools_browserinformation_browseinformationfile,
-          button_index: {
-            en: 6,
-            ja: 20,
-          },
-          button_height: 1,
-        },
-        callingconversion: {
-          description: gypcs.descriptions.vccompilertools_details_callingconversion,
-          button_index: {
-            en: 7,
-            ja: 41,
-          },
-          button_height: 1,
-        },
-        compileas: {
-          description: gypcs.descriptions.vccompilertools_details_compileas,
-          button_index: {
-            en: 9,
-            ja: 15,
-          },
-          button_height: 1,
-        },
-        debuginformationformat: {
-          description: gypcs.descriptions.vccompilertools_general_debuginformationformat,
-          button_index: {
-            en: 12,
-            ja: 17,
-          },
-          button_height: 1,
-        },
-        disablelanguageextensions: {
-          description: gypcs.descriptions.vccompilertools_language_disablelanguageextensions,
-          button_index: {
-            en: 13,
-            ja: 40,
-          },
-          button_height: 1,
-        },
-        disablespecificwarnings: {
-          description: gypcs.descriptions.vccompilertools_details_disablespecificwarnings,
-          button_index: {
-            en: 14,
-            ja: 47,
-          },
-          button_height: 1,
-        },
-        browseinformation: {
-          description: gypcs.descriptions.vccompilertools_browserinformation_browseinformation,
-          button_index: {
-            en: 15,
-            ja: 21,
-          },
-          button_height: 1,
-        },
-        exceptionhandling: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_exceptionhandling,
-          button_index: {
-            en: 16,
-            ja: 1,
-          },
-          button_height: 1,
-        },
-        enableenhancedinstructionset: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_enableenhancedinstructionset,
-          button_index: {
-            en: 17,
-            ja: 32,
-          },
-          button_height: 1,
-        },
-        enablefibersafeoptimizations: {
-          description: gypcs.descriptions.vccompilertools_optimization_enablefibersafeoptimizations,
-          button_index: {
-            default: 18,
-          },
-          button_height: 1,
-        },
-        floatingpointexceptions: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_floatingpointexceptions,
-          button_index: {
-            en: 19,
-            ja: 62,
-          },
-          button_height: 1,
-        },
-        enablefunctionlevellinking: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_enablefunctionlevellinking,
-          button_index: {
-            en: 20,
-            ja: 34,
-          },
-          button_height: 1,
-        },
-        enableintrinsicfunctions: {
-          description: gypcs.descriptions.vccompilertools_optimization_enableintrinsicfunctions,
-          button_index: {
-            en: 21,
-            ja: 49,
-          },
-          button_height: 1,
-        },
-        minimalrebuild: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_minimalrebuild,
-          button_index: {
-            en: 22,
-            ja: 44,
-          },
-          button_height: 1,
-        },
-        runtimetypeinfo: {
-          description: gypcs.descriptions.vccompilertools_language_runtimetypeinfo,
-          button_index: {
-            en: 24,
-            ja: 31,
-          },
-          button_height: 1,
-        },
-        stringpooling: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_stringpooling,
-          button_index: {
-            en: 25,
-            ja: 65,
-          },
-          button_height: 1,
-        },
-        expandattributedsource: {
-          description: gypcs.descriptions.vccompilertools_output_expandattributedsource,
-          button_index: {
-            en: 26,
-            ja: 51,
-          },
-          button_height: 1,
-        },
-        favorsizeorspeed: {
-          description: gypcs.descriptions.vccompilertools_optimization_favorsizeorspeed,
-          button_index: {
-            en: 27,
-            ja: 50,
-          },
-          button_height: 1,
-        },
-        floatingpointmodel: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_floatingpointmodel,
-          button_index: {
-            en: 28,
-            ja: 63,
-          },
-          button_height: 1,
-        },
-        forceconformanceinforloopscope: {
-          description: gypcs.descriptions.vccompilertools_language_forceconformanceinforloopscope,
-          button_index: {
-            en: 29,
-            ja: 2,
-          },
-          button_height: 1,
-        },
-        forcedusingfiles: {
-          description: gypcs.descriptions.vccompilertools_details_forcedusingfiles,
-          button_index: {
-            en: 30,
-            ja: 60,
-          },
-          button_height: 1,
-        },
-        forcedincludefiles: {
-          description: gypcs.descriptions.vccompilertools_details_forcedincludefiles,
-          button_index: {
-            en: 31,
-            ja: 59,
-          },
-          button_height: 1,
-        },
-        generatexmldocumentationfiles: {
-          description: gypcs.descriptions.vccompilertools_output_generatexmldocumentationfiles,
-          button_index: {
-            en: 32,
-            ja: 7,
-          },
-          button_height: 1,
-        },
-        ignorestandardincludepath: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_ignorestandardincludepath,
-          button_index: {
-            en: 33,
-            ja: 61,
-          },
-          button_height: 1,
-        },
-        inlinefunctionexpansion: {
-          description: gypcs.descriptions.vccompilertools_optimization_inlinefunctionexpansion,
-          button_index: {
-            en: 34,
-            ja: 12,
-          },
-          button_height: 1,
-        },
-        errorreporting: {
-          description: gypcs.descriptions.vccompilertools_details_errorreporting,
-          button_index: {
-            en: 35,
-            ja: 58,
-          },
-          button_height: 1,
-        },
-        keepcomments: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_keepcomments,
-          button_index: {
-            en: 36,
-            ja: 14,
-          },
-          button_height: 1,
-        },
-        objectfile: {
-          description: gypcs.descriptions.vccompilertools_output_objectfile,
-          button_index: {
-            en: 38,
-            ja: 13,
-          },
-          button_height: 1,
-        },
-        omitdefaultlibname: {
-          description: gypcs.descriptions.vccompilertools_details_omitdefaultlibname,
-          button_index: {
-            en: 39,
-            ja: 36,
-          },
-          button_height: 1,
-        },
-        omitframepointers: {
-          description: gypcs.descriptions.vccompilertools_optimization_omitframepointers,
-          button_index: {
-            en: 40,
-            ja: 26,
-          },
-          button_height: 1,
-        },
-        openmp: {
-          description: gypcs.descriptions.vccompilertools_language_openmp,
-          button_index: {
-            en: 41,
-            ja: 3,
-          },
-          button_height: 1,
-        },
-        optimization: {
-          description: gypcs.descriptions.vccompilertools_optimization_optimization,
-          button_index: {
-            en: 42,
-            ja: 45,
-          },
-          button_height: 1,
-        },
-        useprecompiledheader: {
-          description: gypcs.descriptions.vccompilertools_precompiledheader_useprecompiledheader,
-          button_index: {
-            en: 43,
-            ja: 22,
-          },
-          button_height: 1,
-        },
-        precompiledheaderthrough: {
-          description: gypcs.descriptions.vccompilertools_precompiledheader_precompiledheaderthrough,
-          button_index: {
-            en: 44,
-            ja: 23,
-          },
-          button_height: 1,
-        },
-        precompiledheaderfile: {
-          description: gypcs.descriptions.vccompilertools_precompiledheader_precompiledheaderfile,
-          button_index: {
-            en: 45,
-            ja: 24,
-          },
-          button_height: 1,
-        },
-        generatepreprocessedfile_a: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile,
-          button_index: {
-            en: 46,
-            ja: 19,
-          },
-          button_height: 1,
-        },
-        generatepreprocessedfile_b: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile,
-          button_index: {
-            en: 47,
-            ja: 43,
-          },
-          button_height: 1,
-        },
-        defines: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_defines,
-          button_index: {
-            en: 48,
-            ja: 25,
-          },
-          button_height: 1,
-        },
-        programdatabasefilename: {
-          description: gypcs.descriptions.vccompilertools_output_programdatabasefilename,
-          button_index: {
-            en: 49,
-            ja: 27,
-          },
-          button_height: 1,
-        },
-        runtimelibrary: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_runtimelibrary,
-          button_index: {
-            en: 50,
-            ja: 30,
-          },
-          button_height: 1,
-        },
-        buffersecuritycheck: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_buffersecuritycheck,
-          button_index: {
-            en: 52,
-            ja: 16,
-          },
-          button_height: 1,
-        },
-        showincludes: {
-          description: gypcs.descriptions.vccompilertools_details_showincludes,
-          button_index: {
-            en: 53,
-            ja: 11,
-          },
-          button_height: 1,
-        },
-        smallertypecheck: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_smallertypecheck,
-          button_index: {
-            en: 54,
-            ja: 48,
-          },
-          button_height: 1,
-        },
-        structmemberalignment: {
-          description: gypcs.descriptions.vccompilertools_codegeneration_structmemberalignment,
-          button_index: {
-            en: 55,
-            ja: 42,
-          },
-          button_height: 1,
-        },
-        suppressstartupbanner: {
-          description: gypcs.descriptions.vccompilertools_general_suppressstartupbanner,
-          button_index: {
-            en: 56,
-            ja: 52,
-          },
-          button_height: 1,
-        },
-        warnaserror: {
-          description: gypcs.descriptions.vccompilertools_general_warnaserror,
-          button_index: {
-            en: 58,
-            ja: 39,
-          },
-          button_height: 1,
-        },
-        treatwchartasbuiltintype: {
-          description: gypcs.descriptions.vccompilertools_language_treatwchartasbuiltintype,
-          button_index: {
-            en: 59,
-            ja: 5,
-          },
-          button_height: 1,
-        },
-        undefineallpreprocessordefinitions: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_undefineallpreprocessordefinitions,
-          button_index: {
-            en: 60,
-            ja: 56,
-          },
-          button_height: 1,
-        },
-        undefinepreprocessordefinitions: {
-          description: gypcs.descriptions.vccompilertools_preprocessor_undefinepreprocessordefinitions,
-          button_index: {
-            en: 61,
-            ja: 46,
-          },
-          button_height: 1,
-        },
-        usefullpaths: {
-          description: gypcs.descriptions.vccompilertools_details_usefullpaths,
-          button_index: {
-            en: 62,
-            ja: 33,
-          },
-          button_height: 1,
-        },
-        warninglevel: {
-          description: gypcs.descriptions.vccompilertools_general_warninglevel,
-          button_index: {
-            en: 64,
-            ja: 38,
-          },
-          button_height: 1,
-        },
-        wholeprogramoptimization: {
-          description: gypcs.descriptions.vccompilertools_optimization_wholeprogramoptimization,
-          button_index: {
-            en: 65,
-            ja: 28,
-          },
-          button_height: 1,
-        },
-        xmldocumentationfilename: {
-          description: gypcs.descriptions.vccompilertools_output_xmldocumentationfilename,
-          button_index: {
-            en: 66,
-            ja: 8,
-          },
-          button_height: 1,
-        },
       },
     },
     vclinkertools_general: {
@@ -3519,81 +3373,137 @@ $(document).ready(function() {
         default: 18,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         outputfile: {
-          description: gypcs.descriptions.vclinkertools_general_outputfile,
+          description: 'vclinkertools_general_outputfile',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 57,
+            ja: 76,
           },
           button_height: 1,
         },
         showprogress: {
-          description: gypcs.descriptions.vclinkertools_general_showprogress,
+          description: 'vclinkertools_general_showprogress',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 68,
+            ja: 77,
           },
           button_height: 1,
         },
         version: {
-          description: gypcs.descriptions.vclinkertools_general_version,
+          description: 'vclinkertools_general_version',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 87,
+            ja: 44,
           },
           button_height: 1,
         },
         linkincremental: {
-          description: gypcs.descriptions.vclinkertools_general_linkincremental,
+          description: 'vclinkertools_general_linkincremental',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 20,
+            ja: 19,
           },
           button_height: 1,
         },
         suppressstartupbanner: {
-          description: gypcs.descriptions.vclinkertools_general_suppressstartupbanner,
+          description: 'vclinkertools_general_suppressstartupbanner',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 74,
+            ja: 84,
           },
           button_height: 1,
         },
         ignoreimportlibrary: {
-          description: gypcs.descriptions.vclinkertools_general_ignoreimportlibrary,
+          description: 'vclinkertools_general_ignoreimportlibrary',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 38,
+            ja: 21,
           },
           button_height: 1,
         },
         registeroutput: {
-          description: gypcs.descriptions.vclinkertools_general_registeroutput,
+          description: 'vclinkertools_general_registeroutput',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 65,
+            ja: 75,
           },
           button_height: 1,
         },
         peruserredirection: {
-          description: gypcs.descriptions.vclinkertools_general_peruserredirection,
+          description: 'vclinkertools_general_peruserredirection',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 58,
+            ja: 63,
           },
           button_height: 1,
         },
         additionallibrarydirectories: {
-          description: gypcs.descriptions.vclinkertools_general_additionallibrarydirectories,
+          description: 'vclinkertools_general_additionallibrarydirectories',
           button_index: {
             default: 8,
+          },
+          alloptions_button_index: {
+            en: 2,
+            ja: 87,
           },
           button_height: 1,
         },
         linklibrarydependencies: {
-          description: gypcs.descriptions.vclinkertools_general_linklibrarydependencies,
+          description: 'vclinkertools_general_linklibrarydependencies',
           button_index: {
             default: 9,
+          },
+          alloptions_button_index: {
+            en: 44,
+            ja: 64,
           },
           button_height: 1,
         },
         uselibrarydependencyinputs: {
-          description: gypcs.descriptions.vclinkertools_general_uselibrarydependencyinputs,
+          description: 'vclinkertools_general_uselibrarydependencyinputs',
           button_index: {
             default: 10,
+          },
+          alloptions_button_index: {
+            en: 86,
+            ja: 65,
+          },
+          button_height: 1,
+        },
+        treatlinkerwarningaserrors: {
+          description: 'vclinkertools_general_treatlinkerwarningaserrors',
+          button_index: {
+            default: 13,
+          },
+          alloptions_button_index: {
+            en: 79,
+            ja: 67,
           },
           button_height: 1,
         },
@@ -3604,67 +3514,104 @@ $(document).ready(function() {
         default: 19,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         additionaldependencies: {
-          description: gypcs.descriptions.vclinkertools_input_additionaldependencies,
+          description: 'vclinkertools_input_additionaldependencies',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 1,
+            ja: 88,
           },
           button_height: 1,
         },
         ignorealldefaultlibraries: {
-          description: gypcs.descriptions.vclinkertools_input_ignorealldefaultlibraries,
+          description: 'vclinkertools_input_ignorealldefaultlibraries',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 36,
+            ja: 32,
           },
           button_height: 1,
         },
         ignoredefaultlibrarynames: {
-          description: gypcs.descriptions.vclinkertools_input_ignoredefaultlibrarynames,
+          description: 'vclinkertools_input_ignoredefaultlibrarynames',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 39,
+            ja: 89,
           },
           button_height: 1,
         },
         moduledefinitionfile: {
-          description: gypcs.descriptions.vclinkertools_input_moduledefinitionfile,
+          description: 'vclinkertools_input_moduledefinitionfile',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 54,
+            ja: 61,
           },
           button_height: 1,
         },
         addmodulenamestoassembly: {
-          description: gypcs.descriptions.vclinkertools_input_addmodulenamestoassembly,
+          description: 'vclinkertools_input_addmodulenamestoassembly',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 0,
+            ja: 60,
           },
           button_height: 1,
         },
         embedmanagedresourcefile: {
-          description: gypcs.descriptions.vclinkertools_input_embedmanagedresourcefile,
+          description: 'vclinkertools_input_embedmanagedresourcefile',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 18,
+            ja: 59,
           },
           button_height: 1,
         },
         forcesymbolreferences: {
-          description: gypcs.descriptions.vclinkertools_input_forcesymbolreferences,
+          description: 'vclinkertools_input_forcesymbolreferences',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 27,
+            ja: 29,
           },
           button_height: 1,
         },
         delayloaddlls: {
-          description: gypcs.descriptions.vclinkertools_input_delayloaddlls,
+          description: 'vclinkertools_input_delayloaddlls',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 14,
+            ja: 5,
           },
           button_height: 1,
         },
         assemblylinkresource: {
-          description: gypcs.descriptions.vclinkertools_input_assemblylinkresource,
+          description: 'vclinkertools_input_assemblylinkresource',
           button_index: {
             default: 8,
+          },
+          alloptions_button_index: {
+            en: 6,
+            ja: 17,
           },
           button_height: 1,
         },
@@ -3675,53 +3622,82 @@ $(document).ready(function() {
         default: 20,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         generatemanifest: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_generatemanifest,
+          description: 'vclinkertools_manifestfile_generatemanifest',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 30,
+            ja: 58,
           },
           button_height: 1,
         },
         manifestfile: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_manifestfile,
+          description: 'vclinkertools_manifestfile_manifestfile',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 47,
+            ja: 57,
           },
           button_height: 1,
         },
         additionalmanifestdependencies: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_additionalmanifestdependencies,
+          description: 'vclinkertools_manifestfile_additionalmanifestdependencies',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 3,
+            ja: 86,
           },
           button_height: 1,
         },
         allowisolation: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_allowisolation,
+          description: 'vclinkertools_manifestfile_allowisolation',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 5,
+            ja: 90,
           },
           button_height: 1,
         },
         enableuac: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_enableuac,
+          description: 'vclinkertools_manifestfile_enableuac',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 22,
+            ja: 62,
           },
           button_height: 1,
         },
         uacexecutionlevel: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_uacexecutionlevel,
+          description: 'vclinkertools_manifestfile_uacexecutionlevel',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 84,
+            ja: 11,
           },
           button_height: 1,
         },
         uacuiaccess: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_uacuiaccess,
+          description: 'vclinkertools_manifestfile_uacuiaccess',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 83,
+            ja: 10,
           },
           button_height: 1,
         },
@@ -3732,53 +3708,82 @@ $(document).ready(function() {
         default: 21,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         generatedebuginformation: {
-          description: gypcs.descriptions.vclinkertools_debug_generatedebuginformation,
+          description: 'vclinkertools_debug_generatedebuginformation',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 29,
+            ja: 41,
           },
           button_height: 1,
         },
         programdatabasefile: {
-          description: gypcs.descriptions.vclinkertools_debug_programdatabasefile,
+          description: 'vclinkertools_debug_programdatabasefile',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 32,
+            ja: 49,
           },
           button_height: 1,
         },
         stripprivatesymbols: {
-          description: gypcs.descriptions.vclinkertools_debug_stripprivatesymbols,
+          description: 'vclinkertools_debug_stripprivatesymbols',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 72,
+            ja: 48,
           },
           button_height: 1,
         },
         generatemapfile: {
-          description: gypcs.descriptions.vclinkertools_debug_generatemapfile,
+          description: 'vclinkertools_debug_generatemapfile',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 31,
+            ja: 55,
           },
           button_height: 1,
         },
         mapfilename: {
-          description: gypcs.descriptions.vclinkertools_debug_mapfilename,
+          description: 'vclinkertools_debug_mapfilename',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 49,
+            ja: 56,
           },
           button_height: 1,
         },
         mapexports: {
-          description: gypcs.descriptions.vclinkertools_debug_mapexports,
+          description: 'vclinkertools_debug_mapexports',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 48,
+            ja: 54,
           },
           button_height: 1,
         },
         assemblydebug: {
-          description: gypcs.descriptions.vclinkertools_debug_assemblydebug,
+          description: 'vclinkertools_debug_assemblydebug',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 13,
+            ja: 40,
           },
           button_height: 1,
         },
@@ -3789,74 +3794,115 @@ $(document).ready(function() {
         default: 22,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         subsystem: {
-          description: gypcs.descriptions.vclinkertools_system_subsystem,
+          description: 'vclinkertools_system_subsystem',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 73,
+            ja: 28,
           },
           button_height: 1,
         },
         heapreservesize: {
-          description: gypcs.descriptions.vclinkertools_system_heapreservesize,
+          description: 'vclinkertools_system_heapreservesize',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 35,
+            ja: 46,
           },
           button_height: 1,
         },
         heapcommitsize: {
-          description: gypcs.descriptions.vclinkertools_system_heapcommitsize,
+          description: 'vclinkertools_system_heapcommitsize',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 34,
+            ja: 45,
           },
           button_height: 1,
         },
         stackreservesize: {
-          description: gypcs.descriptions.vclinkertools_system_stackreservesize,
+          description: 'vclinkertools_system_stackreservesize',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 71,
+            ja: 31,
           },
           button_height: 1,
         },
         stackcommitsize: {
-          description: gypcs.descriptions.vclinkertools_system_stackcommitsize,
+          description: 'vclinkertools_system_stackcommitsize',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 70,
+            ja: 30,
           },
           button_height: 1,
         },
         largeaddressaware: {
-          description: gypcs.descriptions.vclinkertools_system_largeaddressaware,
+          description: 'vclinkertools_system_largeaddressaware',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 21,
+            ja: 79,
           },
           button_height: 1,
         },
         terminalserveraware: {
-          description: gypcs.descriptions.vclinkertools_system_terminalserveraware,
+          description: 'vclinkertools_system_terminalserveraware',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 78,
+            ja: 36,
           },
           button_height: 1,
         },
         swaprunfromcd: {
-          description: gypcs.descriptions.vclinkertools_system_swaprunfromcd,
+          description: 'vclinkertools_system_swaprunfromcd',
           button_index: {
             default: 8,
+          },
+          alloptions_button_index: {
+            en: 75,
+            ja: 0,
           },
           button_height: 1,
         },
         swaprunfromnet: {
-          description: gypcs.descriptions.vclinkertools_system_swaprunfromnet,
+          description: 'vclinkertools_system_swaprunfromnet',
           button_index: {
             default: 9,
+          },
+          alloptions_button_index: {
+            en: 76,
+            ja: 43,
           },
           button_height: 1,
         },
         driver: {
-          description: gypcs.descriptions.vclinkertools_system_driver,
+          description: 'vclinkertools_system_driver',
           button_index: {
             default: 10,
+          },
+          alloptions_button_index: {
+            en: 17,
+            ja: 42,
           },
           button_height: 1,
         },
@@ -3867,39 +3913,60 @@ $(document).ready(function() {
         default: 23,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         optimizereferences: {
-          description: gypcs.descriptions.vclinkertools_optimization_optimizereferences,
+          description: 'vclinkertools_optimization_optimizereferences',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 64,
+            ja: 74,
           },
           button_height: 1,
         },
         enablecomdatfolding: {
-          description: gypcs.descriptions.vclinkertools_optimization_enablecomdatfolding,
+          description: 'vclinkertools_optimization_enablecomdatfolding',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 19,
+            ja: 4,
           },
           button_height: 1,
         },
         functionorder: {
-          description: gypcs.descriptions.vclinkertools_optimization_functionorder,
+          description: 'vclinkertools_optimization_functionorder',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 28,
+            ja: 71,
           },
           button_height: 1,
         },
         profileguideddatabase: {
-          description: gypcs.descriptions.vclinkertools_optimization_profileguideddatabase,
+          description: 'vclinkertools_optimization_profileguideddatabase',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 62,
+            ja: 25,
           },
           button_height: 1,
         },
         linktimecodegeneration: {
-          description: gypcs.descriptions.vclinkertools_optimization_linktimecodegeneration,
+          description: 'vclinkertools_optimization_linktimecodegeneration',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 46,
+            ja: 69,
           },
           button_height: 1,
         },
@@ -3910,39 +3977,60 @@ $(document).ready(function() {
         default: 24,
       },
       page_height: 509,
+      category: 'vclinkertools',
       descriptions: {
         midlcommandfile: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_midlcommandfile,
+          description: 'vclinkertools_embeddedidl_midlcommandfile',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 52,
+            ja: 7,
           },
           button_height: 1,
         },
         ignoreembeddedidl: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_ignoreembeddedidl,
+          description: 'vclinkertools_embeddedidl_ignoreembeddedidl',
           button_index: {
             default: 1,
+          },
+          alloptions_button_index: {
+            en: 37,
+            ja: 91,
           },
           button_height: 1,
         },
         mergedidlbasefilename: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_mergedidlbasefilename,
+          description: 'vclinkertools_embeddedidl_mergedidlbasefilename',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 51,
+            ja: 53,
           },
           button_height: 1,
         },
         typelibraryfile: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_typelibraryfile,
+          description: 'vclinkertools_embeddedidl_typelibraryfile',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 81,
+            ja: 37,
           },
           button_height: 1,
         },
         typelibraryresourceid: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_typelibraryresourceid,
+          description: 'vclinkertools_embeddedidl_typelibraryresourceid',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 82,
+            ja: 9,
           },
           button_height: 1,
         },
@@ -3953,123 +4041,192 @@ $(document).ready(function() {
         default: 26,
       },
       page_height: 526,
+      category: 'vclinkertools',
       descriptions: {
         entrypointsymbol: {
-          description: gypcs.descriptions.vclinkertools_details_entrypointsymbol,
+          description: 'vclinkertools_details_entrypointsymbol',
           button_index: {
             default: 0,
+          },
+          alloptions_button_index: {
+            en: 23,
+            ja: 23,
           },
           button_height: 1,
         },
         setchecksum: {
-          description: gypcs.descriptions.vclinkertools_details_setchecksum,
+          description: 'vclinkertools_details_setchecksum',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 67,
+            ja: 38,
           },
           button_height: 1,
         },
         baseaddress: {
-          description: gypcs.descriptions.vclinkertools_details_baseaddress,
+          description: 'vclinkertools_details_baseaddress',
           button_index: {
             default: 3,
+          },
+          alloptions_button_index: {
+            en: 7,
+            ja: 51,
           },
           button_height: 1,
         },
         randomizedbaseaddress: {
-          description: gypcs.descriptions.vclinkertools_details_randomizedbaseaddress,
+          description: 'vclinkertools_details_randomizedbaseaddress',
           button_index: {
             default: 4,
+          },
+          alloptions_button_index: {
+            en: 63,
+            ja: 66,
           },
           button_height: 1,
         },
         fixedbaseaddress: {
-          description: gypcs.descriptions.vclinkertools_details_fixedbaseaddress,
+          description: 'vclinkertools_details_fixedbaseaddress',
           button_index: {
             default: 5,
+          },
+          alloptions_button_index: {
+            en: 25,
+            ja: 72,
           },
           button_height: 1,
         },
         dataexecutionprevention: {
-          description: gypcs.descriptions.vclinkertools_details_dataexecutionprevention,
+          description: 'vclinkertools_details_dataexecutionprevention',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 12,
+            ja: 39,
           },
           button_height: 1,
         },
         turnoffassemblygeneration: {
-          description: gypcs.descriptions.vclinkertools_details_turnoffassemblygeneration,
+          description: 'vclinkertools_details_turnoffassemblygeneration',
           button_index: {
             default: 7,
+          },
+          alloptions_button_index: {
+            en: 80,
+            ja: 18,
           },
           button_height: 1,
         },
         supportunloadofdelayloadeddll: {
-          description: gypcs.descriptions.vclinkertools_details_supportunloadofdelayloadeddll,
+          description: 'vclinkertools_details_supportunloadofdelayloadeddll',
           button_index: {
             default: 8,
+          },
+          alloptions_button_index: {
+            en: 85,
+            ja: 82,
           },
           button_height: 1,
         },
         importlibrary: {
-          description: gypcs.descriptions.vclinkertools_details_importlibrary,
+          description: 'vclinkertools_details_importlibrary',
           button_index: {
             default: 10,
+          },
+          alloptions_button_index: {
+            en: 41,
+            ja: 20,
           },
           button_height: 1,
         },
         mergesections: {
-          description: gypcs.descriptions.vclinkertools_details_mergesections,
+          description: 'vclinkertools_details_mergesections',
           button_index: {
             default: 11,
+          },
+          alloptions_button_index: {
+            en: 50,
+            ja: 34,
           },
           button_height: 1,
         },
         targetmachine: {
-          description: gypcs.descriptions.vclinkertools_details_targetmachine,
+          description: 'vclinkertools_details_targetmachine',
           button_index: {
             default: 12,
+          },
+          alloptions_button_index: {
+            en: 77,
+            ja: 78,
           },
           button_height: 1,
         },
         profile: {
-          description: gypcs.descriptions.vclinkertools_details_profile,
+          description: 'vclinkertools_details_profile',
           button_index: {
             default: 13,
+          },
+          alloptions_button_index: {
+            en: 61,
+            ja: 50,
           },
           button_height: 1,
         },
         clrthreadattribute: {
-          description: gypcs.descriptions.vclinkertools_details_clrthreadattribute,
+          description: 'vclinkertools_details_clrthreadattribute',
           button_index: {
             default: 14,
+          },
+          alloptions_button_index: {
+            en: 9,
+            ja: 3,
           },
           button_height: 1,
         },
         clrimagetype: {
-          description: gypcs.descriptions.vclinkertools_details_clrimagetype,
+          description: 'vclinkertools_details_clrimagetype',
           button_index: {
             default: 15,
+          },
+          alloptions_button_index: {
+            en: 8,
+            ja: 2,
           },
           button_height: 1,
         },
         keycontainer: {
-          description: gypcs.descriptions.vclinkertools_details_keycontainer,
+          description: 'vclinkertools_details_keycontainer',
           button_index: {
             default: 17,
+          },
+          alloptions_button_index: {
+            en: 42,
+            ja: 26,
           },
           button_height: 1,
         },
         clrunmanagedcodecheck: {
-          description: gypcs.descriptions.vclinkertools_details_clrunmanagedcodecheck,
+          description: 'vclinkertools_details_clrunmanagedcodecheck',
           button_index: {
             default: 19,
+          },
+          alloptions_button_index: {
+            en: 10,
+            ja: 1,
           },
           button_height: 1,
         },
         errorreporting: {
-          description: gypcs.descriptions.vclinkertools_details_errorreporting,
+          description: 'vclinkertools_details_errorreporting',
           button_index: {
             default: 21,
+          },
+          alloptions_button_index: {
+            en: 24,
+            ja: 22,
           },
           button_height: 1,
         },
@@ -4077,638 +4234,230 @@ $(document).ready(function() {
     },
     vclinkertools_alloptions: {
       button_index: {
-        default: 27
+        default: 27,
       },
       page_height: 1945,
       descriptions: {
-        addmodulenamestoassembly: {
-          description: gypcs.descriptions.vclinkertools_input_addmodulenamestoassembly,
-          button_index: {
-            en: 0,
-            ja: 60,
-          },
-          button_height: 1,
-        },
-        additionaldependencies: {
-          description: gypcs.descriptions.vclinkertools_input_additionaldependencies,
-          button_index: {
-            en: 1,
-            ja: 88,
-          },
-          button_height: 1,
-        },
-        additionallibrarydirectories: {
-          description: gypcs.descriptions.vclinkertools_general_additionallibrarydirectories,
-          button_index: {
-            en: 2,
-            ja: 87,
-          },
-          button_height: 1,
-        },
-        additionalmanifestdependencies: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_additionalmanifestdependencies,
-          button_index: {
-            en: 3,
-            ja: 86,
-          },
-          button_height: 1,
-        },
-        allowisolation: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_allowisolation,
-          button_index: {
-            en: 5,
-            ja: 90,
-          },
-          button_height: 1,
-        },
-        assemblylinkresource: {
-          description: gypcs.descriptions.vclinkertools_input_assemblylinkresource,
-          button_index: {
-            en: 6,
-            ja: 17,
-          },
-          button_height: 1,
-        },
-        baseaddress: {
-          description: gypcs.descriptions.vclinkertools_details_baseaddress,
-          button_index: {
-            en: 7,
-            ja: 51,
-          },
-          button_height: 1,
-        },
-        clrimagetype: {
-          description: gypcs.descriptions.vclinkertools_details_clrimagetype,
-          button_index: {
-            en: 8,
-            ja: 2,
-          },
-          button_height: 1,
-        },
-        clrthreadattribute: {
-          description: gypcs.descriptions.vclinkertools_details_clrthreadattribute,
-          button_index: {
-            en: 9,
-            ja: 3,
-          },
-          button_height: 1,
-        },
-        clrunmanagedcodecheck: {
-          description: gypcs.descriptions.vclinkertools_details_clrunmanagedcodecheck,
-          button_index: {
-            en: 10,
-            ja: 1,
-          },
-          button_height: 1,
-        },
-        dataexecutionprevention: {
-          description: gypcs.descriptions.vclinkertools_details_dataexecutionprevention,
-          button_index: {
-            en: 12,
-            ja: 39,
-          },
-          button_height: 1,
-        },
-        assemblydebug: {
-          description: gypcs.descriptions.vclinkertools_debug_assemblydebug,
-          button_index: {
-            en: 13,
-            ja: 40,
-          },
-          button_height: 1,
-        },
-        delayloaddlls: {
-          description: gypcs.descriptions.vclinkertools_input_delayloaddlls,
-          button_index: {
-            en: 14,
-            ja: 5,
-          },
-          button_height: 1,
-        },
-        driver: {
-          description: gypcs.descriptions.vclinkertools_system_driver,
-          button_index: {
-            en: 17,
-            ja: 42,
-          },
-          button_height: 1,
-        },
-        embedmanagedresourcefile: {
-          description: gypcs.descriptions.vclinkertools_input_embedmanagedresourcefile,
-          button_index: {
-            en: 18,
-            ja: 59,
-          },
-          button_height: 1,
-        },
-        enablecomdatfolding: {
-          description: gypcs.descriptions.vclinkertools_optimization_enablecomdatfolding,
-          button_index: {
-            en: 19,
-            ja: 4,
-          },
-          button_height: 1,
-        },
-        linkincremental: {
-          description: gypcs.descriptions.vclinkertools_general_linkincremental,
-          button_index: {
-            en: 20,
-            ja: 19,
-          },
-          button_height: 1,
-        },
-        largeaddressaware: {
-          description: gypcs.descriptions.vclinkertools_system_largeaddressaware,
-          button_index: {
-            en: 21,
-            ja: 79,
-          },
-          button_height: 1,
-        },
-        enableuac: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_enableuac,
-          button_index: {
-            en: 22,
-            ja: 62,
-          },
-          button_height: 1,
-        },
-        entrypointsymbol: {
-          description: gypcs.descriptions.vclinkertools_details_entrypointsymbol,
-          button_index: {
-            en: 23,
-            ja: 23,
-          },
-          button_height: 1,
-        },
-        errorreporting: {
-          description: gypcs.descriptions.vclinkertools_details_errorreporting,
-          button_index: {
-            en: 24,
-            ja: 22,
-          },
-          button_height: 1,
-        },
-        fixedbaseaddress: {
-          description: gypcs.descriptions.vclinkertools_details_fixedbaseaddress,
-          button_index: {
-            en: 25,
-            ja: 72,
-          },
-          button_height: 1,
-        },
-        forcesymbolreferences: {
-          description: gypcs.descriptions.vclinkertools_input_forcesymbolreferences,
-          button_index: {
-            en: 27,
-            ja: 29,
-          },
-          button_height: 1,
-        },
-        functionorder: {
-          description: gypcs.descriptions.vclinkertools_optimization_functionorder,
-          button_index: {
-            en: 28,
-            ja: 71,
-          },
-          button_height: 1,
-        },
-        generatedebuginformation: {
-          description: gypcs.descriptions.vclinkertools_debug_generatedebuginformation,
-          button_index: {
-            en: 29,
-            ja: 41,
-          },
-          button_height: 1,
-        },
-        generatemanifest: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_generatemanifest,
-          button_index: {
-            en: 30,
-            ja: 58,
-          },
-          button_height: 1,
-        },
-        generatemapfile: {
-          description: gypcs.descriptions.vclinkertools_debug_generatemapfile,
-          button_index: {
-            en: 31,
-            ja: 55,
-          },
-          button_height: 1,
-        },
-        programdatabasefile: {
-          description: gypcs.descriptions.vclinkertools_debug_programdatabasefile,
-          button_index: {
-            en: 32,
-            ja: 49,
-          },
-          button_height: 1,
-        },
-        heapcommitsize: {
-          description: gypcs.descriptions.vclinkertools_system_heapcommitsize,
-          button_index: {
-            en: 34,
-            ja: 45,
-          },
-          button_height: 1,
-        },
-        heapreservesize: {
-          description: gypcs.descriptions.vclinkertools_system_heapreservesize,
-          button_index: {
-            en: 35,
-            ja: 46,
-          },
-          button_height: 1,
-        },
-        ignorealldefaultlibraries: {
-          description: gypcs.descriptions.vclinkertools_input_ignorealldefaultlibraries,
-          button_index: {
-            en: 36,
-            ja: 32,
-          },
-          button_height: 1,
-        },
-        ignoreembeddedidl: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_ignoreembeddedidl,
-          button_index: {
-            en: 37,
-            ja: 91,
-          },
-          button_height: 1,
-        },
-        ignoreimportlibrary: {
-          description: gypcs.descriptions.vclinkertools_general_ignoreimportlibrary,
-          button_index: {
-            en: 38,
-            ja: 21,
-          },
-          button_height: 1,
-        },
-        ignoredefaultlibrarynames: {
-          description: gypcs.descriptions.vclinkertools_input_ignoredefaultlibrarynames,
-          button_index: {
-            en: 39,
-            ja: 89,
-          },
-          button_height: 1,
-        },
-        importlibrary: {
-          description: gypcs.descriptions.vclinkertools_details_importlibrary,
-          button_index: {
-            en: 41,
-            ja: 20,
-          },
-          button_height: 1,
-        },
-        keycontainer: {
-          description: gypcs.descriptions.vclinkertools_details_keycontainer,
-          button_index: {
-            en: 42,
-            ja: 26,
-          },
-          button_height: 1,
-        },
-        linklibrarydependencies: {
-          description: gypcs.descriptions.vclinkertools_general_linklibrarydependencies,
-          button_index: {
-            en: 44,
-            ja: 64,
-          },
-          button_height: 1,
-        },
-        linktimecodegeneration: {
-          description: gypcs.descriptions.vclinkertools_optimization_linktimecodegeneration,
-          button_index: {
-            en: 46,
-            ja: 69,
-          },
-          button_height: 1,
-        },
-        manifestfile: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_manifestfile,
-          button_index: {
-            en: 47,
-            ja: 57,
-          },
-          button_height: 1,
-        },
-        mapexports: {
-          description: gypcs.descriptions.vclinkertools_debug_mapexports,
-          button_index: {
-            en: 48,
-            ja: 54,
-          },
-          button_height: 1,
-        },
-        mapfilename: {
-          description: gypcs.descriptions.vclinkertools_debug_mapfilename,
-          button_index: {
-            en: 49,
-            ja: 56,
-          },
-          button_height: 1,
-        },
-        mergesections: {
-          description: gypcs.descriptions.vclinkertools_details_mergesections,
-          button_index: {
-            en: 50,
-            ja: 34,
-          },
-          button_height: 1,
-        },
-        mergedidlbasefilename: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_mergedidlbasefilename,
-          button_index: {
-            en: 51,
-            ja: 53,
-          },
-          button_height: 1,
-        },
-        midlcommandfile: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_midlcommandfile,
-          button_index: {
-            en: 52,
-            ja: 7,
-          },
-          button_height: 1,
-        },
-        moduledefinitionfile: {
-          description: gypcs.descriptions.vclinkertools_input_moduledefinitionfile,
-          button_index: {
-            en: 54,
-            ja: 61,
-          },
-          button_height: 1,
-        },
-        outputfile: {
-          description: gypcs.descriptions.vclinkertools_general_outputfile,
-          button_index: {
-            en: 57,
-            ja: 76,
-          },
-          button_height: 1,
-        },
-        peruserredirection: {
-          description: gypcs.descriptions.vclinkertools_general_peruserredirection,
-          button_index: {
-            en: 58,
-            ja: 63,
-          },
-          button_height: 1,
-        },
-        profile: {
-          description: gypcs.descriptions.vclinkertools_details_profile,
-          button_index: {
-            en: 61,
-            ja: 50,
-          },
-          button_height: 1,
-        },
-        profileguideddatabase: {
-          description: gypcs.descriptions.vclinkertools_optimization_profileguideddatabase,
-          button_index: {
-            en: 62,
-            ja: 25,
-          },
-          button_height: 1,
-        },
-        randomizedbaseaddress: {
-          description: gypcs.descriptions.vclinkertools_details_randomizedbaseaddress,
-          button_index: {
-            en: 63,
-            ja: 66,
-          },
-          button_height: 1,
-        },
-        optimizereferences: {
-          description: gypcs.descriptions.vclinkertools_optimization_optimizereferences,
-          button_index: {
-            en: 64,
-            ja: 74,
-          },
-          button_height: 1,
-        },
-        registeroutput: {
-          description: gypcs.descriptions.vclinkertools_general_registeroutput,
-          button_index: {
-            en: 65,
-            ja: 75,
-          },
-          button_height: 1,
-        },
-        setchecksum: {
-          description: gypcs.descriptions.vclinkertools_details_setchecksum,
-          button_index: {
-            en: 67,
-            ja: 38,
-          },
-          button_height: 1,
-        },
-        showprogress: {
-          description: gypcs.descriptions.vclinkertools_general_showprogress,
-          button_index: {
-            en: 68,
-            ja: 77,
-          },
-          button_height: 1,
-        },
-        stackcommitsize: {
-          description: gypcs.descriptions.vclinkertools_system_stackcommitsize,
-          button_index: {
-            en: 70,
-            ja: 30,
-          },
-          button_height: 1,
-        },
-        stackreservesize: {
-          description: gypcs.descriptions.vclinkertools_system_stackreservesize,
-          button_index: {
-            en: 71,
-            ja: 31,
-          },
-          button_height: 1,
-        },
-        stripprivatesymbols: {
-          description: gypcs.descriptions.vclinkertools_debug_stripprivatesymbols,
-          button_index: {
-            en: 72,
-            ja: 48,
-          },
-          button_height: 1,
-        },
-        subsystem: {
-          description: gypcs.descriptions.vclinkertools_system_subsystem,
-          button_index: {
-            en: 73,
-            ja: 28,
-          },
-          button_height: 1,
-        },
-        suppressstartupbanner: {
-          description: gypcs.descriptions.vclinkertools_general_suppressstartupbanner,
-          button_index: {
-            en: 74,
-            ja: 84,
-          },
-          button_height: 1,
-        },
-        swaprunfromcd: {
-          description: gypcs.descriptions.vclinkertools_system_swaprunfromcd,
-          button_index: {
-            en: 75,
-            ja: 0,
-          },
-          button_height: 1,
-        },
-        swaprunfromnet: {
-          description: gypcs.descriptions.vclinkertools_system_swaprunfromnet,
-          button_index: {
-            en: 76,
-            ja: 43,
-          },
-          button_height: 1,
-        },
-        targetmachine: {
-          description: gypcs.descriptions.vclinkertools_details_targetmachine,
-          button_index: {
-            en: 77,
-            ja: 78,
-          },
-          button_height: 1,
-        },
-        terminalserveraware: {
-          description: gypcs.descriptions.vclinkertools_system_terminalserveraware,
-          button_index: {
-            en: 78,
-            ja: 36,
-          },
-          button_height: 1,
-        },
-        turnoffassemblygeneration: {
-          description: gypcs.descriptions.vclinkertools_details_turnoffassemblygeneration,
-          button_index: {
-            en: 80,
-            ja: 18,
-          },
-          button_height: 1,
-        },
-        typelibraryfile: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_typelibraryfile,
-          button_index: {
-            en: 81,
-            ja: 37,
-          },
-          button_height: 1,
-        },
-        typelibraryresourceid: {
-          description: gypcs.descriptions.vclinkertools_embeddedidl_typelibraryresourceid,
-          button_index: {
-            en: 82,
-            ja: 9,
-          },
-          button_height: 1,
-        },
-        uacuiaccess: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_uacuiaccess,
-          button_index: {
-            en: 83,
-            ja: 10,
-          },
-          button_height: 1,
-        },
-        uacexecutionlevel: {
-          description: gypcs.descriptions.vclinkertools_manifestfile_uacexecutionlevel,
-          button_index: {
-            en: 84,
-            ja: 11,
-          },
-          button_height: 1,
-        },
-        supportunloadofdelayloadeddll: {
-          description: gypcs.descriptions.vclinkertools_details_supportunloadofdelayloadeddll,
-          button_index: {
-            en: 85,
-            ja: 82,
-          },
-          button_height: 1,
-        },
-        uselibrarydependencyinputs: {
-          description: gypcs.descriptions.vclinkertools_general_uselibrarydependencyinputs,
-          button_index: {
-            en: 86,
-            ja: 65,
-          },
-          button_height: 1,
-        },
-        version: {
-          description: gypcs.descriptions.vclinkertools_general_version,
-          button_index: {
-            en: 87,
-            ja: 44,
-          },
-          button_height: 1,
-        },
       },
     },
     vclibrariantool_general: {
       button_index: {
         default: 30,
       },
-      page_height: 526,
+      page_height: 509,
+      category: 'vclibrariantool',
       descriptions: {
-        export_named_functions: {
-          description: gypcs.descriptions.vclibrariantool_general_export_named_functions,
+        outputfile: {
+          description: 'vclibrariantool_general_outputfile',
           button_index: {
-            default: 7,
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 13,
+            ja: 12,
           },
           button_height: 1,
         },
         additional_dependencies: {
-          description: gypcs.descriptions.vclibrariantool_general_additional_dependencies,
+          description: 'vclibrariantool_general_additional_dependencies',
           button_index: {
             default: 1,
           },
-          button_height: 1,
-        },
-        use_unicode_response_files: {
-          description: gypcs.descriptions.vclibrariantool_general_use_unicode_response_files,
-          button_index: {
-            default: 9,
-          },
-          button_height: 1,
-        },
-        suppress_startup_banner: {
-          description: gypcs.descriptions.vclibrariantool_general_suppress_startup_banner,
-          button_index: {
-            default: 3,
-          },
-          button_height: 1,
-        },
-        output_file: {
-          description: gypcs.descriptions.vclibrariantool_general_output_file,
-          button_index: {
-            default: 0,
+          alloptions_button_index: {
+            en: 0,
+            ja: 18,
           },
           button_height: 1,
         },
         additional_library_directories: {
-          description: gypcs.descriptions.vclibrariantool_general_additional_library_directories,
+          description: 'vclibrariantool_general_additional_library_directories',
           button_index: {
             default: 2,
+          },
+          alloptions_button_index: {
+            en: 1,
+            ja: 17,
+          },
+          button_height: 1,
+        },
+        suppressstartupbanner: {
+          description: 'vclibrariantool_general_suppressstartupbanner',
+          button_index: {
+            default: 3,
+          },
+          alloptions_button_index: {
+            en: 16,
+            ja: 15,
+          },
+          button_height: 1,
+        },
+        moduledefinitionfile: {
+          description: 'vclibrariantool_general_moduledefinitionfile',
+          button_index: {
+            default: 4,
+          },
+          alloptions_button_index: {
+            en: 11,
+            ja: 7,
+          },
+          button_height: 1,
+        },
+        ignorealldefaultlibraries: {
+          description: 'vclibrariantool_general_ignorealldefaultlibraries',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 6,
+            ja: 6,
           },
           button_height: 1,
         },
         ignore_specific_default_libraries: {
-          description: gypcs.descriptions.vclibrariantool_general_ignore_specific_default_libraries,
+          description: 'vclibrariantool_general_ignore_specific_default_libraries',
           button_index: {
             default: 6,
+          },
+          alloptions_button_index: {
+            en: 7,
+            ja: 19,
+          },
+          button_height: 1,
+        },
+        export_named_functions: {
+          description: 'vclibrariantool_general_export_named_functions',
+          button_index: {
+            default: 7,
+          },
+          alloptions_button_index: {
+            en: 4,
+            ja: 10,
+          },
+          button_height: 1,
+        },
+        forcesymbolreferences: {
+          description: 'vclibrariantool_general_forcesymbolreferences',
+          button_index: {
+            default: 8,
+          },
+          alloptions_button_index: {
+            en: 5,
+            ja: 5,
+          },
+          button_height: 1,
+        },
+        use_unicode_response_files: {
+          description: 'vclibrariantool_general_use_unicode_response_files',
+          button_index: {
+            default: 9,
+          },
+          alloptions_button_index: {
+            en: 19,
+            ja: 1,
+          },
+          button_height: 1,
+        },
+        linklibrarydependencies: {
+          description: 'vclibrariantool_general_linklibrarydependencies',
+          button_index: {
+            default: 10,
+          },
+          alloptions_button_index: {
+            en: 8,
+            ja: 8,
+          },
+          button_height: 1,
+        },
+        targetmachine: {
+          description: 'vclinkertools_details_targetmachine',
+          button_index: {
+            default: 13,
+          },
+          alloptions_button_index: {
+            en: 17,
+            ja: 14,
           },
           button_height: 1,
         },
       },
     },
+    vclibrariantool_alloptions: {
+      button_index: {
+        default: 31,
+      },
+      page_height: 509,
+      descriptions: {
+      },
+    },
+    vcmanifesttool_inputandoutput: {
+      button_index: {
+        default: 35,
+      },
+      page_height: 509,
+      category: 'vcmanifesttool',
+      descriptions: {
+        additionalmanifestfiles: {
+          description: 'vcmanifesttool_inputandoutput_additionalmanifestfiles',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 0,
+            ja: 17,
+          },
+          button_height: 1,
+        },
+      },
+    },
+    vcmanifesttool_alloptions: {
+      button_index: {
+        default: 38,
+      },
+      page_height: 509,
+      descriptions: {
+      },
+    },
   };
+
+  var append_alloptions_pages = function(gypcs) {
+    var categories = {};
+
+    for (var page_title in gypcs.pages) {
+      var page = gypcs.pages[page_title];
+      if (page.category) {
+        if (!(page.category in categories)) {
+          categories[page.category] = [];
+        }
+      }
+      for (var description_title in page.descriptions) {
+        if (page.category) {
+          categories[page.category].push({description_title: description_title, page_title: page_title});
+        }
+      }
+    }
+
+    for (var category in categories) {
+      var page_title = category + '_alloptions';
+
+      var page = gypcs.pages[page_title];
+
+      for (var i = 0; i < categories[category].length; i++) {
+        var item = categories[category][i];
+        var original_description_title = item.description_title;
+        var original_page_title = item.page_title;
+
+        var description = {};
+        var original_description = gypcs.pages[original_page_title].descriptions[original_description_title];
+
+        description.description = original_description.description;
+        description.button_index = original_description.alloptions_button_index;
+        description.button_height = original_description.button_height;
+
+        page.descriptions[original_description_title] = description;
+      }
+    }
+  };
+  append_alloptions_pages(gypcs);
 
   var page_button_height = 20;
   var page_button_offset = 0;
@@ -4754,13 +4503,16 @@ $(document).ready(function() {
 
     $('.description_select_button').removeClass('selected_button');
     if ($button_element) {
-      var page = $button_element.attr('data-gypcs-page')
+      var page = $button_element.attr('data-gypcs-page');
       var description = $button_element.attr('data-gypcs-description');
       var lang = gypcs.language;
-      var contents = gypcs.pages[page].descriptions[description].description['text'];
+      var description_element_name = gypcs.pages[page].descriptions[description].description;
+      var description = gypcs.descriptions[description_element_name];
+      var contents = description['text'];
+      var section_name = gypcs.pages[page]['section_name'];
       var translations = null;
-      if ('translations' in gypcs.pages[page].descriptions[description].description) {
-        translations = gypcs.pages[page].descriptions[description].description['translations'];
+      if ('translations' in description) {
+        translations = description['translations'];
       } else {
         translations = {};
       }
@@ -4770,6 +4522,9 @@ $(document).ready(function() {
       contents = [];
       for (var i = 0; i < original_contents.length; i++) {
         var content = original_contents[i];
+        if (section_name) {
+            content = content.replace('@section_name', section_name);
+        }
         for (var key in translations) {
           var value = translations[key][lang];
           while (true) {
@@ -4797,6 +4552,10 @@ $(document).ready(function() {
   };
 
   window.gypcs_load_contents = function(lang) {
+    var $language_label = $('#language_label');
+    $language_label.empty();
+    $language_label.append(lang);
+
     var $config_panel_background = $('.config_panel_background')
     $config_panel_background.attr('src', 'image/' + lang + '/config_panel.png');
 
@@ -4844,7 +4603,7 @@ $(document).ready(function() {
         var button_height = description.button_height;
         var top = (description_button_offset + button_index * description_button_distance) * config_panel_scale;
         var height = button_height * description_button_height * config_panel_scale;
-        var $desc_div = $('<div data-gypcs-page="' + name + '" data-gypcs-description="' + description_title + '" class="description_select_button" style="top: ' + top + 'px; height: ' + height + 'px"></div>');
+        var $desc_div = $('<div data-gypcs-page="' + name + '" data-gypcs-description="' + description_title + '" class="description_select_button" style="top: ' + top + 'px; height: ' + height + 'px"><!--' + button_index + '--></div>');
         $config_property.append($desc_div);
       }
 
@@ -4900,7 +4659,10 @@ $(document).ready(function() {
          'VCLinkerTool': {
              'AdditionalDependencies_excluded': 'file3',
              'AdditionalOptions': 'a string1',
+
+             // NG, ignored
              'DelaySign': 'true',
+
              'KeyFile': 'a_file_name',
              'OptimizeForWindows98': '1',
              'ResourceOnlyDLL': 'true',
@@ -4946,15 +4708,8 @@ $(document).ready(function() {
              'ShowProgress': 'true',
              'SuppressStartupBanner': 'true',
              'UndefinePreprocessorDefinitions': 'string1;string2'},
-         'VCLibrarianTool': {
-             'ForceSymbolReferences': 'a string1',
-             'IgnoreAllDefaultLibraries': 'true',
-             'LinkLibraryDependencies': 'true',
-             'ModuleDefinitionFile': 'a_file_name',
-         },
+
          'VCManifestTool': {
-             'AdditionalManifestFiles': 'file1;file2',
-             'AdditionalOptions': 'a string1',
              'AssemblyIdentity': 'a string1',
              'ComponentFileName': 'a_file_name',
              'DependencyInformationFile': 'a_file_name',
