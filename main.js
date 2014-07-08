@@ -2829,6 +2829,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         includedir: {
           description: 'vccompilertools_general_includedir',
@@ -2898,6 +2899,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         optimization: {
           description: 'vccompilertools_optimization_optimization',
@@ -2976,6 +2978,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         defines: {
           description: 'vccompilertools_preprocessor_defines',
@@ -3055,6 +3058,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         stringpooling: {
           description: 'vccompilertools_codegeneration_stringpooling',
@@ -3184,6 +3188,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         disablelanguageextensions: {
           description: 'vccompilertools_language_disablelanguageextensions',
@@ -3243,6 +3248,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         useprecompiledheader: {
           description: 'vccompilertools_precompiledheader_useprecompiledheader',
@@ -3282,6 +3288,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         expandattributedsource: {
           description: 'vccompilertools_output_expandattributedsource',
@@ -3361,6 +3368,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         browseinformation: {
           description: 'vccompilertools_browserinformation_browseinformation',
@@ -3390,6 +3398,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vccompilertools',
+      section_name: 'VCCLCompilerTool',
       descriptions: {
         disablespecificwarnings: {
           description: 'vccompilertools_details_disablespecificwarnings',
@@ -3488,6 +3497,7 @@ $(document).ready(function() {
         default: 15,
       },
       page_height: 1420,
+      section_name: 'VCCLCompilerTool',
       descriptions: {
       },
     },
@@ -3497,6 +3507,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         outputfile: {
           description: 'vclinkertool_general_outputfile',
@@ -3626,6 +3637,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         additionaldependencies: {
           description: 'vclinkertool_input_additionaldependencies',
@@ -3725,6 +3737,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         generatemanifest: {
           description: 'vclinkertool_manifestfile_generatemanifest',
@@ -3804,6 +3817,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         generatedebuginformation: {
           description: 'vclinkertool_debug_generatedebuginformation',
@@ -3883,6 +3897,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         subsystem: {
           description: 'vclinkertool_system_subsystem',
@@ -3992,6 +4007,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         optimizereferences: {
           description: 'vclinkertool_optimization_optimizereferences',
@@ -4051,6 +4067,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         midlcommandfile: {
           description: 'vclinkertool_embeddedidl_midlcommandfile',
@@ -4110,6 +4127,7 @@ $(document).ready(function() {
       },
       page_height: 526,
       category: 'vclinkertool',
+      section_name: 'VCLinkerTool',
       descriptions: {
         entrypointsymbol: {
           description: 'vclinkertool_details_entrypointsymbol',
@@ -4288,6 +4306,7 @@ $(document).ready(function() {
         default: 27,
       },
       page_height: 1945,
+      section_name: 'VCLinkerTool',
       descriptions: {
       },
     },
@@ -4297,6 +4316,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vclibrariantool',
+      section_name: 'VCLibrarianTool',
       descriptions: {
         outputfile: {
           description: 'vclibrariantool_general_outputfile',
@@ -4425,6 +4445,7 @@ $(document).ready(function() {
         default: 31,
       },
       page_height: 509,
+      section_name: 'VCLibrarianTool',
       descriptions: {
       },
     },
@@ -4434,6 +4455,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vcmanifesttool',
+      section_name: 'VCManifestTool',
       descriptions: {
         assemblyidentity: {
           description: 'vcmanifesttool_general_assemblyidentity',
@@ -4472,6 +4494,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vcmanifesttool',
+      section_name: 'VCManifestTool',
       descriptions: {
         additionalmanifestfiles: {
           description: 'vcmanifesttool_inputandoutput_additionalmanifestfiles',
@@ -4531,6 +4554,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vcmanifesttool',
+      section_name: 'VCManifestTool',
       descriptions: {
         additionalmanifestfiles: {
           description: 'vcmanifesttool_isolatedcom_componentfilename',
@@ -4580,6 +4604,7 @@ $(document).ready(function() {
       },
       page_height: 509,
       category: 'vcmanifesttool',
+      section_name: 'VCManifestTool',
       descriptions: {
         updatefilehashes: {
           description: 'vcmanifesttool_advanced_updatefilehashes',
@@ -4608,6 +4633,7 @@ $(document).ready(function() {
         default: 38,
       },
       page_height: 509,
+      section_name: 'VCManifestTool',
       descriptions: {
       },
     },
