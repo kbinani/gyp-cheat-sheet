@@ -2799,7 +2799,6 @@ $(document).ready(function() {
             ja: 1,
             en: 10,
           },
-          button_height: 1,
         },
         characterset: {
           description: 'general_characterset',
@@ -2807,7 +2806,6 @@ $(document).ready(function() {
             ja: 4,
             en: 13,
           },
-          button_height: 1,
         },
         toolset: {
           description: 'general_toolset',
@@ -2815,7 +2813,6 @@ $(document).ready(function() {
             ja: 15,
             en: 7,
           },
-          button_height: 1,
         },
         targetname: {
           description: 'general_targetname',
@@ -2823,7 +2820,6 @@ $(document).ready(function() {
             ja: 11,
             en: 3,
           },
-          button_height: 1,
         },
       },
     },
@@ -2843,7 +2839,6 @@ $(document).ready(function() {
             en: 1,
             ja: 55,
           },
-          button_height: 1,
         },
         additionalusingdirectories: {
           description: 'vccompilertools_general_additionalusingdirectories',
@@ -2854,7 +2849,6 @@ $(document).ready(function() {
             en: 0,
             ja: 54,
           },
-          button_height: 1,
         },
         debuginformationformat: {
           description: 'vccompilertools_general_debuginformationformat',
@@ -2865,7 +2859,6 @@ $(document).ready(function() {
             en: 12,
             ja: 17,
           },
-          button_height: 1,
         },
         suppressstartupbanner: {
           description: 'vccompilertools_general_suppressstartupbanner',
@@ -2876,7 +2869,6 @@ $(document).ready(function() {
             en: 56,
             ja: 52,
           },
-          button_height: 1,
         },
         warninglevel: {
           description: 'vccompilertools_general_warninglevel',
@@ -2887,7 +2879,6 @@ $(document).ready(function() {
             en: 64,
             ja: 38,
           },
-          button_height: 1,
         },
         warnaserror: {
           description: 'vccompilertools_general_warnaserror',
@@ -2898,7 +2889,6 @@ $(document).ready(function() {
             en: 58,
             ja: 39,
           },
-          button_height: 1,
         },
       },
     },
@@ -2918,7 +2908,6 @@ $(document).ready(function() {
             en: 42,
             ja: 45,
           },
-          button_height: 1,
         },
         inlinefunctionexpansion: {
           description: 'vccompilertools_optimization_inlinefunctionexpansion',
@@ -2929,7 +2918,6 @@ $(document).ready(function() {
             en: 34,
             ja: 12,
           },
-          button_height: 1,
         },
         enableintrinsicfunctions: {
           description: 'vccompilertools_optimization_enableintrinsicfunctions',
@@ -2940,7 +2928,6 @@ $(document).ready(function() {
             en: 21,
             ja: 49,
           },
-          button_height: 1,
         },
         favorsizeorspeed: {
           description: 'vccompilertools_optimization_favorsizeorspeed',
@@ -2951,7 +2938,6 @@ $(document).ready(function() {
             en: 27,
             ja: 50,
           },
-          button_height: 1,
         },
         omitframepointers: {
           description: 'vccompilertools_optimization_omitframepointers',
@@ -2962,7 +2948,6 @@ $(document).ready(function() {
             en: 40,
             ja: 26,
           },
-          button_height: 1,
         },
         enablefibersafeoptimizations: {
           description: 'vccompilertools_optimization_enablefibersafeoptimizations',
@@ -2972,7 +2957,6 @@ $(document).ready(function() {
           alloptions_button_index: {
             default: 18,
           },
-          button_height: 1,
         },
         wholeprogramoptimization: {
           description: 'vccompilertools_optimization_wholeprogramoptimization',
@@ -2983,7 +2967,6 @@ $(document).ready(function() {
             en: 65,
             ja: 28,
           },
-          button_height: 1,
         },
       },
     },
@@ -3003,7 +2986,6 @@ $(document).ready(function() {
             en: 48,
             ja: 25,
           },
-          button_height: 1,
         },
         ignorestandardincludepath: {
           description: 'vccompilertools_preprocessor_ignorestandardincludepath',
@@ -3014,7 +2996,6 @@ $(document).ready(function() {
             en: 33,
             ja: 61,
           },
-          button_height: 1,
         },
         undefineallpreprocessordefinitions: {
           description: 'vccompilertools_preprocessor_undefineallpreprocessordefinitions',
@@ -3025,7 +3006,6 @@ $(document).ready(function() {
             en: 60,
             ja: 56,
           },
-          button_height: 1,
         },
         generatepreprocessedfile_a: {
           description: 'vccompilertools_preprocessor_generatepreprocessedfile_a',
@@ -3036,7 +3016,6 @@ $(document).ready(function() {
             en: 46,
             ja: 19,
           },
-          button_height: 1,
         },
         generatepreprocessedfile_b: {
           description: 'vccompilertools_preprocessor_generatepreprocessedfile_b',
@@ -3047,7 +3026,6 @@ $(document).ready(function() {
             en: 47,
             ja: 43,
           },
-          button_height: 1,
         },
         undefinepreprocessordefinitions: {
           description: 'vccompilertools_preprocessor_undefinepreprocessordefinitions',
@@ -3058,7 +3036,6 @@ $(document).ready(function() {
             en: 61,
             ja: 46,
           },
-          button_height: 1,
         },
         keepcomments: {
           description: 'vccompilertools_preprocessor_keepcomments',
@@ -3069,7 +3046,6 @@ $(document).ready(function() {
             en: 36,
             ja: 14,
           },
-          button_height: 1,
         },
       },
     },
@@ -3089,7 +3065,6 @@ $(document).ready(function() {
             en: 25,
             ja: 65,
           },
-          button_height: 1,
         },
         minimalrebuild: {
           description: 'vccompilertools_codegeneration_minimalrebuild',
@@ -3100,7 +3075,6 @@ $(document).ready(function() {
             en: 22,
             ja: 44,
           },
-          button_height: 1,
         },
         exceptionhandling: {
           description: 'vccompilertools_codegeneration_exceptionhandling',
@@ -3111,7 +3085,6 @@ $(document).ready(function() {
             en: 16,
             ja: 1,
           },
-          button_height: 1,
         },
         smallertypecheck: {
           description: 'vccompilertools_codegeneration_smallertypecheck',
@@ -3122,7 +3095,6 @@ $(document).ready(function() {
             en: 54,
             ja: 48,
           },
-          button_height: 1,
         },
         basicruntimechecks: {
           description: 'vccompilertools_codegeneration_basicruntimechecks',
@@ -3133,7 +3105,6 @@ $(document).ready(function() {
             en: 5,
             ja: 35,
           },
-          button_height: 1,
         },
         runtimelibrary: {
           description: 'vccompilertools_codegeneration_runtimelibrary',
@@ -3144,7 +3115,6 @@ $(document).ready(function() {
             en: 50,
             ja: 30,
           },
-          button_height: 1,
         },
         structmemberalignment: {
           description: 'vccompilertools_codegeneration_structmemberalignment',
@@ -3155,7 +3125,6 @@ $(document).ready(function() {
             en: 55,
             ja: 42,
           },
-          button_height: 1,
         },
         buffersecuritycheck: {
           description: 'vccompilertools_codegeneration_buffersecuritycheck',
@@ -3166,7 +3135,6 @@ $(document).ready(function() {
             en: 52,
             ja: 16,
           },
-          button_height: 1,
         },
         enablefunctionlevellinking: {
           description: 'vccompilertools_codegeneration_enablefunctionlevellinking',
@@ -3177,7 +3145,6 @@ $(document).ready(function() {
             en: 20,
             ja: 34,
           },
-          button_height: 1,
         },
         enableenhancedinstructionset: {
           description: 'vccompilertools_codegeneration_enableenhancedinstructionset',
@@ -3188,7 +3155,6 @@ $(document).ready(function() {
             en: 17,
             ja: 32,
           },
-          button_height: 1,
         },
         floatingpointmodel: {
           description: 'vccompilertools_codegeneration_floatingpointmodel',
@@ -3199,7 +3165,6 @@ $(document).ready(function() {
             en: 28,
             ja: 63,
           },
-          button_height: 1,
         },
         floatingpointexceptions: {
           description: 'vccompilertools_codegeneration_floatingpointexceptions',
@@ -3210,7 +3175,6 @@ $(document).ready(function() {
             en: 19,
             ja: 62,
           },
-          button_height: 1,
         },
       },
     },
@@ -3230,7 +3194,6 @@ $(document).ready(function() {
             en: 13,
             ja: 40,
           },
-          button_height: 1,
         },
         treatwchartasbuiltintype: {
           description: 'vccompilertools_language_treatwchartasbuiltintype',
@@ -3241,7 +3204,6 @@ $(document).ready(function() {
             en: 59,
             ja: 5,
           },
-          button_height: 1,
         },
         forceconformanceinforloopscope: {
           description: 'vccompilertools_language_forceconformanceinforloopscope',
@@ -3252,7 +3214,6 @@ $(document).ready(function() {
             en: 29,
             ja: 2,
           },
-          button_height: 1,
         },
         runtimetypeinfo: {
           description: 'vccompilertools_language_runtimetypeinfo',
@@ -3263,7 +3224,6 @@ $(document).ready(function() {
             en: 24,
             ja: 31,
           },
-          button_height: 1,
         },
         openmp: {
           description: 'vccompilertools_language_openmp',
@@ -3274,7 +3234,6 @@ $(document).ready(function() {
             en: 41,
             ja: 3,
           },
-          button_height: 1,
         },
       },
     },
@@ -3294,7 +3253,6 @@ $(document).ready(function() {
             en: 43,
             ja: 22,
           },
-          button_height: 1,
         },
         precompiledheaderthrough: {
           description: 'vccompilertools_precompiledheader_precompiledheaderthrough',
@@ -3305,7 +3263,6 @@ $(document).ready(function() {
             en: 44,
             ja: 23,
           },
-          button_height: 1,
         },
         precompiledheaderfile: {
           description: 'vccompilertools_precompiledheader_precompiledheaderfile',
@@ -3316,7 +3273,6 @@ $(document).ready(function() {
             en: 45,
             ja: 24,
           },
-          button_height: 1,
         },
       },
     },
@@ -3336,7 +3292,6 @@ $(document).ready(function() {
             en: 26,
             ja: 51,
           },
-          button_height: 1,
         },
         assembleroutput: {
           description: 'vccompilertools_output_assembleroutput',
@@ -3347,7 +3302,6 @@ $(document).ready(function() {
             en: 4,
             ja: 10,
           },
-          button_height: 1,
         },
         assemblerlistinglocation: {
           description: 'vccompilertools_output_assemblerlistinglocation',
@@ -3358,7 +3312,6 @@ $(document).ready(function() {
             en: 3,
             ja: 0,
           },
-          button_height: 1,
         },
         objectfile: {
           description: 'vccompilertools_output_objectfile',
@@ -3369,7 +3322,6 @@ $(document).ready(function() {
             en: 38,
             ja: 13,
           },
-          button_height: 1,
         },
         programdatabasefilename: {
           description: 'vccompilertools_output_programdatabasefilename',
@@ -3380,7 +3332,6 @@ $(document).ready(function() {
             en: 49,
             ja: 27,
           },
-          button_height: 1,
         },
         generatexmldocumentationfiles: {
           description: 'vccompilertools_output_generatexmldocumentationfiles',
@@ -3391,7 +3342,6 @@ $(document).ready(function() {
             en: 32,
             ja: 7,
           },
-          button_height: 1,
         },
         xmldocumentationfilename: {
           description: 'vccompilertools_output_xmldocumentationfilename',
@@ -3402,7 +3352,6 @@ $(document).ready(function() {
             en: 66,
             ja: 8,
           },
-          button_height: 1,
         },
       },
     },
@@ -3422,7 +3371,6 @@ $(document).ready(function() {
             en: 15,
             ja: 21,
           },
-          button_height: 1,
         },
         browseinformationfile: {
           description: 'vccompilertools_browserinformation_browseinformationfile',
@@ -3433,7 +3381,6 @@ $(document).ready(function() {
             en: 6,
             ja: 20,
           },
-          button_height: 1,
         },
       },
     },
@@ -3453,7 +3400,6 @@ $(document).ready(function() {
             en: 14,
             ja: 47,
           },
-          button_height: 1,
         },
         callingconversion: {
           description: 'vccompilertools_details_callingconversion',
@@ -3464,7 +3410,6 @@ $(document).ready(function() {
             en: 7,
             ja: 41,
           },
-          button_height: 1,
         },
         compileas: {
           description: 'vccompilertools_details_compileas',
@@ -3475,7 +3420,6 @@ $(document).ready(function() {
             en: 9,
             ja: 15,
           },
-          button_height: 1,
         },
         forcedincludefiles: {
           description: 'vccompilertools_details_forcedincludefiles',
@@ -3486,7 +3430,6 @@ $(document).ready(function() {
             en: 31,
             ja: 59,
           },
-          button_height: 1,
         },
         forcedusingfiles: {
           description: 'vccompilertools_details_forcedusingfiles',
@@ -3497,7 +3440,6 @@ $(document).ready(function() {
             en: 30,
             ja: 60,
           },
-          button_height: 1,
         },
         showincludes: {
           description: 'vccompilertools_details_showincludes',
@@ -3508,7 +3450,6 @@ $(document).ready(function() {
             en: 53,
             ja: 11,
           },
-          button_height: 1,
         },
         usefullpaths: {
           description: 'vccompilertools_details_usefullpaths',
@@ -3519,7 +3460,6 @@ $(document).ready(function() {
             en: 62,
             ja: 33,
           },
-          button_height: 1,
         },
         omitdefaultlibname: {
           description: 'vccompilertools_details_omitdefaultlibname',
@@ -3530,7 +3470,6 @@ $(document).ready(function() {
             en: 39,
             ja: 36,
           },
-          button_height: 1,
         },
         errorreporting: {
           description: 'vccompilertools_details_errorreporting',
@@ -3541,7 +3480,6 @@ $(document).ready(function() {
             en: 35,
             ja: 58,
           },
-          button_height: 1,
         },
       },
     },
@@ -3569,7 +3507,6 @@ $(document).ready(function() {
             en: 57,
             ja: 76,
           },
-          button_height: 1,
         },
         showprogress: {
           description: 'vclinkertools_general_showprogress',
@@ -3580,7 +3517,6 @@ $(document).ready(function() {
             en: 68,
             ja: 77,
           },
-          button_height: 1,
         },
         version: {
           description: 'vclinkertools_general_version',
@@ -3591,7 +3527,6 @@ $(document).ready(function() {
             en: 87,
             ja: 44,
           },
-          button_height: 1,
         },
         linkincremental: {
           description: 'vclinkertools_general_linkincremental',
@@ -3602,7 +3537,6 @@ $(document).ready(function() {
             en: 20,
             ja: 19,
           },
-          button_height: 1,
         },
         suppressstartupbanner: {
           description: 'vclinkertools_general_suppressstartupbanner',
@@ -3613,7 +3547,6 @@ $(document).ready(function() {
             en: 74,
             ja: 84,
           },
-          button_height: 1,
         },
         ignoreimportlibrary: {
           description: 'vclinkertools_general_ignoreimportlibrary',
@@ -3624,7 +3557,6 @@ $(document).ready(function() {
             en: 38,
             ja: 21,
           },
-          button_height: 1,
         },
         registeroutput: {
           description: 'vclinkertools_general_registeroutput',
@@ -3635,7 +3567,6 @@ $(document).ready(function() {
             en: 65,
             ja: 75,
           },
-          button_height: 1,
         },
         peruserredirection: {
           description: 'vclinkertools_general_peruserredirection',
@@ -3646,7 +3577,6 @@ $(document).ready(function() {
             en: 58,
             ja: 63,
           },
-          button_height: 1,
         },
         additionallibrarydirectories: {
           description: 'vclinkertools_general_additionallibrarydirectories',
@@ -3657,7 +3587,6 @@ $(document).ready(function() {
             en: 2,
             ja: 87,
           },
-          button_height: 1,
         },
         linklibrarydependencies: {
           description: 'vclinkertools_general_linklibrarydependencies',
@@ -3668,7 +3597,6 @@ $(document).ready(function() {
             en: 44,
             ja: 64,
           },
-          button_height: 1,
         },
         uselibrarydependencyinputs: {
           description: 'vclinkertools_general_uselibrarydependencyinputs',
@@ -3679,7 +3607,6 @@ $(document).ready(function() {
             en: 86,
             ja: 65,
           },
-          button_height: 1,
         },
         treatlinkerwarningaserrors: {
           description: 'vclinkertools_general_treatlinkerwarningaserrors',
@@ -3690,7 +3617,6 @@ $(document).ready(function() {
             en: 79,
             ja: 67,
           },
-          button_height: 1,
         },
       },
     },
@@ -3710,7 +3636,6 @@ $(document).ready(function() {
             en: 1,
             ja: 88,
           },
-          button_height: 1,
         },
         ignorealldefaultlibraries: {
           description: 'vclinkertools_input_ignorealldefaultlibraries',
@@ -3721,7 +3646,6 @@ $(document).ready(function() {
             en: 36,
             ja: 32,
           },
-          button_height: 1,
         },
         ignoredefaultlibrarynames: {
           description: 'vclinkertools_input_ignoredefaultlibrarynames',
@@ -3732,7 +3656,6 @@ $(document).ready(function() {
             en: 39,
             ja: 89,
           },
-          button_height: 1,
         },
         moduledefinitionfile: {
           description: 'vclinkertools_input_moduledefinitionfile',
@@ -3743,7 +3666,6 @@ $(document).ready(function() {
             en: 54,
             ja: 61,
           },
-          button_height: 1,
         },
         addmodulenamestoassembly: {
           description: 'vclinkertools_input_addmodulenamestoassembly',
@@ -3754,7 +3676,6 @@ $(document).ready(function() {
             en: 0,
             ja: 60,
           },
-          button_height: 1,
         },
         embedmanagedresourcefile: {
           description: 'vclinkertools_input_embedmanagedresourcefile',
@@ -3765,7 +3686,6 @@ $(document).ready(function() {
             en: 18,
             ja: 59,
           },
-          button_height: 1,
         },
         forcesymbolreferences: {
           description: 'vclinkertools_input_forcesymbolreferences',
@@ -3776,7 +3696,6 @@ $(document).ready(function() {
             en: 27,
             ja: 29,
           },
-          button_height: 1,
         },
         delayloaddlls: {
           description: 'vclinkertools_input_delayloaddlls',
@@ -3787,7 +3706,6 @@ $(document).ready(function() {
             en: 14,
             ja: 5,
           },
-          button_height: 1,
         },
         assemblylinkresource: {
           description: 'vclinkertools_input_assemblylinkresource',
@@ -3798,7 +3716,6 @@ $(document).ready(function() {
             en: 6,
             ja: 17,
           },
-          button_height: 1,
         },
       },
     },
@@ -3818,7 +3735,6 @@ $(document).ready(function() {
             en: 30,
             ja: 58,
           },
-          button_height: 1,
         },
         manifestfile: {
           description: 'vclinkertools_manifestfile_manifestfile',
@@ -3829,7 +3745,6 @@ $(document).ready(function() {
             en: 47,
             ja: 57,
           },
-          button_height: 1,
         },
         additionalmanifestdependencies: {
           description: 'vclinkertools_manifestfile_additionalmanifestdependencies',
@@ -3840,7 +3755,6 @@ $(document).ready(function() {
             en: 3,
             ja: 86,
           },
-          button_height: 1,
         },
         allowisolation: {
           description: 'vclinkertools_manifestfile_allowisolation',
@@ -3851,7 +3765,6 @@ $(document).ready(function() {
             en: 5,
             ja: 90,
           },
-          button_height: 1,
         },
         enableuac: {
           description: 'vclinkertools_manifestfile_enableuac',
@@ -3862,7 +3775,6 @@ $(document).ready(function() {
             en: 22,
             ja: 62,
           },
-          button_height: 1,
         },
         uacexecutionlevel: {
           description: 'vclinkertools_manifestfile_uacexecutionlevel',
@@ -3873,7 +3785,6 @@ $(document).ready(function() {
             en: 84,
             ja: 11,
           },
-          button_height: 1,
         },
         uacuiaccess: {
           description: 'vclinkertools_manifestfile_uacuiaccess',
@@ -3884,7 +3795,6 @@ $(document).ready(function() {
             en: 83,
             ja: 10,
           },
-          button_height: 1,
         },
       },
     },
@@ -3904,7 +3814,6 @@ $(document).ready(function() {
             en: 29,
             ja: 41,
           },
-          button_height: 1,
         },
         programdatabasefile: {
           description: 'vclinkertools_debug_programdatabasefile',
@@ -3915,7 +3824,6 @@ $(document).ready(function() {
             en: 32,
             ja: 49,
           },
-          button_height: 1,
         },
         stripprivatesymbols: {
           description: 'vclinkertools_debug_stripprivatesymbols',
@@ -3926,7 +3834,6 @@ $(document).ready(function() {
             en: 72,
             ja: 48,
           },
-          button_height: 1,
         },
         generatemapfile: {
           description: 'vclinkertools_debug_generatemapfile',
@@ -3937,7 +3844,6 @@ $(document).ready(function() {
             en: 31,
             ja: 55,
           },
-          button_height: 1,
         },
         mapfilename: {
           description: 'vclinkertools_debug_mapfilename',
@@ -3948,7 +3854,6 @@ $(document).ready(function() {
             en: 49,
             ja: 56,
           },
-          button_height: 1,
         },
         mapexports: {
           description: 'vclinkertools_debug_mapexports',
@@ -3959,7 +3864,6 @@ $(document).ready(function() {
             en: 48,
             ja: 54,
           },
-          button_height: 1,
         },
         assemblydebug: {
           description: 'vclinkertools_debug_assemblydebug',
@@ -3970,7 +3874,6 @@ $(document).ready(function() {
             en: 13,
             ja: 40,
           },
-          button_height: 1,
         },
       },
     },
@@ -3990,7 +3893,6 @@ $(document).ready(function() {
             en: 73,
             ja: 28,
           },
-          button_height: 1,
         },
         heapreservesize: {
           description: 'vclinkertools_system_heapreservesize',
@@ -4001,7 +3903,6 @@ $(document).ready(function() {
             en: 35,
             ja: 46,
           },
-          button_height: 1,
         },
         heapcommitsize: {
           description: 'vclinkertools_system_heapcommitsize',
@@ -4012,7 +3913,6 @@ $(document).ready(function() {
             en: 34,
             ja: 45,
           },
-          button_height: 1,
         },
         stackreservesize: {
           description: 'vclinkertools_system_stackreservesize',
@@ -4023,7 +3923,6 @@ $(document).ready(function() {
             en: 71,
             ja: 31,
           },
-          button_height: 1,
         },
         stackcommitsize: {
           description: 'vclinkertools_system_stackcommitsize',
@@ -4034,7 +3933,6 @@ $(document).ready(function() {
             en: 70,
             ja: 30,
           },
-          button_height: 1,
         },
         largeaddressaware: {
           description: 'vclinkertools_system_largeaddressaware',
@@ -4045,7 +3943,6 @@ $(document).ready(function() {
             en: 21,
             ja: 79,
           },
-          button_height: 1,
         },
         terminalserveraware: {
           description: 'vclinkertools_system_terminalserveraware',
@@ -4056,7 +3953,6 @@ $(document).ready(function() {
             en: 78,
             ja: 36,
           },
-          button_height: 1,
         },
         swaprunfromcd: {
           description: 'vclinkertools_system_swaprunfromcd',
@@ -4067,7 +3963,6 @@ $(document).ready(function() {
             en: 75,
             ja: 0,
           },
-          button_height: 1,
         },
         swaprunfromnet: {
           description: 'vclinkertools_system_swaprunfromnet',
@@ -4078,7 +3973,6 @@ $(document).ready(function() {
             en: 76,
             ja: 43,
           },
-          button_height: 1,
         },
         driver: {
           description: 'vclinkertools_system_driver',
@@ -4089,7 +3983,6 @@ $(document).ready(function() {
             en: 17,
             ja: 42,
           },
-          button_height: 1,
         },
       },
     },
@@ -4109,7 +4002,6 @@ $(document).ready(function() {
             en: 64,
             ja: 74,
           },
-          button_height: 1,
         },
         enablecomdatfolding: {
           description: 'vclinkertools_optimization_enablecomdatfolding',
@@ -4120,7 +4012,6 @@ $(document).ready(function() {
             en: 19,
             ja: 4,
           },
-          button_height: 1,
         },
         functionorder: {
           description: 'vclinkertools_optimization_functionorder',
@@ -4131,7 +4022,6 @@ $(document).ready(function() {
             en: 28,
             ja: 71,
           },
-          button_height: 1,
         },
         profileguideddatabase: {
           description: 'vclinkertools_optimization_profileguideddatabase',
@@ -4142,7 +4032,6 @@ $(document).ready(function() {
             en: 62,
             ja: 25,
           },
-          button_height: 1,
         },
         linktimecodegeneration: {
           description: 'vclinkertools_optimization_linktimecodegeneration',
@@ -4153,7 +4042,6 @@ $(document).ready(function() {
             en: 46,
             ja: 69,
           },
-          button_height: 1,
         },
       },
     },
@@ -4173,7 +4061,6 @@ $(document).ready(function() {
             en: 52,
             ja: 7,
           },
-          button_height: 1,
         },
         ignoreembeddedidl: {
           description: 'vclinkertools_embeddedidl_ignoreembeddedidl',
@@ -4184,7 +4071,6 @@ $(document).ready(function() {
             en: 37,
             ja: 91,
           },
-          button_height: 1,
         },
         mergedidlbasefilename: {
           description: 'vclinkertools_embeddedidl_mergedidlbasefilename',
@@ -4195,7 +4081,6 @@ $(document).ready(function() {
             en: 51,
             ja: 53,
           },
-          button_height: 1,
         },
         typelibraryfile: {
           description: 'vclinkertools_embeddedidl_typelibraryfile',
@@ -4206,7 +4091,6 @@ $(document).ready(function() {
             en: 81,
             ja: 37,
           },
-          button_height: 1,
         },
         typelibraryresourceid: {
           description: 'vclinkertools_embeddedidl_typelibraryresourceid',
@@ -4217,7 +4101,6 @@ $(document).ready(function() {
             en: 82,
             ja: 9,
           },
-          button_height: 1,
         },
       },
     },
@@ -4237,7 +4120,6 @@ $(document).ready(function() {
             en: 23,
             ja: 23,
           },
-          button_height: 1,
         },
         setchecksum: {
           description: 'vclinkertools_details_setchecksum',
@@ -4248,7 +4130,6 @@ $(document).ready(function() {
             en: 67,
             ja: 38,
           },
-          button_height: 1,
         },
         baseaddress: {
           description: 'vclinkertools_details_baseaddress',
@@ -4259,7 +4140,6 @@ $(document).ready(function() {
             en: 7,
             ja: 51,
           },
-          button_height: 1,
         },
         randomizedbaseaddress: {
           description: 'vclinkertools_details_randomizedbaseaddress',
@@ -4270,7 +4150,6 @@ $(document).ready(function() {
             en: 63,
             ja: 66,
           },
-          button_height: 1,
         },
         fixedbaseaddress: {
           description: 'vclinkertools_details_fixedbaseaddress',
@@ -4281,7 +4160,6 @@ $(document).ready(function() {
             en: 25,
             ja: 72,
           },
-          button_height: 1,
         },
         dataexecutionprevention: {
           description: 'vclinkertools_details_dataexecutionprevention',
@@ -4292,7 +4170,6 @@ $(document).ready(function() {
             en: 12,
             ja: 39,
           },
-          button_height: 1,
         },
         turnoffassemblygeneration: {
           description: 'vclinkertools_details_turnoffassemblygeneration',
@@ -4303,7 +4180,6 @@ $(document).ready(function() {
             en: 80,
             ja: 18,
           },
-          button_height: 1,
         },
         supportunloadofdelayloadeddll: {
           description: 'vclinkertools_details_supportunloadofdelayloadeddll',
@@ -4314,7 +4190,6 @@ $(document).ready(function() {
             en: 85,
             ja: 82,
           },
-          button_height: 1,
         },
         importlibrary: {
           description: 'vclinkertools_details_importlibrary',
@@ -4325,7 +4200,6 @@ $(document).ready(function() {
             en: 41,
             ja: 20,
           },
-          button_height: 1,
         },
         mergesections: {
           description: 'vclinkertools_details_mergesections',
@@ -4336,7 +4210,6 @@ $(document).ready(function() {
             en: 50,
             ja: 34,
           },
-          button_height: 1,
         },
         targetmachine: {
           description: 'vclinkertools_details_targetmachine',
@@ -4347,7 +4220,6 @@ $(document).ready(function() {
             en: 77,
             ja: 78,
           },
-          button_height: 1,
         },
         profile: {
           description: 'vclinkertools_details_profile',
@@ -4358,7 +4230,6 @@ $(document).ready(function() {
             en: 61,
             ja: 50,
           },
-          button_height: 1,
         },
         clrthreadattribute: {
           description: 'vclinkertools_details_clrthreadattribute',
@@ -4369,7 +4240,6 @@ $(document).ready(function() {
             en: 9,
             ja: 3,
           },
-          button_height: 1,
         },
         clrimagetype: {
           description: 'vclinkertools_details_clrimagetype',
@@ -4380,7 +4250,6 @@ $(document).ready(function() {
             en: 8,
             ja: 2,
           },
-          button_height: 1,
         },
         keycontainer: {
           description: 'vclinkertools_details_keycontainer',
@@ -4391,7 +4260,6 @@ $(document).ready(function() {
             en: 42,
             ja: 26,
           },
-          button_height: 1,
         },
         clrunmanagedcodecheck: {
           description: 'vclinkertools_details_clrunmanagedcodecheck',
@@ -4402,7 +4270,6 @@ $(document).ready(function() {
             en: 10,
             ja: 1,
           },
-          button_height: 1,
         },
         errorreporting: {
           description: 'vclinkertools_details_errorreporting',
@@ -4413,7 +4280,6 @@ $(document).ready(function() {
             en: 24,
             ja: 22,
           },
-          button_height: 1,
         },
       },
     },
@@ -4441,7 +4307,6 @@ $(document).ready(function() {
             en: 13,
             ja: 12,
           },
-          button_height: 1,
         },
         additional_dependencies: {
           description: 'vclibrariantool_general_additional_dependencies',
@@ -4452,7 +4317,6 @@ $(document).ready(function() {
             en: 0,
             ja: 18,
           },
-          button_height: 1,
         },
         additional_library_directories: {
           description: 'vclibrariantool_general_additional_library_directories',
@@ -4463,7 +4327,6 @@ $(document).ready(function() {
             en: 1,
             ja: 17,
           },
-          button_height: 1,
         },
         suppressstartupbanner: {
           description: 'vclibrariantool_general_suppressstartupbanner',
@@ -4474,7 +4337,6 @@ $(document).ready(function() {
             en: 16,
             ja: 15,
           },
-          button_height: 1,
         },
         moduledefinitionfile: {
           description: 'vclibrariantool_general_moduledefinitionfile',
@@ -4485,7 +4347,6 @@ $(document).ready(function() {
             en: 11,
             ja: 7,
           },
-          button_height: 1,
         },
         ignorealldefaultlibraries: {
           description: 'vclibrariantool_general_ignorealldefaultlibraries',
@@ -4496,7 +4357,6 @@ $(document).ready(function() {
             en: 6,
             ja: 6,
           },
-          button_height: 1,
         },
         ignore_specific_default_libraries: {
           description: 'vclibrariantool_general_ignore_specific_default_libraries',
@@ -4507,7 +4367,6 @@ $(document).ready(function() {
             en: 7,
             ja: 19,
           },
-          button_height: 1,
         },
         export_named_functions: {
           description: 'vclibrariantool_general_export_named_functions',
@@ -4518,7 +4377,6 @@ $(document).ready(function() {
             en: 4,
             ja: 10,
           },
-          button_height: 1,
         },
         forcesymbolreferences: {
           description: 'vclibrariantool_general_forcesymbolreferences',
@@ -4529,7 +4387,6 @@ $(document).ready(function() {
             en: 5,
             ja: 5,
           },
-          button_height: 1,
         },
         use_unicode_response_files: {
           description: 'vclibrariantool_general_use_unicode_response_files',
@@ -4540,7 +4397,6 @@ $(document).ready(function() {
             en: 19,
             ja: 1,
           },
-          button_height: 1,
         },
         linklibrarydependencies: {
           description: 'vclibrariantool_general_linklibrarydependencies',
@@ -4551,7 +4407,6 @@ $(document).ready(function() {
             en: 8,
             ja: 8,
           },
-          button_height: 1,
         },
         targetmachine: {
           description: 'vclinkertools_details_targetmachine',
@@ -4562,7 +4417,6 @@ $(document).ready(function() {
             en: 17,
             ja: 14,
           },
-          button_height: 1,
         },
       },
     },
@@ -4589,7 +4443,6 @@ $(document).ready(function() {
           alloptions_button_index: {
             default: 2,
           },
-          button_height: 1,
         },
         suppressstartupbanner: {
           description: 'vcmanifesttool_general_suppressstartupbanner',
@@ -4600,7 +4453,6 @@ $(document).ready(function() {
             en: 15,
             ja: 15,
           },
-          button_height: 1,
         },
         verboseoutput: {
           description: 'vcmanifesttool_general_verboseoutput',
@@ -4611,7 +4463,6 @@ $(document).ready(function() {
             en: 19,
             ja: 13,
           },
-          button_height: 1,
         },
       },
     },
@@ -4631,7 +4482,6 @@ $(document).ready(function() {
             en: 0,
             ja: 17,
           },
-          button_height: 1,
         },
         generatecatalogfiles: {
           description: 'vcmanifesttool_inputandoutput_generatecatalogfiles',
@@ -4642,7 +4492,6 @@ $(document).ready(function() {
             en: 6,
             ja: 4,
           },
-          button_height: 1,
         },
         inputresourcemanifests: {
           description: 'vcmanifesttool_inputandoutput_inputresourcemanifests',
@@ -4653,7 +4502,6 @@ $(document).ready(function() {
             en: 9,
             ja: 18,
           },
-          button_height: 1,
         },
         manifestresourcefile: {
           description: 'vcmanifesttool_inputandoutput_manifestresourcefile',
@@ -4664,7 +4512,6 @@ $(document).ready(function() {
             en: 10,
             ja: 9,
           },
-          button_height: 1,
         },
         outputmanifestfile: {
           description: 'vcmanifesttool_inputandoutput_outputmanifestfile',
@@ -4675,7 +4522,6 @@ $(document).ready(function() {
             en: 11,
             ja: 12,
           },
-          button_height: 1,
         },
       },
     },
@@ -4695,7 +4541,6 @@ $(document).ready(function() {
             en: 3,
             ja: 5,
           },
-          button_height: 1,
         },
         registrarscriptfile: {
           description: 'vcmanifesttool_isolatedcom_registrarscriptfile',
@@ -4706,7 +4551,6 @@ $(document).ready(function() {
             en: 12,
             ja: 10,
           },
-          button_height: 1,
         },
         replacementsfile: {
           description: 'vcmanifesttool_isolatedcom_replacementsfile',
@@ -4717,7 +4561,6 @@ $(document).ready(function() {
             en: 13,
             ja: 14,
           },
-          button_height: 1,
         },
         typelibraryfile: {
           description: 'vcmanifesttool_isolatedcom_typelibraryfile',
@@ -4728,7 +4571,6 @@ $(document).ready(function() {
             en: 16,
             ja: 6,
           },
-          button_height: 1,
         },
       },
     },
@@ -4748,7 +4590,6 @@ $(document).ready(function() {
             en: 17,
             ja: 7,
           },
-          button_height: 1,
         },
         updatefilehashessearchpath: {
           description: 'vcmanifesttool_advanced_updatefilehashessearchpath',
@@ -4759,7 +4600,6 @@ $(document).ready(function() {
             en: 18,
             ja: 8,
           },
-          button_height: 1,
         },
       },
     },
@@ -4805,7 +4645,6 @@ $(document).ready(function() {
 
         description.description = original_description.description;
         description.button_index = original_description.alloptions_button_index;
-        description.button_height = original_description.button_height;
 
         page.descriptions[original_description_title] = description;
       }
@@ -4954,9 +4793,8 @@ $(document).ready(function() {
         } else {
           button_index = description.button_index[lang];
         }
-        var button_height = description.button_height;
         var top = (description_button_offset + button_index * description_button_distance) * config_panel_scale;
-        var height = button_height * description_button_height * config_panel_scale;
+        var height = description_button_height * config_panel_scale;
         var $desc_div = $('<div data-gypcs-page="' + name + '" data-gypcs-description="' + description_title + '" class="description_select_button" style="top: ' + top + 'px; height: ' + height + 'px"><!--' + button_index + '--></div>');
         $config_property.append($desc_div);
       }
