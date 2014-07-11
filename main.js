@@ -85,7 +85,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'include_dirs': [\n" +
-        "      'C:SomeLibraryinclude'\n" +
+        "      'C:\\SomeLibrary\\include'\n" +
         "    ]\n" +
         "  }\n" +
         "]\n",
@@ -4220,6 +4220,102 @@ $(document).ready(function() {
         "@54": { en: "Afrikaans (0x36)", ja: "アフリカーンス語 (0x36)" },
       },
     },
+    vcresourcecompilertool_general_ignorestandardincludepath: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCResourceCompilerTool': {\n" +
+        "        # @yes (/X)\n" +
+        "        'IgnoreStandardIncludePath': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'IgnoreStandardIncludePath': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcresourcecompilertool_general_preprocessordefinitions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCResourceCompilerTool': {\n" +
+        "        'PreprocessorDefinitions': [\n" +
+        "          'string1',\n" +
+        "          'string2',\n" +
+        "         ],\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcresourcecompilertool_general_resourceoutputfilename: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCResourceCompilerTool': {\n" +
+        "        'ResourceOutputFileName': '$(IntDir)%(Filename).res',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcresourcecompilertool_general_showprogress: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCResourceCompilerTool': {\n" +
+        "        # @yes (/v)\n" +
+        "        'ShowProgress': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'ShowProgress': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcresourcecompilertool_general_suppressstartupbanner: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCResourceCompilerTool': {\n" +
+        "        # @yes (/nologo)\n" +
+        "        'SuppressStartupBanner': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'SuppressStartupBanner': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcresourcecompilertool_general_undefinepreprocessordefinitions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCResourceCompilerTool': {\n" +
+        "        'UndefinePreprocessorDefinitions': [\n" +
+        "          'string1',\n" +
+        "          'string2',\n" +
+        "        ],\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
     vcresourcecompilertool_alloptions_additionaloptions: {
       text: [
         "'targets': [\n" +
@@ -6089,6 +6185,66 @@ $(document).ready(function() {
             ja: 1,
           },
         },
+        ignorestandardincludepath: {
+          description: 'vcresourcecompilertool_general_ignorestandardincludepath',
+          button_index: {
+            default: 4,
+          },
+          alloptions_button_index: {
+            en: 3,
+            ja: 9,
+          },
+        },
+        preprocessordefinitions: {
+          description: 'vcresourcecompilertool_general_preprocessordefinitions',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 5,
+            ja: 2,
+          },
+        },
+        resourceoutputfilename: {
+          description: 'vcresourcecompilertool_general_resourceoutputfilename',
+          button_index: {
+            default: 7,
+          },
+          alloptions_button_index: {
+            en: 6,
+            ja: 4,
+          }
+        },
+        showprogress: {
+          description: 'vcresourcecompilertool_general_showprogress',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 7,
+            ja: 5,
+          },
+        },
+        suppressstartupbanner: {
+          description: 'vcresourcecompilertool_general_suppressstartupbanner',
+          button_index: {
+            default: 6,
+          },
+          alloptions_button_index: {
+            en: 8,
+            ja: 6,
+          },
+        },
+        undefinepreprocessordefinitions: {
+          description: 'vcresourcecompilertool_general_undefinepreprocessordefinitions',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 9,
+            ja: 3,
+          },
+        },
       },
     },
     vcresourcecompilertool_alloptions: {
@@ -6387,15 +6543,7 @@ $(document).ready(function() {
              'WarnAsError': 'true',
              'WarningLevel': '1'},
          'VCResourceCompilerTool': {
-             'AdditionalOptions': 'a string1',
-             'AdditionalIncludeDirectories': 'folder1;folder2',
-             'Culture': '1003',
-             'IgnoreStandardIncludePath': 'true',
-             'PreprocessorDefinitions': 'string1;string2',
-             'ResourceOutputFileName': 'a string1',
-             'ShowProgress': 'true',
-             'SuppressStartupBanner': 'true',
-             'UndefinePreprocessorDefinitions': 'string1;string2'},
+         }
 
          'VCManifestTool': {
              // 反映されない
