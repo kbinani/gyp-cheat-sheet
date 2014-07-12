@@ -1190,7 +1190,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        'OutputFile': '$(OutDir)$(TargetName)$(TargetExt)',\n" +
         "      },\n" +
         "    }\n" +
@@ -1258,7 +1258,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @yes (/NOLOGO)\n" +
         "        'SuppressStartupBanner': 'true',\n" +
         "\n" +
@@ -1341,7 +1341,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @yes\n" +
         "        'LinkLibraryDependencies': 'true',\n" +
         "\n" +
@@ -1391,7 +1391,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @yes (/NODEFAULTLIB)\n" +
         "        'IgnoreAllDefaultLibraries': 'true',\n" +
         "\n" +
@@ -1424,7 +1424,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        'ModuleDefinitionFile': 'a_file_name.def',\n" +
         "      },\n" +
         "    }\n" +
@@ -1469,7 +1469,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        'ForceSymbolReferences': [\n" +
         "          'file1',\n" +
         "          'file2',\n" +
@@ -1745,7 +1745,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @1\n" +
         "        'SubSystem': '0',\n" +
         "\n" +
@@ -2257,7 +2257,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @1\n" +
         "        'TargetMachine': '0',\n" +
         "\n" +
@@ -2408,7 +2408,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @1 (/ERRORREPORT:NONE)\n" +
         "        'ErrorReporting': '0',\n" +
         "\n" +
@@ -2433,7 +2433,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        'AdditionalOptions': 'option1 option2',\n" +
         "      },\n" +
         "    },\n" +
@@ -2446,7 +2446,7 @@ $(document).ready(function() {
         "'targets': [\n" +
         "  {\n" +
         "    'msvs_settings': {\n" +
-        "      '@section_name': {\n" +
+        "      '@category': {\n" +
         "        # @yes (/WX)\n" +
         "        'TreatLinkerWarningAsErrors': 'true',\n" +
         "\n" +
@@ -2828,8 +2828,7 @@ $(document).ready(function() {
         default: 6,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         includedir: {
           description: 'vcclcompilertool_general_includedir',
@@ -2898,8 +2897,7 @@ $(document).ready(function() {
         default: 7,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         optimization: {
           description: 'vcclcompilertool_optimization_optimization',
@@ -2977,8 +2975,7 @@ $(document).ready(function() {
         default: 8,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         defines: {
           description: 'vcclcompilertool_preprocessor_defines',
@@ -3057,8 +3054,7 @@ $(document).ready(function() {
         default: 9,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         stringpooling: {
           description: 'vcclcompilertool_codegeneration_stringpooling',
@@ -3187,8 +3183,7 @@ $(document).ready(function() {
         default: 10,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         disablelanguageextensions: {
           description: 'vcclcompilertool_language_disablelanguageextensions',
@@ -3247,8 +3242,7 @@ $(document).ready(function() {
         default: 11,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         useprecompiledheader: {
           description: 'vcclcompilertool_precompiledheader_useprecompiledheader',
@@ -3287,8 +3281,7 @@ $(document).ready(function() {
         default: 12,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         expandattributedsource: {
           description: 'vcclcompilertool_output_expandattributedsource',
@@ -3367,8 +3360,7 @@ $(document).ready(function() {
         default: 13,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         browseinformation: {
           description: 'vcclcompilertool_browserinformation_browseinformation',
@@ -3397,8 +3389,7 @@ $(document).ready(function() {
         default: 14,
       },
       page_height: 509,
-      category: 'vcclcompilertool',
-      section_name: 'VCCLCompilerTool',
+      category: 'VCCLCompilerTool',
       descriptions: {
         disablespecificwarnings: {
           description: 'vcclcompilertool_advanced_disablespecificwarnings',
@@ -3497,7 +3488,6 @@ $(document).ready(function() {
         default: 15,
       },
       page_height: 1420,
-      section_name: 'VCCLCompilerTool',
       descriptions: {
       },
     },
@@ -3506,8 +3496,7 @@ $(document).ready(function() {
         default: 18,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         outputfile: {
           description: 'vclinkertool_general_outputfile',
@@ -3636,8 +3625,7 @@ $(document).ready(function() {
         default: 19,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         additionaldependencies: {
           description: 'vclinkertool_input_additionaldependencies',
@@ -3736,8 +3724,7 @@ $(document).ready(function() {
         default: 20,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         generatemanifest: {
           description: 'vclinkertool_manifestfile_generatemanifest',
@@ -3816,8 +3803,7 @@ $(document).ready(function() {
         default: 21,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         generatedebuginformation: {
           description: 'vclinkertool_debug_generatedebuginformation',
@@ -3896,8 +3882,7 @@ $(document).ready(function() {
         default: 22,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         subsystem: {
           description: 'vclinkertool_system_subsystem',
@@ -4006,8 +3991,7 @@ $(document).ready(function() {
         default: 23,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         optimizereferences: {
           description: 'vclinkertool_optimization_optimizereferences',
@@ -4066,8 +4050,7 @@ $(document).ready(function() {
         default: 24,
       },
       page_height: 509,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         midlcommandfile: {
           description: 'vclinkertool_embeddedidl_midlcommandfile',
@@ -4126,8 +4109,7 @@ $(document).ready(function() {
         default: 26,
       },
       page_height: 526,
-      category: 'vclinkertool',
-      section_name: 'VCLinkerTool',
+      category: 'VCLinkerTool',
       descriptions: {
         entrypointsymbol: {
           description: 'vclinkertool_advanced_entrypointsymbol',
@@ -4306,7 +4288,6 @@ $(document).ready(function() {
         default: 27,
       },
       page_height: 1945,
-      section_name: 'VCLinkerTool',
       descriptions: {
       },
     },
@@ -4315,8 +4296,7 @@ $(document).ready(function() {
         default: 30,
       },
       page_height: 509,
-      category: 'vclibrariantool',
-      section_name: 'VCLibrarianTool',
+      category: 'VCLibrarianTool',
       descriptions: {
         outputfile: {
           description: 'vclibrariantool_general_outputfile',
@@ -4445,7 +4425,6 @@ $(document).ready(function() {
         default: 31,
       },
       page_height: 509,
-      section_name: 'VCLibrarianTool',
       descriptions: {
       },
     },
@@ -4454,8 +4433,7 @@ $(document).ready(function() {
         default: 34,
       },
       page_height: 509,
-      category: 'vcmanifesttool',
-      section_name: 'VCManifestTool',
+      category: 'VCManifestTool',
       descriptions: {
         assemblyidentity: {
           description: 'vcmanifesttool_general_assemblyidentity',
@@ -4493,8 +4471,7 @@ $(document).ready(function() {
         default: 35,
       },
       page_height: 509,
-      category: 'vcmanifesttool',
-      section_name: 'VCManifestTool',
+      category: 'VCManifestTool',
       descriptions: {
         additionalmanifestfiles: {
           description: 'vcmanifesttool_inputandoutput_additionalmanifestfiles',
@@ -4553,8 +4530,7 @@ $(document).ready(function() {
         default: 36,
       },
       page_height: 509,
-      category: 'vcmanifesttool',
-      section_name: 'VCManifestTool',
+      category: 'VCManifestTool',
       descriptions: {
         additionalmanifestfiles: {
           description: 'vcmanifesttool_isolatedcom_componentfilename',
@@ -4603,8 +4579,7 @@ $(document).ready(function() {
         default: 37,
       },
       page_height: 509,
-      category: 'vcmanifesttool',
-      section_name: 'VCManifestTool',
+      category: 'VCManifestTool',
       descriptions: {
         updatefilehashes: {
           description: 'vcmanifesttool_advanced_updatefilehashes',
@@ -4633,7 +4608,6 @@ $(document).ready(function() {
         default: 38,
       },
       page_height: 509,
-      section_name: 'VCManifestTool',
       descriptions: {
       },
     },
@@ -4657,9 +4631,10 @@ $(document).ready(function() {
     }
 
     for (var category in categories) {
-      var page_title = category + '_alloptions';
+      var page_title = category.toLowerCase() + '_alloptions';
 
       var page = gypcs.pages[page_title];
+      page.category = category;
 
       for (var i = 0; i < categories[category].length; i++) {
         var item = categories[category][i];
@@ -4727,8 +4702,8 @@ $(document).ready(function() {
       var lang = gypcs.language;
       var description_element_name = gypcs.pages[page].descriptions[description].description;
       var description = gypcs.descriptions[description_element_name];
-      var contents = description['text'];
-      var section_name = gypcs.pages[page]['section_name'];
+      var contents = description.text;
+      var category = gypcs.pages[page].category;
       var translations = null;
       if ('translations' in description) {
         translations = description['translations'];
@@ -4741,8 +4716,8 @@ $(document).ready(function() {
       contents = [];
       for (var i = 0; i < original_contents.length; i++) {
         var content = original_contents[i];
-        if (section_name) {
-            content = content.replace('@section_name', section_name);
+        if (category) {
+            content = content.replace('@category', category);
         }
         for (var key in translations) {
           var value = translations[key][lang];
