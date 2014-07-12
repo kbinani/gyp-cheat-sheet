@@ -4329,6 +4329,501 @@ $(document).ready(function() {
         "]\n",
       ],
     },
+    vcmidltool_general_additionalincludedirectories: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'AdditionalIncludeDirectories': [\n" +
+        "          'folder1',\n" +
+        "          'folder2',\n" +
+        "        ],\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_defaultchartype: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # Unsigned (/char unsigned)\n" +
+        "        'DefaultCharType': '0',\n" +
+        "\n" +
+        "        # Signed (/char signed)\n" +
+        "        'DefaultCharType': '1',\n" +
+        "\n" +
+        "        # Ascii (/char ascii7)\n" +
+        "        'DefaultCharType': '2',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_generatestublessproxies: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/Oicf)\n" +
+        "        'GenerateStublessProxies': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'GenerateStublessProxies': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_ignorestandardincludepath: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/no_def_idir)\n" +
+        "        'IgnoreStandardIncludePath': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'IgnoreStandardIncludePath': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_mktyplibcompatible: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/mktyplib203)\n" +
+        "        'MkTypLibCompatible': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'MkTypLibCompatible': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_preprocessordefinitions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'PreprocessorDefinitions': [\n" +
+        "          'string1',\n" +
+        "          'string2',\n" +
+        "         ],\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_suppressstartupbanner: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/nologo)\n" +
+        "        'SuppressStartupBanner': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'SuppressStartupBanner': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_targetenvironment: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @1\n" +
+        "        'TargetEnvironment': '0',\n" +
+        "\n" +
+        "        # @2 (/env win32)\n" +
+        "        'TargetEnvironment': '1',\n" +
+        "\n" +
+        "        # @3 (/env ia64)\n" +
+        "        'TargetEnvironment': '2',\n" +
+        "\n" +
+        "        # @4 (/env x64)\n" +
+        "        'TargetEnvironment': '3',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+      translations: {
+        "@1": { en: "Not Set", ja: "設定なし" },
+        "@2": { en: "Microsoft Windows 32-bit", ja: "Microsoft Windows 32 ビット" },
+        "@3": { en: "Microsoft Windows 64-bit on Itanium", ja: "Microsoft Windows Itanium の 64 ビット" },
+        "@4": { en: "Microsoft Windows 64-bit on x64", ja: "Microsoft Windows x64 の 64 ビット" },
+      }
+    },
+    vcmidltool_general_warnaserror: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/WX)\n" +
+        "        'WarnAsError': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'WarnAsError': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_general_warninglevel: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # 1 (/W0)\n" +
+        "        'WarningLevel': '0'\n" +
+        "\n" +
+        "        # 1 (/W1)\n" +
+        "        'WarningLevel': '1'\n" +
+        "\n" +
+        "        # 2 (/W2)\n" +
+        "        'WarningLevel': '2'\n" +
+        "\n" +
+        "        # 3 (/W3)\n" +
+        "        'WarningLevel': '3'\n" +
+        "\n" +
+        "        # 4 (/W4)\n" +
+        "        'WarningLevel': '4'\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_dlldatafilename: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'DLLDataFileName': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_generatetypelibrary: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes\n" +
+        "        'GenerateTypeLibrary': 'true',\n" +
+        "\n" +
+        "        # @no (/notlb)\n" +
+        "        'GenerateTypeLibrary': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_headerfilename: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'HeaderFileName': '%(Filename)_h.h',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_interfaceidentifierfilename: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'InterfaceIdentifierFileName': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_outputdirectory: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'OutputDirectory': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_proxyfilename: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'ProxyFileName': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_output_typelibraryname: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'TypeLibraryName': '$(IntDir)$(ProjectName).tlb',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_cpreprocessoptions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'CPreprocessOptions': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_enableerrorchecks: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @1 (/error none)\n" +
+        "        'EnableErrorChecks': '1',\n" +
+        "\n" +
+        "        # @2 (/error all)\n" +
+        "        'EnableErrorChecks': '2',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+      translations: {
+        "@1": { en: "None", ja: "なし" },
+        "@2": { en: "All", ja: "すべて" },
+      },
+    },
+    vcmidltool_advanced_errorcheckallocations: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/error allocation)\n" +
+        "        'ErrorCheckAllocations': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'ErrorCheckAllocations': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_errorcheckbounds: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/error bounds_check)\n" +
+        "        'ErrorCheckBounds': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'ErrorCheckBounds': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_errorcheckenumrange: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/error enum)\n" +
+        "        'ErrorCheckEnumRange': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'ErrorCheckEnumRange': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_errorcheckrefpointers: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/error ref)\n" +
+        "        'ErrorCheckRefPointers': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'ErrorCheckRefPointers': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_errorcheckstubdata: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/error stub_data)\n" +
+        "        'ErrorCheckStubData': 'true',\n" +
+        "\n" +
+        "        # @no\n" +
+        "        'ErrorCheckStubData': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_redirectoutputanderrors: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'RedirectOutputAndErrors': 'a_file_name',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_structmemberalignment: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @1\n" +
+        "        'StructMemberAlignment': '0',\n" +
+        "\n" +
+        "        # 1 @2 (/Zp1)\n" +
+        "        'StructMemberAlignment': '1',\n" +
+        "\n" +
+        "        # 2 @2 (/Zp2)\n" +
+        "        'StructMemberAlignment': '2',\n" +
+        "\n" +
+        "        # 4 @2 (/Zp4)\n" +
+        "        'StructMemberAlignment': '3',\n" +
+        "\n" +
+        "        # 8 @2 (/Zp8)\n" +
+        "        'StructMemberAlignment': '4',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+      translations: {
+        "@1": { en: "Not Set", ja: "設定なし" },
+        "@2": { en: "Byte", ja: "バイト" },
+      },
+    },
+    vcmidltool_advanced_undefinepreprocessordefinitions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'UndefinePreprocessorDefinitions': [\n" +
+        "          'string1',\n" +
+        "          'string2',\n" +
+        "        ],\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_advanced_validateparameters: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        # @yes (/robust)\n" +
+        "        'ValidateParameters': 'true',\n" +
+        "\n" +
+        "        # @no (/no_robust)\n" +
+        "        'ValidateParameters': 'false',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
+    vcmidltool_alloptions_additionaloptions: {
+      text: [
+        "'targets': [\n" +
+        "  {\n" +
+        "    'msvs_settings': {\n" +
+        "      'VCMIDLTool': {\n" +
+        "        'AdditionalOptions': 'a string1',\n" +
+        "      },\n" +
+        "    }\n" +
+        "  }\n" +
+        "]\n",
+      ],
+    },
   };
   gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile_a = gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile;
   gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile_b = gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile;
@@ -6262,6 +6757,328 @@ $(document).ready(function() {
         },
       },
     },
+    vcmidltool_general: {
+      button_index: {
+        default: 45,
+      },
+      page_height: 509,
+      category: 'VCMIDLTool',
+      descriptions: {
+        additionalincludedirectories: {
+          description: 'vcmidltool_general_additionalincludedirectories',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 0,
+            ja: 37,
+          },
+        },
+        defaultchartype: {
+          description: 'vcmidltool_general_defaultchartype',
+          button_index: {
+            default: 9,
+          },
+          alloptions_button_index: {
+            en: 4,
+            ja: 1,
+          },
+        },
+        generatestublessproxies: {
+          description: 'vcmidltool_general_generatestublessproxies',
+          button_index: {
+            default: 11,
+          },
+          alloptions_button_index: {
+            en: 17,
+            ja: 16,
+          },
+        },
+        ignorestandardincludepath: {
+          description: 'vcmidltool_general_ignorestandardincludepath',
+          button_index: {
+            default: 4,
+          },
+          alloptions_button_index: {
+            en: 20,
+            ja: 40,
+          },
+        },
+        mktyplibcompatible: {
+          description: 'vcmidltool_general_mktyplibcompatible',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 24,
+            ja: 6,
+          },
+        },
+        preprocessordefinitions: {
+          description: 'vcmidltool_general_preprocessordefinitions',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 27,
+            ja: 22,
+          },
+        },
+        suppressstartupbanner: {
+          description: 'vcmidltool_general_suppressstartupbanner',
+          button_index: {
+            default: 8,
+          },
+          alloptions_button_index: {
+            en: 33,
+            ja: 35,
+          },
+        },
+        targetenvironment: {
+          description: 'vcmidltool_general_targetenvironment',
+          button_index: {
+            default: 10,
+          },
+          alloptions_button_index: {
+            en: 34,
+            ja: 17,
+          },
+        },
+        warnaserror: {
+          description: 'vcmidltool_general_warnaserror',
+          button_index: {
+            default: 7,
+          },
+          alloptions_button_index: {
+            en: 35,
+            ja: 29,
+          },
+        },
+        warninglevel: {
+          description: 'vcmidltool_general_warninglevel',
+          button_index: {
+            default: 6,
+          },
+          alloptions_button_index: {
+            en: 40,
+            ja: 28,
+          },
+        },
+      },
+    },
+    vcmidltool_output: {
+      button_index: {
+        default: 46,
+      },
+      page_height: 509,
+      category: 'VCMIDLTool',
+      descriptions: {
+        dlldatafilename: {
+          description: 'vcmidltool_output_dlldatafilename',
+          button_index: {
+            default: 3,
+          },
+          alloptions_button_index: {
+            en: 12,
+            ja: 3,
+          },
+        },
+        generatetypelibrary: {
+          description: 'vcmidltool_output_generatetypelibrary',
+          button_index: {
+            default: 6,
+          },
+          alloptions_button_index: {
+            en: 18,
+            ja: 20,
+          },
+        },
+        headerfilename: {
+          description: 'vcmidltool_output_headerfilename',
+          button_index: {
+            default: 2,
+          },
+          alloptions_button_index: {
+            en: 19,
+            ja: 24,
+          }
+        },
+        interfaceidentifierfilename: {
+          description: 'vcmidltool_output_interfaceidentifierfilename',
+          button_index: {
+            default: 4,
+          },
+          alloptions_button_index: {
+            en: 21,
+            ja: 5,
+          },
+        },
+        outputdirectory: {
+          description: 'vcmidltool_output_outputdirectory',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            en: 25,
+            ja: 33,
+          },
+        },
+        proxyfilename: {
+          description: 'vcmidltool_output_proxyfilename',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 28,
+            ja: 23,
+          },
+        },
+        typelibraryname: {
+          description: 'vcmidltool_output_typelibraryname',
+          button_index: {
+            default: 7,
+          },
+          alloptions_button_index: {
+            en: 36,
+            ja: 18,
+          },
+        },
+      },
+    },
+    vcmidltool_advanced: {
+      button_index: {
+        default: 47,
+      },
+      page_height: 509,
+      category: 'VCMIDLTool',
+      descriptions: {
+        cpreprocessoptions: {
+          description: 'vcmidltool_advanced_cpreprocessoptions',
+          button_index: {
+            default: 0,
+          },
+          alloptions_button_index: {
+            ja: 2,
+            en: 5,
+          },
+        },
+        enableerrorchecks: {
+          description: 'vcmidltool_advanced_enableerrorchecks',
+          button_index: {
+            default: 2,
+          },
+          alloptions_button_index: {
+            en: 13,
+            ja: 9,
+          },
+        },
+        errorcheckallocations: {
+          description: 'vcmidltool_advanced_errorcheckallocations',
+          button_index: {
+            default: 3,
+          },
+          alloptions_button_index: {
+            en: 6,
+            ja: 26,
+          },
+        },
+        errorcheckbounds: {
+          description: 'vcmidltool_advanced_errorcheckbounds',
+          button_index: {
+            default: 4,
+          },
+          alloptions_button_index: {
+            en: 7,
+            ja: 39,
+          },
+        },
+        errorcheckenumrange: {
+          description: 'vcmidltool_advanced_errorcheckenumrange',
+          button_index: {
+            default: 5,
+          },
+          alloptions_button_index: {
+            en: 8,
+            ja: 4,
+          },
+        },
+        errorcheckrefpointers: {
+          description: 'vcmidltool_advanced_errorcheckrefpointers',
+          button_index: {
+            default: 6,
+          },
+          alloptions_button_index: {
+            en: 9,
+            ja: 31,
+          },
+        },
+        errorcheckstubdata: {
+          description: 'vcmidltool_advanced_errorcheckstubdata',
+          button_index: {
+            default: 7,
+          },
+          alloptions_button_index: {
+            en: 10,
+            ja: 15,
+          },
+        },
+        redirectoutputanderrors: {
+          description: 'vcmidltool_advanced_redirectoutputanderrors',
+          button_index: {
+            default: 11,
+          },
+          alloptions_button_index: {
+            en: 29,
+            ja: 34,
+          },
+        },
+        structmemberalignment: {
+          description: 'vcmidltool_advanced_structmemberalignment',
+          button_index: {
+            default: 10,
+          },
+          alloptions_button_index: {
+            en: 31,
+            ja: 30,
+          },
+        },
+        undefinepreprocessordefinitions: {
+          description: 'vcmidltool_advanced_undefinepreprocessordefinitions',
+          button_index: {
+            default: 1,
+          },
+          alloptions_button_index: {
+            en: 38,
+            ja: 32,
+          },
+        },
+        validateparameters: {
+          description: 'vcmidltool_advanced_validateparameters',
+          button_index: {
+            default: 9,
+          },
+          alloptions_button_index: {
+            en: 39,
+            ja: 21,
+          },
+        }
+      },
+    },
+    vcmidltool_alloptions: {
+      button_index: {
+        default: 48,
+      },
+      page_height: 874,
+      descriptions: {
+        additionaloptions: {
+          description: 'vcmidltool_alloptions_additionaloptions',
+          button_index: {
+            en: 2,
+            ja: 36,
+          },
+        },
+      },
+    },
   };
 
   var append_alloptions_pages = function(gypcs) {
@@ -6513,35 +7330,7 @@ $(document).ready(function() {
              'UseUnicodeResponseFiles': 'true',
          },
          'VCMIDLTool': {
-             'AdditionalIncludeDirectories': 'folder1;folder2',
-             'AdditionalOptions': 'a string1',
-             'CPreprocessOptions': 'a string1',
-             'DefaultCharType': '1',
-             'DLLDataFileName': 'a_file_name',
-             'EnableErrorChecks': '1',
-             'ErrorCheckAllocations': 'true',
-             'ErrorCheckBounds': 'true',
-             'ErrorCheckEnumRange': 'true',
-             'ErrorCheckRefPointers': 'true',
-             'ErrorCheckStubData': 'true',
-             'GenerateStublessProxies': 'true',
-             'GenerateTypeLibrary': 'true',
-             'HeaderFileName': 'a_file_name',
-             'IgnoreStandardIncludePath': 'true',
-             'InterfaceIdentifierFileName': 'a_file_name',
-             'MkTypLibCompatible': 'true',
-             'OutputDirectory': 'a string1',
-             'PreprocessorDefinitions': 'string1;string2',
-             'ProxyFileName': 'a_file_name',
-             'RedirectOutputAndErrors': 'a_file_name',
-             'StructMemberAlignment': '1',
-             'SuppressStartupBanner': 'true',
-             'TargetEnvironment': '1',
-             'TypeLibraryName': 'a_file_name',
-             'UndefinePreprocessorDefinitions': 'string1;string2',
-             'ValidateParameters': 'true',
-             'WarnAsError': 'true',
-             'WarningLevel': '1'},
+             },
          'VCResourceCompilerTool': {
          }
 
