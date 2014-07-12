@@ -4359,7 +4359,7 @@ $(document).ready(function() {
           },
         },
         moduledefinitionfile: {
-          description: 'vclibrariantool_general_moduledefinitionfile',
+          description: 'vclinkertool_input_moduledefinitionfile',
           button_index: {
             default: 4,
           },
@@ -4369,7 +4369,7 @@ $(document).ready(function() {
           },
         },
         ignorealldefaultlibraries: {
-          description: 'vclibrariantool_general_ignorealldefaultlibraries',
+          description: 'vclinkertool_input_ignorealldefaultlibraries',
           button_index: {
             default: 5,
           },
@@ -4399,7 +4399,7 @@ $(document).ready(function() {
           },
         },
         forcesymbolreferences: {
-          description: 'vclibrariantool_general_forcesymbolreferences',
+          description: 'vclinkertool_input_forcesymbolreferences',
           button_index: {
             default: 8,
           },
@@ -4419,7 +4419,7 @@ $(document).ready(function() {
           },
         },
         linklibrarydependencies: {
-          description: 'vclibrariantool_general_linklibrarydependencies',
+          description: 'vclinkertool_general_linklibrarydependencies',
           button_index: {
             default: 10,
           },
