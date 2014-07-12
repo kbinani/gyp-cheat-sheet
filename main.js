@@ -80,7 +80,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_general_includedir: {
+    vcclcompilertool_general_includedir: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -91,7 +91,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_general_additionalusingdirectories: {
+    vcclcompilertool_general_additionalusingdirectories: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -107,7 +107,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_general_debuginformationformat: {
+    vcclcompilertool_general_debuginformationformat: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -132,7 +132,7 @@ $(document).ready(function() {
         "@3": { ja: "エディット コンティニュのプログラム データベース", en: "Program Database for Edit And Continue" },
       },
     },
-    vccompilertools_general_suppressstartupbanner: {
+    vcclcompilertool_general_suppressstartupbanner: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -149,7 +149,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_general_warninglevel: {
+    vcclcompilertool_general_warninglevel: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -182,7 +182,7 @@ $(document).ready(function() {
         "@5": { ja: "レベル 4", en: "Level4" },
       },
     },
-    vccompilertools_general_warnaserror: {
+    vcclcompilertool_general_warnaserror: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -199,7 +199,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_optimization_optimization: {
+    vcclcompilertool_optimization_optimization: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -228,7 +228,7 @@ $(document).ready(function() {
         "@4": { ja: "最大限の最適化", en: "Full Optimization" },
       },
     },
-    vccompilertools_optimization_inlinefunctionexpansion: {
+    vcclcompilertool_optimization_inlinefunctionexpansion: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -253,7 +253,7 @@ $(document).ready(function() {
         "@3": { ja: "拡張可能な関数すべて", en: "Any Suitable" },
       },
     },
-    vccompilertools_optimization_enableintrinsicfunctions: {
+    vcclcompilertool_optimization_enableintrinsicfunctions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -270,7 +270,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_optimization_favorsizeorspeed: {
+    vcclcompilertool_optimization_favorsizeorspeed: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -295,7 +295,7 @@ $(document).ready(function() {
         "@3": { ja: "実行可能ファイルのサイズを優先", en: "Favor small code" },
       },
     },
-    vccompilertools_optimization_omitframepointers: {
+    vcclcompilertool_optimization_omitframepointers: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -312,7 +312,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_optimization_enablefibersafeoptimizations: {
+    vcclcompilertool_optimization_enablefibersafeoptimizations: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -329,7 +329,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_optimization_wholeprogramoptimization: {
+    vcclcompilertool_optimization_wholeprogramoptimization: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -346,7 +346,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_preprocessor_defines: {
+    vcclcompilertool_preprocessor_defines: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -358,7 +358,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_preprocessor_ignorestandardincludepath: {
+    vcclcompilertool_preprocessor_ignorestandardincludepath: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -375,7 +375,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_preprocessor_undefineallpreprocessordefinitions: {
+    vcclcompilertool_preprocessor_undefineallpreprocessordefinitions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -392,7 +392,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_preprocessor_generatepreprocessedfile: {
+    vcclcompilertool_preprocessor_generatepreprocessedfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -419,7 +419,7 @@ $(document).ready(function() {
         "@2": { ja: "行番号の前処理の抑制", en: "Preprocess Suppress Line Numbers" },
       },
     },
-    vccompilertools_preprocessor_undefinepreprocessordefinitions: {
+    vcclcompilertool_preprocessor_undefinepreprocessordefinitions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -435,7 +435,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_preprocessor_keepcomments: {
+    vcclcompilertool_preprocessor_keepcomments: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -452,7 +452,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_stringpooling: {
+    vcclcompilertool_codegeneration_stringpooling: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -469,7 +469,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_minimalrebuild: {
+    vcclcompilertool_codegeneration_minimalrebuild: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -486,7 +486,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_exceptionhandling: {
+    vcclcompilertool_codegeneration_exceptionhandling: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -509,7 +509,7 @@ $(document).ready(function() {
         "@1": { ja: "はい - SEH の例外あり", en: "Yes with SEH Exceptions" },
       },
     },
-    vccompilertools_codegeneration_smallertypecheck: {
+    vcclcompilertool_codegeneration_smallertypecheck: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -526,7 +526,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_basicruntimechecks: {
+    vcclcompilertool_codegeneration_basicruntimechecks: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -555,7 +555,7 @@ $(document).ready(function() {
         "@4": { ja: "両方 (/RTC1、/RTCsu と同等)", en: "Both (/RTC1, equiv. to /RTCsu) (/RTC1)" },
       },
     },
-    vccompilertools_codegeneration_runtimelibrary: {
+    vcclcompilertool_codegeneration_runtimelibrary: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -588,7 +588,7 @@ $(document).ready(function() {
         "@4": { ja: "マルチスレッド デバッグ DLL", en: "Multi-threaded Debug DLL (/MDd)" },
       },
     },
-    vccompilertools_codegeneration_structmemberalignment: {
+    vcclcompilertool_codegeneration_structmemberalignment: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -622,7 +622,7 @@ $(document).ready(function() {
         "@3": { ja: "バイト", en: "Bytes" },
       },
     },
-    vccompilertools_codegeneration_buffersecuritycheck: {
+    vcclcompilertool_codegeneration_buffersecuritycheck: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -639,7 +639,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_enablefunctionlevellinking: {
+    vcclcompilertool_codegeneration_enablefunctionlevellinking: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -656,7 +656,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_enableenhancedinstructionset: {
+    vcclcompilertool_codegeneration_enableenhancedinstructionset: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -689,7 +689,7 @@ $(document).ready(function() {
         "@5": { ja: "拡張命令なし", en: "No Enhanced Instructions (/arch:IA32)" },
       },
     },
-    vccompilertools_codegeneration_floatingpointmodel: {
+    vcclcompilertool_codegeneration_floatingpointmodel: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -709,7 +709,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_codegeneration_floatingpointexceptions: {
+    vcclcompilertool_codegeneration_floatingpointexceptions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -726,7 +726,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_language_disablelanguageextensions: {
+    vcclcompilertool_language_disablelanguageextensions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -743,7 +743,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_language_treatwchartasbuiltintype: {
+    vcclcompilertool_language_treatwchartasbuiltintype: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -760,7 +760,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_language_forceconformanceinforloopscope: {
+    vcclcompilertool_language_forceconformanceinforloopscope: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -777,7 +777,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_language_runtimetypeinfo: {
+    vcclcompilertool_language_runtimetypeinfo: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -794,7 +794,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_language_openmp: {
+    vcclcompilertool_language_openmp: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -811,7 +811,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_precompiledheader_useprecompiledheader: {
+    vcclcompilertool_precompiledheader_useprecompiledheader: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -843,7 +843,7 @@ $(document).ready(function() {
         "@4": { ja: "stdafx.cpp について、'作成 (/Yc)'", en: "'Create (/Yc)' for stdafx.cpp" },
       },
     },
-    vccompilertools_precompiledheader_precompiledheaderthrough: {
+    vcclcompilertool_precompiledheader_precompiledheaderthrough: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -856,7 +856,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_precompiledheader_precompiledheaderfile: {
+    vcclcompilertool_precompiledheader_precompiledheaderfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -869,7 +869,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_output_expandattributedsource: {
+    vcclcompilertool_output_expandattributedsource: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -886,7 +886,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_output_assembleroutput: {
+    vcclcompilertool_output_assembleroutput: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -919,7 +919,7 @@ $(document).ready(function() {
         "@5": { ja: "アセンブリ コードとソース コード", en: "Assembly With Source Code" },
       },
     },
-    vccompilertools_output_assemblerlistinglocation: {
+    vcclcompilertool_output_assemblerlistinglocation: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -932,7 +932,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_output_objectfile: {
+    vcclcompilertool_output_objectfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -945,7 +945,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_output_programdatabasefilename: {
+    vcclcompilertool_output_programdatabasefilename: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -958,7 +958,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_output_generatexmldocumentationfiles: {
+    vcclcompilertool_output_generatexmldocumentationfiles: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -975,7 +975,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_output_xmldocumentationfilename: {
+    vcclcompilertool_output_xmldocumentationfilename: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -988,7 +988,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_browserinformation_browseinformation: {
+    vcclcompilertool_browserinformation_browseinformation: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1005,7 +1005,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_browserinformation_browseinformationfile: {
+    vcclcompilertool_browserinformation_browseinformationfile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1018,7 +1018,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_disablespecificwarnings: {
+    vcclcompilertool_advanced_disablespecificwarnings: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1033,7 +1033,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_callingconversion: {
+    vcclcompilertool_advanced_callingconversion: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1053,7 +1053,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_compileas: {
+    vcclcompilertool_advanced_compileas: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1078,7 +1078,7 @@ $(document).ready(function() {
         "@3": { ja: "C++ コードとしてコンパイル", en: "Compile as C++ Code" },
       },
     },
-    vccompilertools_advanced_forcedincludefiles: {
+    vcclcompilertool_advanced_forcedincludefiles: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1093,7 +1093,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_forcedusingfiles: {
+    vcclcompilertool_advanced_forcedusingfiles: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1109,7 +1109,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_showincludes: {
+    vcclcompilertool_advanced_showincludes: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1126,7 +1126,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_usefullpaths: {
+    vcclcompilertool_advanced_usefullpaths: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1143,7 +1143,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_omitdefaultlibname: {
+    vcclcompilertool_advanced_omitdefaultlibname: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1160,7 +1160,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_advanced_errorreporting: {
+    vcclcompilertool_advanced_errorreporting: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2783,8 +2783,8 @@ $(document).ready(function() {
       ],
     },
   };
-  gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile_a = gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile;
-  gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile_b = gypcs.descriptions.vccompilertools_preprocessor_generatepreprocessedfile;
+  gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile_a = gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile;
+  gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile_b = gypcs.descriptions.vcclcompilertool_preprocessor_generatepreprocessedfile;
 
   gypcs.pages = {
     general: {
@@ -2823,16 +2823,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_general: {
+    vcclcompilertool_general: {
       button_index: {
         default: 6,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         includedir: {
-          description: 'vccompilertools_general_includedir',
+          description: 'vcclcompilertool_general_includedir',
           button_index: {
             default: 0,
           },
@@ -2842,7 +2842,7 @@ $(document).ready(function() {
           },
         },
         additionalusingdirectories: {
-          description: 'vccompilertools_general_additionalusingdirectories',
+          description: 'vcclcompilertool_general_additionalusingdirectories',
           button_index: {
             default: 1,
           },
@@ -2852,7 +2852,7 @@ $(document).ready(function() {
           },
         },
         debuginformationformat: {
-          description: 'vccompilertools_general_debuginformationformat',
+          description: 'vcclcompilertool_general_debuginformationformat',
           button_index: {
             default: 2,
           },
@@ -2862,7 +2862,7 @@ $(document).ready(function() {
           },
         },
         suppressstartupbanner: {
-          description: 'vccompilertools_general_suppressstartupbanner',
+          description: 'vcclcompilertool_general_suppressstartupbanner',
           button_index: {
             default: 5,
           },
@@ -2872,7 +2872,7 @@ $(document).ready(function() {
           },
         },
         warninglevel: {
-          description: 'vccompilertools_general_warninglevel',
+          description: 'vcclcompilertool_general_warninglevel',
           button_index: {
             default: 6,
           },
@@ -2882,7 +2882,7 @@ $(document).ready(function() {
           },
         },
         warnaserror: {
-          description: 'vccompilertools_general_warnaserror',
+          description: 'vcclcompilertool_general_warnaserror',
           button_index: {
             default: 7,
           },
@@ -2893,16 +2893,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_optimization: {
+    vcclcompilertool_optimization: {
       button_index: {
         default: 7,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         optimization: {
-          description: 'vccompilertools_optimization_optimization',
+          description: 'vcclcompilertool_optimization_optimization',
           button_index: {
             default: 0,
           },
@@ -2912,7 +2912,7 @@ $(document).ready(function() {
           },
         },
         inlinefunctionexpansion: {
-          description: 'vccompilertools_optimization_inlinefunctionexpansion',
+          description: 'vcclcompilertool_optimization_inlinefunctionexpansion',
           button_index: {
             default: 1,
           },
@@ -2922,7 +2922,7 @@ $(document).ready(function() {
           },
         },
         enableintrinsicfunctions: {
-          description: 'vccompilertools_optimization_enableintrinsicfunctions',
+          description: 'vcclcompilertool_optimization_enableintrinsicfunctions',
           button_index: {
             default: 2,
           },
@@ -2932,7 +2932,7 @@ $(document).ready(function() {
           },
         },
         favorsizeorspeed: {
-          description: 'vccompilertools_optimization_favorsizeorspeed',
+          description: 'vcclcompilertool_optimization_favorsizeorspeed',
           button_index: {
             default: 3,
           },
@@ -2942,7 +2942,7 @@ $(document).ready(function() {
           },
         },
         omitframepointers: {
-          description: 'vccompilertools_optimization_omitframepointers',
+          description: 'vcclcompilertool_optimization_omitframepointers',
           button_index: {
             default: 4,
           },
@@ -2952,7 +2952,7 @@ $(document).ready(function() {
           },
         },
         enablefibersafeoptimizations: {
-          description: 'vccompilertools_optimization_enablefibersafeoptimizations',
+          description: 'vcclcompilertool_optimization_enablefibersafeoptimizations',
           button_index: {
             default: 5,
           },
@@ -2961,7 +2961,7 @@ $(document).ready(function() {
           },
         },
         wholeprogramoptimization: {
-          description: 'vccompilertools_optimization_wholeprogramoptimization',
+          description: 'vcclcompilertool_optimization_wholeprogramoptimization',
           button_index: {
             default: 6,
           },
@@ -2972,16 +2972,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_preprocessor: {
+    vcclcompilertool_preprocessor: {
       button_index: {
         default: 8,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         defines: {
-          description: 'vccompilertools_preprocessor_defines',
+          description: 'vcclcompilertool_preprocessor_defines',
           button_index: {
             default: 0,
           },
@@ -2991,7 +2991,7 @@ $(document).ready(function() {
           },
         },
         ignorestandardincludepath: {
-          description: 'vccompilertools_preprocessor_ignorestandardincludepath',
+          description: 'vcclcompilertool_preprocessor_ignorestandardincludepath',
           button_index: {
             default: 3,
           },
@@ -3001,7 +3001,7 @@ $(document).ready(function() {
           },
         },
         undefineallpreprocessordefinitions: {
-          description: 'vccompilertools_preprocessor_undefineallpreprocessordefinitions',
+          description: 'vcclcompilertool_preprocessor_undefineallpreprocessordefinitions',
           button_index: {
             default: 2,
           },
@@ -3011,7 +3011,7 @@ $(document).ready(function() {
           },
         },
         generatepreprocessedfile_a: {
-          description: 'vccompilertools_preprocessor_generatepreprocessedfile_a',
+          description: 'vcclcompilertool_preprocessor_generatepreprocessedfile_a',
           button_index: {
             default: 4,
           },
@@ -3021,7 +3021,7 @@ $(document).ready(function() {
           },
         },
         generatepreprocessedfile_b: {
-          description: 'vccompilertools_preprocessor_generatepreprocessedfile_b',
+          description: 'vcclcompilertool_preprocessor_generatepreprocessedfile_b',
           button_index: {
             default: 5,
           },
@@ -3031,7 +3031,7 @@ $(document).ready(function() {
           },
         },
         undefinepreprocessordefinitions: {
-          description: 'vccompilertools_preprocessor_undefinepreprocessordefinitions',
+          description: 'vcclcompilertool_preprocessor_undefinepreprocessordefinitions',
           button_index: {
             default: 1,
           },
@@ -3041,7 +3041,7 @@ $(document).ready(function() {
           },
         },
         keepcomments: {
-          description: 'vccompilertools_preprocessor_keepcomments',
+          description: 'vcclcompilertool_preprocessor_keepcomments',
           button_index: {
             default: 6,
           },
@@ -3052,16 +3052,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_codegeneration: {
+    vcclcompilertool_codegeneration: {
       button_index: {
         default: 9,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         stringpooling: {
-          description: 'vccompilertools_codegeneration_stringpooling',
+          description: 'vcclcompilertool_codegeneration_stringpooling',
           button_index: {
             default: 0,
           },
@@ -3071,7 +3071,7 @@ $(document).ready(function() {
           },
         },
         minimalrebuild: {
-          description: 'vccompilertools_codegeneration_minimalrebuild',
+          description: 'vcclcompilertool_codegeneration_minimalrebuild',
           button_index: {
             default: 1,
           },
@@ -3081,7 +3081,7 @@ $(document).ready(function() {
           },
         },
         exceptionhandling: {
-          description: 'vccompilertools_codegeneration_exceptionhandling',
+          description: 'vcclcompilertool_codegeneration_exceptionhandling',
           button_index: {
             default: 2,
           },
@@ -3091,7 +3091,7 @@ $(document).ready(function() {
           },
         },
         smallertypecheck: {
-          description: 'vccompilertools_codegeneration_smallertypecheck',
+          description: 'vcclcompilertool_codegeneration_smallertypecheck',
           button_index: {
             default: 3,
           },
@@ -3101,7 +3101,7 @@ $(document).ready(function() {
           },
         },
         basicruntimechecks: {
-          description: 'vccompilertools_codegeneration_basicruntimechecks',
+          description: 'vcclcompilertool_codegeneration_basicruntimechecks',
           button_index: {
             default: 4,
           },
@@ -3111,7 +3111,7 @@ $(document).ready(function() {
           },
         },
         runtimelibrary: {
-          description: 'vccompilertools_codegeneration_runtimelibrary',
+          description: 'vcclcompilertool_codegeneration_runtimelibrary',
           button_index: {
             default: 5,
           },
@@ -3121,7 +3121,7 @@ $(document).ready(function() {
           },
         },
         structmemberalignment: {
-          description: 'vccompilertools_codegeneration_structmemberalignment',
+          description: 'vcclcompilertool_codegeneration_structmemberalignment',
           button_index: {
             default: 6,
           },
@@ -3131,7 +3131,7 @@ $(document).ready(function() {
           },
         },
         buffersecuritycheck: {
-          description: 'vccompilertools_codegeneration_buffersecuritycheck',
+          description: 'vcclcompilertool_codegeneration_buffersecuritycheck',
           button_index: {
             default: 7,
           },
@@ -3141,7 +3141,7 @@ $(document).ready(function() {
           },
         },
         enablefunctionlevellinking: {
-          description: 'vccompilertools_codegeneration_enablefunctionlevellinking',
+          description: 'vcclcompilertool_codegeneration_enablefunctionlevellinking',
           button_index: {
             default: 8,
           },
@@ -3151,7 +3151,7 @@ $(document).ready(function() {
           },
         },
         enableenhancedinstructionset: {
-          description: 'vccompilertools_codegeneration_enableenhancedinstructionset',
+          description: 'vcclcompilertool_codegeneration_enableenhancedinstructionset',
           button_index: {
             default: 10,
           },
@@ -3161,7 +3161,7 @@ $(document).ready(function() {
           },
         },
         floatingpointmodel: {
-          description: 'vccompilertools_codegeneration_floatingpointmodel',
+          description: 'vcclcompilertool_codegeneration_floatingpointmodel',
           button_index: {
             default: 11,
           },
@@ -3171,7 +3171,7 @@ $(document).ready(function() {
           },
         },
         floatingpointexceptions: {
-          description: 'vccompilertools_codegeneration_floatingpointexceptions',
+          description: 'vcclcompilertool_codegeneration_floatingpointexceptions',
           button_index: {
             default: 12,
           },
@@ -3182,16 +3182,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_language: {
+    vcclcompilertool_language: {
       button_index: {
         default: 10,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         disablelanguageextensions: {
-          description: 'vccompilertools_language_disablelanguageextensions',
+          description: 'vcclcompilertool_language_disablelanguageextensions',
           button_index: {
             default: 0,
           },
@@ -3201,7 +3201,7 @@ $(document).ready(function() {
           },
         },
         treatwchartasbuiltintype: {
-          description: 'vccompilertools_language_treatwchartasbuiltintype',
+          description: 'vcclcompilertool_language_treatwchartasbuiltintype',
           button_index: {
             default: 1,
           },
@@ -3211,7 +3211,7 @@ $(document).ready(function() {
           },
         },
         forceconformanceinforloopscope: {
-          description: 'vccompilertools_language_forceconformanceinforloopscope',
+          description: 'vcclcompilertool_language_forceconformanceinforloopscope',
           button_index: {
             default: 2,
           },
@@ -3221,7 +3221,7 @@ $(document).ready(function() {
           },
         },
         runtimetypeinfo: {
-          description: 'vccompilertools_language_runtimetypeinfo',
+          description: 'vcclcompilertool_language_runtimetypeinfo',
           button_index: {
             default: 3,
           },
@@ -3231,7 +3231,7 @@ $(document).ready(function() {
           },
         },
         openmp: {
-          description: 'vccompilertools_language_openmp',
+          description: 'vcclcompilertool_language_openmp',
           button_index: {
             default: 4,
           },
@@ -3242,16 +3242,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_precompiledheader: {
+    vcclcompilertool_precompiledheader: {
       button_index: {
         default: 11,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         useprecompiledheader: {
-          description: 'vccompilertools_precompiledheader_useprecompiledheader',
+          description: 'vcclcompilertool_precompiledheader_useprecompiledheader',
           button_index: {
             default: 0,
           },
@@ -3261,7 +3261,7 @@ $(document).ready(function() {
           },
         },
         precompiledheaderthrough: {
-          description: 'vccompilertools_precompiledheader_precompiledheaderthrough',
+          description: 'vcclcompilertool_precompiledheader_precompiledheaderthrough',
           button_index: {
             default: 1,
           },
@@ -3271,7 +3271,7 @@ $(document).ready(function() {
           },
         },
         precompiledheaderfile: {
-          description: 'vccompilertools_precompiledheader_precompiledheaderfile',
+          description: 'vcclcompilertool_precompiledheader_precompiledheaderfile',
           button_index: {
             default: 2,
           },
@@ -3282,16 +3282,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_output: {
+    vcclcompilertool_output: {
       button_index: {
         default: 12,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         expandattributedsource: {
-          description: 'vccompilertools_output_expandattributedsource',
+          description: 'vcclcompilertool_output_expandattributedsource',
           button_index: {
             default: 0,
           },
@@ -3301,7 +3301,7 @@ $(document).ready(function() {
           },
         },
         assembleroutput: {
-          description: 'vccompilertools_output_assembleroutput',
+          description: 'vcclcompilertool_output_assembleroutput',
           button_index: {
             default: 1,
           },
@@ -3311,7 +3311,7 @@ $(document).ready(function() {
           },
         },
         assemblerlistinglocation: {
-          description: 'vccompilertools_output_assemblerlistinglocation',
+          description: 'vcclcompilertool_output_assemblerlistinglocation',
           button_index: {
             default: 3,
           },
@@ -3321,7 +3321,7 @@ $(document).ready(function() {
           },
         },
         objectfile: {
-          description: 'vccompilertools_output_objectfile',
+          description: 'vcclcompilertool_output_objectfile',
           button_index: {
             default: 4,
           },
@@ -3331,7 +3331,7 @@ $(document).ready(function() {
           },
         },
         programdatabasefilename: {
-          description: 'vccompilertools_output_programdatabasefilename',
+          description: 'vcclcompilertool_output_programdatabasefilename',
           button_index: {
             default: 5,
           },
@@ -3341,7 +3341,7 @@ $(document).ready(function() {
           },
         },
         generatexmldocumentationfiles: {
-          description: 'vccompilertools_output_generatexmldocumentationfiles',
+          description: 'vcclcompilertool_output_generatexmldocumentationfiles',
           button_index: {
             default: 6,
           },
@@ -3351,7 +3351,7 @@ $(document).ready(function() {
           },
         },
         xmldocumentationfilename: {
-          description: 'vccompilertools_output_xmldocumentationfilename',
+          description: 'vcclcompilertool_output_xmldocumentationfilename',
           button_index: {
             default: 7,
           },
@@ -3362,16 +3362,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_browserinformation: {
+    vcclcompilertool_browserinformation: {
       button_index: {
         default: 13,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         browseinformation: {
-          description: 'vccompilertools_browserinformation_browseinformation',
+          description: 'vcclcompilertool_browserinformation_browseinformation',
           button_index: {
             default: 0,
           },
@@ -3381,7 +3381,7 @@ $(document).ready(function() {
           },
         },
         browseinformationfile: {
-          description: 'vccompilertools_browserinformation_browseinformationfile',
+          description: 'vcclcompilertool_browserinformation_browseinformationfile',
           button_index: {
             default: 1,
           },
@@ -3392,16 +3392,16 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_advanced: {
+    vcclcompilertool_advanced: {
       button_index: {
         default: 14,
       },
       page_height: 509,
-      category: 'vccompilertools',
+      category: 'vcclcompilertool',
       section_name: 'VCCLCompilerTool',
       descriptions: {
         disablespecificwarnings: {
-          description: 'vccompilertools_advanced_disablespecificwarnings',
+          description: 'vcclcompilertool_advanced_disablespecificwarnings',
           button_index: {
             default: 2,
           },
@@ -3411,7 +3411,7 @@ $(document).ready(function() {
           },
         },
         callingconversion: {
-          description: 'vccompilertools_advanced_callingconversion',
+          description: 'vcclcompilertool_advanced_callingconversion',
           button_index: {
             default: 0,
           },
@@ -3421,7 +3421,7 @@ $(document).ready(function() {
           },
         },
         compileas: {
-          description: 'vccompilertools_advanced_compileas',
+          description: 'vcclcompilertool_advanced_compileas',
           button_index: {
             default: 1,
           },
@@ -3431,7 +3431,7 @@ $(document).ready(function() {
           },
         },
         forcedincludefiles: {
-          description: 'vccompilertools_advanced_forcedincludefiles',
+          description: 'vcclcompilertool_advanced_forcedincludefiles',
           button_index: {
             default: 3,
           },
@@ -3441,7 +3441,7 @@ $(document).ready(function() {
           },
         },
         forcedusingfiles: {
-          description: 'vccompilertools_advanced_forcedusingfiles',
+          description: 'vcclcompilertool_advanced_forcedusingfiles',
           button_index: {
             default: 4,
           },
@@ -3451,7 +3451,7 @@ $(document).ready(function() {
           },
         },
         showincludes: {
-          description: 'vccompilertools_advanced_showincludes',
+          description: 'vcclcompilertool_advanced_showincludes',
           button_index: {
             default: 5,
           },
@@ -3461,7 +3461,7 @@ $(document).ready(function() {
           },
         },
         usefullpaths: {
-          description: 'vccompilertools_advanced_usefullpaths',
+          description: 'vcclcompilertool_advanced_usefullpaths',
           button_index: {
             default: 6,
           },
@@ -3471,7 +3471,7 @@ $(document).ready(function() {
           },
         },
         omitdefaultlibname: {
-          description: 'vccompilertools_advanced_omitdefaultlibname',
+          description: 'vcclcompilertool_advanced_omitdefaultlibname',
           button_index: {
             default: 7,
           },
@@ -3481,7 +3481,7 @@ $(document).ready(function() {
           },
         },
         errorreporting: {
-          description: 'vccompilertools_advanced_errorreporting',
+          description: 'vcclcompilertool_advanced_errorreporting',
           button_index: {
             default: 8,
           },
@@ -3492,7 +3492,7 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_alloptions: {
+    vcclcompilertool_alloptions: {
       button_index: {
         default: 15,
       },
