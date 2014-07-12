@@ -1018,7 +1018,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_disablespecificwarnings: {
+    vccompilertools_advanced_disablespecificwarnings: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1033,7 +1033,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_callingconversion: {
+    vccompilertools_advanced_callingconversion: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1053,7 +1053,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_compileas: {
+    vccompilertools_advanced_compileas: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1078,7 +1078,7 @@ $(document).ready(function() {
         "@3": { ja: "C++ コードとしてコンパイル", en: "Compile as C++ Code" },
       },
     },
-    vccompilertools_details_forcedincludefiles: {
+    vccompilertools_advanced_forcedincludefiles: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1093,7 +1093,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_forcedusingfiles: {
+    vccompilertools_advanced_forcedusingfiles: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1109,7 +1109,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_showincludes: {
+    vccompilertools_advanced_showincludes: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1126,7 +1126,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_usefullpaths: {
+    vccompilertools_advanced_usefullpaths: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1143,7 +1143,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_omitdefaultlibname: {
+    vccompilertools_advanced_omitdefaultlibname: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -1160,7 +1160,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vccompilertools_details_errorreporting: {
+    vccompilertools_advanced_errorreporting: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2098,7 +2098,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_entrypointsymbol: {
+    vclinkertool_advanced_entrypointsymbol: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2111,7 +2111,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_setchecksum: {
+    vclinkertool_advanced_setchecksum: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2128,7 +2128,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_baseaddress: {
+    vclinkertool_advanced_baseaddress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2141,7 +2141,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_randomizedbaseaddress: {
+    vclinkertool_advanced_randomizedbaseaddress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2158,7 +2158,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_fixedbaseaddress: {
+    vclinkertool_advanced_fixedbaseaddress: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2175,7 +2175,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_dataexecutionprevention: {
+    vclinkertool_advanced_dataexecutionprevention: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2192,7 +2192,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_turnoffassemblygeneration: {
+    vclinkertool_advanced_turnoffassemblygeneration: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2209,7 +2209,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_supportunloadofdelayloadeddll: {
+    vclinkertool_advanced_supportunloadofdelayloadeddll: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2226,7 +2226,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_importlibrary: {
+    vclinkertool_advanced_importlibrary: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2239,7 +2239,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_mergesections: {
+    vclinkertool_advanced_mergesections: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2252,7 +2252,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_targetmachine: {
+    vclinkertool_advanced_targetmachine: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2302,7 +2302,7 @@ $(document).ready(function() {
         "@1": { ja: "設定なし", en: "Not Set" },
       },
     },
-    vclinkertool_details_profile: {
+    vclinkertool_advanced_profile: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2319,7 +2319,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_clrthreadattribute: {
+    vclinkertool_advanced_clrthreadattribute: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2344,7 +2344,7 @@ $(document).ready(function() {
         "@3": { ja: "STA スレッド属性", en: "STA threading attribute" },
       },
     },
-    vclinkertool_details_clrimagetype: {
+    vclinkertool_advanced_clrimagetype: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2373,7 +2373,7 @@ $(document).ready(function() {
         "@4": { ja: "安全 IL イメージの強制", en: "Force Safe IL Image" },
       },
     },
-    vclinkertool_details_keycontainer: {
+    vclinkertool_advanced_keycontainer: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2386,7 +2386,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_clrunmanagedcodecheck: {
+    vclinkertool_advanced_clrunmanagedcodecheck: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2403,7 +2403,7 @@ $(document).ready(function() {
         "]\n",
       ],
     },
-    vclinkertool_details_errorreporting: {
+    vclinkertool_advanced_errorreporting: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -2428,7 +2428,7 @@ $(document).ready(function() {
         "@3": { ja: "次回ログインのためのキュー", en: "Queue For Next Login" },
       },
     },
-    vclinkertool_details_additionaloptions: {
+    vclinkertool_advanced_additionaloptions: {
       text: [
         "'targets': [\n" +
         "  {\n" +
@@ -3392,7 +3392,7 @@ $(document).ready(function() {
         },
       },
     },
-    vccompilertools_details: {
+    vccompilertools_advanced: {
       button_index: {
         default: 14,
       },
@@ -3401,7 +3401,7 @@ $(document).ready(function() {
       section_name: 'VCCLCompilerTool',
       descriptions: {
         disablespecificwarnings: {
-          description: 'vccompilertools_details_disablespecificwarnings',
+          description: 'vccompilertools_advanced_disablespecificwarnings',
           button_index: {
             default: 2,
           },
@@ -3411,7 +3411,7 @@ $(document).ready(function() {
           },
         },
         callingconversion: {
-          description: 'vccompilertools_details_callingconversion',
+          description: 'vccompilertools_advanced_callingconversion',
           button_index: {
             default: 0,
           },
@@ -3421,7 +3421,7 @@ $(document).ready(function() {
           },
         },
         compileas: {
-          description: 'vccompilertools_details_compileas',
+          description: 'vccompilertools_advanced_compileas',
           button_index: {
             default: 1,
           },
@@ -3431,7 +3431,7 @@ $(document).ready(function() {
           },
         },
         forcedincludefiles: {
-          description: 'vccompilertools_details_forcedincludefiles',
+          description: 'vccompilertools_advanced_forcedincludefiles',
           button_index: {
             default: 3,
           },
@@ -3441,7 +3441,7 @@ $(document).ready(function() {
           },
         },
         forcedusingfiles: {
-          description: 'vccompilertools_details_forcedusingfiles',
+          description: 'vccompilertools_advanced_forcedusingfiles',
           button_index: {
             default: 4,
           },
@@ -3451,7 +3451,7 @@ $(document).ready(function() {
           },
         },
         showincludes: {
-          description: 'vccompilertools_details_showincludes',
+          description: 'vccompilertools_advanced_showincludes',
           button_index: {
             default: 5,
           },
@@ -3461,7 +3461,7 @@ $(document).ready(function() {
           },
         },
         usefullpaths: {
-          description: 'vccompilertools_details_usefullpaths',
+          description: 'vccompilertools_advanced_usefullpaths',
           button_index: {
             default: 6,
           },
@@ -3471,7 +3471,7 @@ $(document).ready(function() {
           },
         },
         omitdefaultlibname: {
-          description: 'vccompilertools_details_omitdefaultlibname',
+          description: 'vccompilertools_advanced_omitdefaultlibname',
           button_index: {
             default: 7,
           },
@@ -3481,7 +3481,7 @@ $(document).ready(function() {
           },
         },
         errorreporting: {
-          description: 'vccompilertools_details_errorreporting',
+          description: 'vccompilertools_advanced_errorreporting',
           button_index: {
             default: 8,
           },
@@ -4121,7 +4121,7 @@ $(document).ready(function() {
         },
       },
     },
-    vclinkertool_details: {
+    vclinkertool_advanced: {
       button_index: {
         default: 26,
       },
@@ -4130,7 +4130,7 @@ $(document).ready(function() {
       section_name: 'VCLinkerTool',
       descriptions: {
         entrypointsymbol: {
-          description: 'vclinkertool_details_entrypointsymbol',
+          description: 'vclinkertool_advanced_entrypointsymbol',
           button_index: {
             default: 0,
           },
@@ -4140,7 +4140,7 @@ $(document).ready(function() {
           },
         },
         setchecksum: {
-          description: 'vclinkertool_details_setchecksum',
+          description: 'vclinkertool_advanced_setchecksum',
           button_index: {
             default: 2,
           },
@@ -4150,7 +4150,7 @@ $(document).ready(function() {
           },
         },
         baseaddress: {
-          description: 'vclinkertool_details_baseaddress',
+          description: 'vclinkertool_advanced_baseaddress',
           button_index: {
             default: 3,
           },
@@ -4160,7 +4160,7 @@ $(document).ready(function() {
           },
         },
         randomizedbaseaddress: {
-          description: 'vclinkertool_details_randomizedbaseaddress',
+          description: 'vclinkertool_advanced_randomizedbaseaddress',
           button_index: {
             default: 4,
           },
@@ -4170,7 +4170,7 @@ $(document).ready(function() {
           },
         },
         fixedbaseaddress: {
-          description: 'vclinkertool_details_fixedbaseaddress',
+          description: 'vclinkertool_advanced_fixedbaseaddress',
           button_index: {
             default: 5,
           },
@@ -4180,7 +4180,7 @@ $(document).ready(function() {
           },
         },
         dataexecutionprevention: {
-          description: 'vclinkertool_details_dataexecutionprevention',
+          description: 'vclinkertool_advanced_dataexecutionprevention',
           button_index: {
             default: 6,
           },
@@ -4190,7 +4190,7 @@ $(document).ready(function() {
           },
         },
         turnoffassemblygeneration: {
-          description: 'vclinkertool_details_turnoffassemblygeneration',
+          description: 'vclinkertool_advanced_turnoffassemblygeneration',
           button_index: {
             default: 7,
           },
@@ -4200,7 +4200,7 @@ $(document).ready(function() {
           },
         },
         supportunloadofdelayloadeddll: {
-          description: 'vclinkertool_details_supportunloadofdelayloadeddll',
+          description: 'vclinkertool_advanced_supportunloadofdelayloadeddll',
           button_index: {
             default: 8,
           },
@@ -4210,7 +4210,7 @@ $(document).ready(function() {
           },
         },
         importlibrary: {
-          description: 'vclinkertool_details_importlibrary',
+          description: 'vclinkertool_advanced_importlibrary',
           button_index: {
             default: 10,
           },
@@ -4220,7 +4220,7 @@ $(document).ready(function() {
           },
         },
         mergesections: {
-          description: 'vclinkertool_details_mergesections',
+          description: 'vclinkertool_advanced_mergesections',
           button_index: {
             default: 11,
           },
@@ -4230,7 +4230,7 @@ $(document).ready(function() {
           },
         },
         targetmachine: {
-          description: 'vclinkertool_details_targetmachine',
+          description: 'vclinkertool_advanced_targetmachine',
           button_index: {
             default: 12,
           },
@@ -4240,7 +4240,7 @@ $(document).ready(function() {
           },
         },
         profile: {
-          description: 'vclinkertool_details_profile',
+          description: 'vclinkertool_advanced_profile',
           button_index: {
             default: 13,
           },
@@ -4250,7 +4250,7 @@ $(document).ready(function() {
           },
         },
         clrthreadattribute: {
-          description: 'vclinkertool_details_clrthreadattribute',
+          description: 'vclinkertool_advanced_clrthreadattribute',
           button_index: {
             default: 14,
           },
@@ -4260,7 +4260,7 @@ $(document).ready(function() {
           },
         },
         clrimagetype: {
-          description: 'vclinkertool_details_clrimagetype',
+          description: 'vclinkertool_advanced_clrimagetype',
           button_index: {
             default: 15,
           },
@@ -4270,7 +4270,7 @@ $(document).ready(function() {
           },
         },
         keycontainer: {
-          description: 'vclinkertool_details_keycontainer',
+          description: 'vclinkertool_advanced_keycontainer',
           button_index: {
             default: 17,
           },
@@ -4280,7 +4280,7 @@ $(document).ready(function() {
           },
         },
         clrunmanagedcodecheck: {
-          description: 'vclinkertool_details_clrunmanagedcodecheck',
+          description: 'vclinkertool_advanced_clrunmanagedcodecheck',
           button_index: {
             default: 19,
           },
@@ -4290,7 +4290,7 @@ $(document).ready(function() {
           },
         },
         errorreporting: {
-          description: 'vclinkertool_details_errorreporting',
+          description: 'vclinkertool_advanced_errorreporting',
           button_index: {
             default: 21,
           },
@@ -4429,7 +4429,7 @@ $(document).ready(function() {
           },
         },
         targetmachine: {
-          description: 'vclinkertool_details_targetmachine',
+          description: 'vclinkertool_advanced_targetmachine',
           button_index: {
             default: 13,
           },
